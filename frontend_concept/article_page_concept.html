@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akan Reports article-page design concept.">
+    <meta name="robots" content="noindex">
+    <title>Ghana is growing. The recovery is still uneven. — Akan Reports</title>
+    <link rel="stylesheet" href="design_system/tokens.css">
+    <style>
+        .article-page { min-height: 100vh; }
+        .site-utility { border-bottom: 1px solid var(--akan-ink); background: var(--akan-ink); color: var(--akan-paper); }
+        .site-utility__inner,
+        .site-header__inner,
+        .article-shell,
+        .related-shell,
+        .site-footer__inner { width: min(100%, var(--page-max)); margin-inline: auto; padding-inline: var(--gutter); }
+        .site-utility__inner { display: flex; justify-content: space-between; gap: 1rem; padding-block: .5rem; }
+        .site-utility p { margin: 0; color: inherit; }
+        .site-header { border-bottom: 2px solid var(--akan-ink); background: var(--akan-earth); }
+        .site-header__top { display: flex; align-items: end; justify-content: space-between; gap: 2rem; padding-block: 1.25rem; }
+        .wordmark { color: var(--akan-ink); font-size: clamp(3.5rem, 8vw, 6rem); font-weight: 900; letter-spacing: -.075em; line-height: .72; text-decoration: none; }
+        .site-description { max-width: 22rem; margin: 0; border-left: 2px solid var(--akan-ink); padding-left: 1rem; font-size: .875rem; font-weight: 600; line-height: 1.45; }
+        .site-nav { overflow-x: auto; border-top: 1px solid var(--akan-ink); scrollbar-width: none; }
+        .site-nav::-webkit-scrollbar { display: none; }
+        .site-nav ul { display: flex; min-width: max-content; margin: 0; padding: 0; list-style: none; }
+        .site-nav a { display: block; min-height: 2.75rem; border-right: 1px solid var(--akan-ink); padding: .8rem 1.25rem; font-size: .75rem; font-weight: 800; letter-spacing: .02em; text-decoration: none; text-transform: uppercase; }
+        .site-nav a:hover,
+        .site-nav a:focus-visible { background: var(--akan-ink); color: var(--akan-paper); }
+        .site-nav .search-link { display: inline-flex; align-items: center; gap: .5rem; }
+        .site-nav svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 1.75; }
+
+        .article-header { border-bottom: 2px solid var(--akan-ink); background: var(--akan-paper); }
+        .article-shell { padding-block: clamp(2rem, 5vw, 5rem); }
+        .article-header__grid { display: grid; gap: 2.5rem; }
+        .article-title { max-width: 13ch; margin: 1.25rem 0 0; font-size: clamp(3.2rem, 8.8vw, 8.2rem); font-weight: 900; letter-spacing: -.07em; line-height: .84; }
+        .article-deck { max-width: 68ch; margin: 2rem 0 0; font-size: clamp(1.15rem, 1rem + .65vw, 1.55rem); font-weight: 500; line-height: 1.55; }
+        .article-byline { display: flex; flex-wrap: wrap; gap: .65rem 2rem; margin-top: 2rem; padding-block: 1rem; border-block: 1px solid var(--akan-ink); }
+        .article-byline span { color: var(--akan-quiet); }
+        .article-header__aside { display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; padding-top: .25rem; }
+        .article-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+        .article-actions .ds-button { background: var(--akan-paper); }
+        .article-actions .ds-button:hover { background: var(--akan-ink); }
+        .report-index { border-top: 2px solid var(--akan-ink); }
+        .report-index__item { display: grid; grid-template-columns: 2rem 1fr; gap: .75rem; padding-block: .8rem; border-bottom: 1px solid var(--akan-ink); font-size: .875rem; font-weight: 700; }
+        .report-index__item span:first-child { font-family: var(--font-mono); font-size: .7rem; }
+
+        .data-hero { border-bottom: 2px solid var(--akan-ink); background: var(--akan-gold); }
+        .data-hero__grid { display: grid; }
+        .data-hero__summary { padding: clamp(1.5rem, 4vw, 3.5rem); border-bottom: 2px solid var(--akan-ink); }
+        .data-value { margin: 1rem 0 0; font-size: clamp(5rem, 15vw, 10rem); font-weight: 900; letter-spacing: -.08em; line-height: .75; }
+        .data-hero__summary p:last-child { max-width: 32rem; margin: 1.75rem 0 0; font-size: 1rem; font-weight: 600; line-height: 1.55; }
+        .data-hero__chart { padding: clamp(1.5rem, 4vw, 3.5rem); background: var(--akan-paper); }
+        .chart-bars { display: grid; height: 15rem; grid-template-columns: repeat(5, 1fr); align-items: end; gap: clamp(.5rem, 2vw, 1.25rem); margin-top: 3rem; border-bottom: 1px solid var(--akan-ink); }
+        .chart-bar { position: relative; background: var(--akan-forest); }
+        .chart-bar:last-child { background: var(--akan-signal); }
+        .chart-bar b { position: absolute; top: -1.6rem; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: .7rem; }
+        .chart-labels { display: grid; grid-template-columns: repeat(5, 1fr); gap: .5rem; margin-top: .6rem; text-align: center; }
+        .chart-labels span { font-family: var(--font-mono); font-size: .65rem; text-transform: uppercase; }
+
+        .article-content { background: var(--akan-earth); }
+        .article-content__grid { display: grid; gap: 3rem; }
+        .article-body { min-width: 0; }
+        .article-body > p,
+        .article-body > h2,
+        .article-body > blockquote { max-width: var(--reading-max); }
+        .article-body > p { margin: 0 0 1.6rem; font-size: clamp(1.0625rem, 1rem + .22vw, 1.18rem); line-height: 1.82; }
+        .article-body > p:first-of-type { font-size: clamp(1.2rem, 1.1rem + .35vw, 1.35rem); font-weight: 600; line-height: 1.7; }
+        .article-body > h2 { margin: 3.75rem 0 1.5rem; font-size: clamp(2.2rem, 1.5rem + 3vw, 4rem); font-weight: 900; letter-spacing: -.055em; line-height: .95; text-transform: uppercase; }
+        .article-body blockquote { margin: 3.5rem 0; border-block: 2px solid var(--akan-ink); padding-block: 1.6rem; font-size: clamp(1.8rem, 1.25rem + 2.4vw, 3rem); font-weight: 800; letter-spacing: -.04em; line-height: 1.06; }
+        .article-body blockquote cite { display: block; margin-top: 1rem; font-family: var(--font-mono); font-size: .7rem; font-style: normal; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+        .article-rail { align-self: start; }
+        .key-figures { border: 2px solid var(--akan-ink); background: var(--akan-paper); }
+        .key-figures__head { padding: 1rem; border-bottom: 2px solid var(--akan-ink); background: var(--akan-ink); color: var(--akan-paper); }
+        .key-figure { padding: 1.15rem; border-bottom: 1px solid var(--akan-ink); }
+        .key-figure:last-child { border-bottom: 0; }
+        .key-figure strong { display: block; font-size: 2.3rem; letter-spacing: -.055em; }
+        .key-figure span { display: block; margin-top: .25rem; color: var(--akan-quiet); font-size: .8rem; line-height: 1.4; }
+        .correction-box { margin-top: 3.5rem; border: 1px solid var(--akan-ink); border-left: .5rem solid var(--akan-gold); padding: 1.25rem; background: var(--akan-paper); }
+        .correction-box p { margin: .5rem 0 0; font-size: .9rem; line-height: 1.6; }
+
+        .related { border-top: 2px solid var(--akan-ink); background: var(--akan-paper); }
+        .related-shell { padding-block: clamp(2.5rem, 5vw, 5rem); }
+        .related-head { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--akan-ink); }
+        .related-head h2 { margin: 0; font-size: clamp(2.6rem, 6vw, 5rem); font-weight: 900; letter-spacing: -.06em; line-height: .85; text-transform: uppercase; }
+        .related-grid { display: grid; border-left: 1px solid var(--akan-ink); }
+        .related-story { min-height: 18rem; border-right: 1px solid var(--akan-ink); border-bottom: 1px solid var(--akan-ink); padding: 1.5rem; }
+        .related-story h3 { margin: 3.5rem 0 0; font-size: 1.8rem; font-weight: 900; letter-spacing: -.045em; line-height: 1; text-transform: uppercase; }
+        .related-story p { color: var(--akan-quiet); line-height: 1.55; }
+
+        .site-footer { border-top: 2px solid var(--akan-ink); background: var(--akan-ink); color: var(--akan-paper); }
+        .site-footer__inner { display: grid; gap: 2rem; padding-block: 2rem; }
+        .footer-wordmark { margin: 0; font-size: 4rem; font-weight: 900; letter-spacing: -.07em; line-height: .8; }
+        .footer-links { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin: 0; padding: 0; list-style: none; }
+        .footer-links a { font-family: var(--font-mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; }
+        .toast { position: fixed; right: 1rem; bottom: 1rem; z-index: 20; transform: translateY(6rem); border: 1px solid var(--akan-paper); padding: .8rem 1rem; background: var(--akan-ink); color: var(--akan-paper); font-family: var(--font-mono); font-size: .7rem; text-transform: uppercase; transition: transform var(--motion-standard) var(--ease-out); }
+        .toast.is-visible { transform: translateY(0); }
+
+        @media (min-width: 48rem) {
+            .article-header__grid { grid-template-columns: minmax(0, 3fr) minmax(15rem, 1fr); }
+            .data-hero__grid { grid-template-columns: minmax(17rem, .75fr) minmax(0, 1.25fr); }
+            .data-hero__summary { border-right: 2px solid var(--akan-ink); border-bottom: 0; }
+            .article-content__grid { grid-template-columns: minmax(0, 3fr) minmax(15rem, 1fr); }
+            .article-rail { position: sticky; top: 1.5rem; }
+            .related-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .site-footer__inner { grid-template-columns: 1fr auto; align-items: end; }
+        }
+        @media (max-width: 47.99rem) {
+            .site-description { display: none; }
+            .article-title { max-width: none; }
+            .report-index { display: none; }
+            .related-head { align-items: start; flex-direction: column; }
+        }
+        @media print {
+            .site-utility, .site-header, .article-actions, .related, .site-footer, .toast { display: none; }
+            .article-header, .article-content, .data-hero { background: white; }
+            .article-content__grid { display: block; }
+            .article-rail { position: static; margin-top: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-page">
+        <a href="#article-body" class="ds-button" style="position:absolute;left:1rem;top:-6rem;z-index:50;background:var(--akan-ink);color:var(--akan-paper)" onfocus="this.style.top='1rem'" onblur="this.style.top='-6rem'">Skip to article</a>
+
+        <div class="site-utility">
+            <div class="site-utility__inner ds-meta">
+                <p>Vol. 01 · Accra, Ghana</p>
+                <p>Independent · Fact-led · Ghanaian</p>
+            </div>
+        </div>
+
+        <header class="site-header">
+            <div class="site-header__inner">
+                <div class="site-header__top">
+                    <a class="wordmark" href="akan_news_modernist_concept.html" aria-label="Akan Reports home">akan.</a>
+                    <p class="site-description">Signals from Ghana's news cycle. Plus the world that shapes it.</p>
+                </div>
+                <nav class="site-nav" aria-label="Primary navigation">
+                    <ul>
+                        <li><a href="#">Latest</a></li>
+                        <li><a href="#">Ghana</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">World</a></li>
+                        <li><a class="search-link" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>Search</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <header class="article-header">
+                    <div class="article-shell article-header__grid">
+                        <div>
+                            <p class="ds-kicker">Analysis / Economy</p>
+                            <h1 class="article-title">Ghana is growing. <span style="color:var(--akan-signal)">The recovery is still uneven.</span></h1>
+                            <p class="article-deck">Technology and mining pushed the economy to its strongest first-quarter expansion in years. The headline number does not describe how that recovery feels—or who is receiving its benefits.</p>
+                            <div class="article-byline ds-meta">
+                                <strong style="color:var(--akan-ink)">By Kofi Mensah</strong>
+                                <span>Published 31 Aug 2026 · 07:40 GMT</span>
+                                <span>Updated 09:15 GMT</span>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                        <aside class="article-header__aside" aria-label="Article tools and outline">
+                            <div class="article-actions">
+                                <button class="ds-button ds-button--solid" type="button" id="copyLink">Copy link</button>
+                                <button class="ds-button" type="button" onclick="window.print()">Print</button>
+                            </div>
+                            <div class="report-index">
+                                <p class="ds-kicker" style="margin:0 0 .8rem">In this report</p>
+                                <div class="report-index__item"><span>01</span><span>The headline figure</span></div>
+                                <div class="report-index__item"><span>02</span><span>Where growth came from</span></div>
+                                <div class="report-index__item"><span>03</span><span>What households feel</span></div>
+                            </div>
+                        </aside>
+                    </div>
+                </header>
+
+                <figure class="data-hero" style="margin:0">
+                    <div class="article-shell data-hero__grid" style="padding-block:0">
+                        <figcaption class="data-hero__summary">
+                            <p class="ds-meta" style="color:var(--akan-ink)">Real GDP growth · Year on year</p>
+                            <p class="data-value">6.4%</p>
+                            <p>Growth accelerated sharply in the first quarter, with information and communication technology expanding 25.2%.</p>
+                        </figcaption>
+                        <div class="data-hero__chart">
+                            <p class="ds-kicker">Five-quarter view</p>
+                            <div class="chart-bars" role="img" aria-label="GDP growth rises from 2.2 percent in the first quarter of 2025 to 6.4 percent in the first quarter of 2026">
+                                <div class="chart-bar" style="height:34%"><b>2.2</b></div>
+                                <div class="chart-bar" style="height:48%"><b>3.1</b></div>
+                                <div class="chart-bar" style="height:66%"><b>4.3</b></div>
+                                <div class="chart-bar" style="height:58%"><b>3.8</b></div>
+                                <div class="chart-bar" style="height:100%"><b>6.4</b></div>
+                            </div>
+                            <div class="chart-labels"><span>Q1 25</span><span>Q2</span><span>Q3</span><span>Q4</span><span>Q1 26</span></div>
+                            <p class="ds-meta" style="margin:1rem 0 0">Source: Ghana Statistical Service · Prototype data display</p>
+                        </div>
+                    </div>
+                </figure>
+
+                <div class="article-content">
+                    <div class="article-shell article-content__grid">
+                        <div class="article-body" id="article-body">
+                            <p>Ghana's economy expanded by 6.4% in the first quarter, a national figure strong enough to suggest that the recovery has gained real momentum. But the composition of that growth—and the distance between expanding sectors and household experience—deserves closer attention.</p>
+
+                            <p>The largest push came from information and communication technology, which grew by 25.2%. Mining recovered by 10.7%, adding further weight to the headline figure. Together, a small number of high-performing sectors carried much of the acceleration.</p>
+
+                            <h2>The number is national. The experience is personal.</h2>
+
+                            <p>Gross domestic product measures the value created across the economy. It does not promise that the gains will arrive evenly, immediately, or in forms that households recognize. A fast-growing sector may employ relatively few people, concentrate income in particular regions, or rely heavily on imported equipment.</p>
+
+                            <p>For many households, the recovery is judged through a different set of indicators: food prices, rent, transport costs, reliable work, and the value of wages after inflation. Those measures can move much more slowly than national output.</p>
+
+                            <blockquote>
+                                Growth answers how much the economy produced. It does not, by itself, answer who gained.
+                                <cite>Akan Reports analysis</cite>
+                            </blockquote>
+
+                            <h2>Where the gains are concentrated</h2>
+
+                            <p>The technology expansion is important because it suggests continuing investment in connectivity, digital services, and business infrastructure. The next question is whether that expansion produces broad employment, stronger local companies, and productivity gains outside the largest cities.</p>
+
+                            <p>Mining presents a similar distribution question. Higher production can support exports, taxes, and foreign-exchange earnings, while communities near extraction sites may still evaluate the sector through jobs, environmental costs, infrastructure, and local revenue.</p>
+
+                            <h2>What to watch next</h2>
+
+                            <p>The next releases should show whether growth is spreading into employment-intensive sectors and whether household consumption strengthens. Wage growth, food inflation, private-sector credit, and regional activity will help explain whether the recovery is becoming more widely felt.</p>
+
+                            <p>The 6.4% figure is meaningful. The more consequential story is what happens after it: whether expanding sectors begin to change the material conditions through which people recognize economic progress.</p>
+
+                            <aside class="correction-box" aria-labelledby="correction-title">
+                                <p class="ds-kicker" id="correction-title" style="color:var(--akan-ink)">Updates and corrections</p>
+                                <p><strong>09:15 GMT:</strong> This prototype demonstrates how a material update or correction would remain visible on an Akan Reports article.</p>
+                            </aside>
+                        </div>
+
+                        <aside class="article-rail" aria-label="Key figures">
+                            <div class="key-figures">
+                                <div class="key-figures__head"><p class="ds-meta" style="margin:0;color:inherit">Key figures</p></div>
+                                <div class="key-figure"><strong>6.4%</strong><span>Real GDP growth, year on year</span></div>
+                                <div class="key-figure"><strong>25.2%</strong><span>ICT-sector expansion</span></div>
+                                <div class="key-figure"><strong>10.7%</strong><span>Mining-sector recovery</span></div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </article>
+
+            <section class="related" aria-labelledby="related-title">
+                <div class="related-shell">
+                    <div class="related-head">
+                        <div><p class="ds-kicker">Continue reading</p><h2 id="related-title">Related reports</h2></div>
+                        <p class="ds-meta">Three paths deeper into the story</p>
+                    </div>
+                    <div class="related-grid">
+                        <article class="related-story"><p class="ds-kicker">Business</p><h3>What the cedi's recovery changes for importers</h3><p>Lower currency pressure has not reached every shelf at the same speed.</p></article>
+                        <article class="related-story"><p class="ds-kicker">Technology</p><h3>Inside Kumasi's expanding startup economy</h3><p>New capital is widening the founder pipeline beyond Accra.</p></article>
+                        <article class="related-story"><p class="ds-kicker">Explainer</p><h3>How Ghana measures economic growth</h3><p>What GDP captures, what it misses, and why revisions matter.</p></article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <div><p class="footer-wordmark">akan.</p><p style="max-width:30rem;margin:1rem 0 0">Signals from Ghana's news cycle. Plus the world that shapes it.</p></div>
+                <ul class="footer-links"><li><a href="#">About</a></li><li><a href="#">Methodology</a></li><li><a href="#">Corrections</a></li><li><a href="#">Contact</a></li><li><a href="#">Privacy</a></li></ul>
+            </div>
+        </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Link copied</div>
+    <script>
+        const copyButton = document.getElementById('copyLink');
+        const toast = document.getElementById('toast');
+        let toastTimer;
+
+        copyButton.addEventListener('click', async () => {
+            try { await navigator.clipboard.writeText(window.location.href); } catch (error) { /* Clipboard may be unavailable for local files. */ }
+            toast.classList.add('is-visible');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 1800);
+        });
+    </script>
+</body>
+</html>

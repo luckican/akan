@@ -27,9 +27,9 @@ The grid keeps the publication coherent, while story modules vary in scale and d
 
 Index pages may be energetic; article bodies become calmer. Long-form text uses a comfortable measure, ordinary casing, and generous line height.
 
-### Evidence should be visible
+### Accountability should be visible
 
-Sources, updates, corrections, data labels, and tracker statuses are first-class interface elements rather than footnotes hidden from readers.
+Updates, corrections, data labels, and future tracker statuses are first-class interface elements rather than footnotes hidden from readers. Public source lists and methodology notes are optional components used when the reporting or data treatment benefits from them; they are not required on every article.
 
 ### Mobile is a full editorial surface
 
@@ -135,14 +135,14 @@ Labels identify section, urgency, status, or content type. They must remain shor
 
 Author, publication time, update time, reading time, section, and correction status should form a consistent metadata band.
 
-### Evidence elements
+### Accountability elements
 
-- Source list
-- Methodology note
 - Correction notice
 - Update history
 - Data source and timestamp
 - Tracker status and last verified date
+- Optional source list
+- Optional methodology note
 
 These elements use bordered notes with semantic edge colors and explicit headings.
 
