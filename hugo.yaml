@@ -1,0 +1,21 @@
+baseURL: https://example.org/
+locale: en-gh
+title: Akan Reports
+enableRobotsTXT: true
+summaryLength: 32
+
+permalinks:
+  stories: /stories/:slug/
+
+taxonomies:
+  topic: topics
+  format: formats
+
+params:
+  description: "Signals from Ghana's news cycle. Plus the world that shapes it."
+  accraTimezone: Africa/Accra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
