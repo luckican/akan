@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akan Reports design system specimen.">
+    <title>Akan Reports — Design System 0.1</title>
+    <link rel="stylesheet" href="tokens.css">
+    <style>
+        .specimen-header { border-bottom: var(--rule-strong) solid var(--color-rule); background: var(--color-text); color: var(--color-inverse); }
+        .specimen-header__bar { display: flex; justify-content: space-between; gap: 1rem; padding-block: .75rem; border-bottom: 1px solid rgba(244,235,221,.3); }
+        .specimen-header__brand { padding-block: var(--space-7); }
+        .specimen-wordmark { margin: 0; font-size: var(--text-masthead); font-weight: 900; letter-spacing: -.075em; line-height: .72; }
+        .specimen-intro { display: grid; gap: var(--space-5); align-items: end; }
+        .specimen-intro p { max-width: 38rem; margin: 0; font-size: var(--text-body-lg); line-height: 1.55; }
+        .section-head { display: flex; align-items: end; justify-content: space-between; gap: var(--space-6); margin-bottom: var(--space-6); }
+        .section-head p:last-child { max-width: 30rem; margin: 0; text-align: right; }
+        .swatch { min-height: 15rem; display: flex; flex-direction: column; justify-content: space-between; padding: var(--space-5); }
+        .swatch--ink { background: var(--akan-ink); color: var(--akan-paper); }
+        .swatch--earth { background: var(--akan-earth); }
+        .swatch--paper { background: var(--akan-paper); }
+        .swatch--forest { background: var(--akan-forest); color: var(--akan-paper); }
+        .swatch--signal { background: var(--akan-signal); color: var(--akan-white); }
+        .swatch--gold { background: var(--akan-gold); }
+        .swatch--quiet { background: var(--akan-quiet); color: var(--akan-white); }
+        .swatch__name { font-size: 1.4rem; font-weight: 800; text-transform: uppercase; }
+        .swatch__value { font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: .1em; text-transform: uppercase; }
+        .type-row { display: grid; gap: var(--space-5); padding: var(--space-6); background: var(--color-surface); }
+        .type-row + .type-row { border-top: var(--rule-thin) solid var(--color-rule); }
+        .type-row__label { font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: .12em; line-height: 1.5; text-transform: uppercase; }
+        .type-masthead { margin: 0; overflow: hidden; font-size: var(--text-masthead); font-weight: 900; letter-spacing: -.075em; line-height: .75; }
+        .component-strip { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); padding: var(--space-6); background: var(--color-surface); border: var(--rule-thin) solid var(--color-rule); }
+        .lead-specimen { display: grid; border: var(--rule-strong) solid var(--color-rule); background: var(--color-canvas); }
+        .lead-specimen__story { padding: clamp(1.5rem, 3vw, 4rem); }
+        .lead-specimen__story .ds-display { margin-top: var(--space-7); }
+        .lead-specimen__data { padding: var(--space-6); border-top: var(--rule-strong) solid var(--color-rule); background: var(--color-surface); }
+        .mini-chart { display: grid; height: 12rem; grid-template-columns: repeat(5,1fr); align-items: end; gap: .75rem; margin-top: var(--space-6); border-bottom: 1px solid var(--color-rule); }
+        .mini-chart span { display: block; background: var(--color-brand); }
+        .mini-chart span:last-child { background: var(--color-emphasis); }
+        .tracker { display: grid; background: var(--color-surface); border: var(--rule-strong) solid var(--color-rule); }
+        .tracker__head { padding: var(--space-6); border-bottom: var(--rule-strong) solid var(--color-rule); }
+        .tracker__item { display: grid; grid-template-columns: 5rem 1fr; gap: var(--space-5); padding: var(--space-5); border-bottom: var(--rule-thin) solid var(--color-rule); }
+        .tracker__item:last-child { border-bottom: 0; }
+        .tracker__date { font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; }
+        .tracker__item h4 { margin: 0; font-size: 1rem; }
+        .tracker__item p { margin: .45rem 0 0; color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
+        .article-sample { background: var(--color-surface); border: var(--rule-strong) solid var(--color-rule); }
+        .article-sample__head { padding: clamp(1.5rem, 4vw, 4rem); border-bottom: var(--rule-strong) solid var(--color-rule); }
+        .article-sample__body { max-width: calc(var(--reading-max) + 8rem); padding: clamp(1.5rem, 4vw, 4rem); }
+        .article-sample__body p:not([class]) { max-width: var(--reading-max); font-size: 1.125rem; line-height: 1.8; }
+        .article-meta { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); padding-block: var(--space-4); border-block: var(--rule-thin) solid var(--color-rule); }
+        .spacing-row { display: flex; flex-wrap: wrap; align-items: end; gap: var(--space-5); padding: var(--space-6); background: var(--color-surface); border: var(--rule-thin) solid var(--color-rule); }
+        .spacing-token { display: grid; gap: .5rem; justify-items: center; font-family: var(--font-mono); font-size: .65rem; text-transform: uppercase; }
+        .spacing-token i { display: block; width: 2rem; background: var(--color-emphasis); }
+        .specimen-footer { padding-block: var(--space-7); background: var(--color-text); color: var(--color-inverse); }
+        @media (min-width: 50rem) {
+            .specimen-intro { grid-template-columns: 1fr 26rem; }
+            .type-row { grid-template-columns: 12rem 1fr; align-items: baseline; }
+            .lead-specimen { grid-template-columns: minmax(0, 2fr) minmax(18rem, .8fr); }
+            .lead-specimen__data { border-top: 0; border-left: var(--rule-strong) solid var(--color-rule); }
+        }
+        @media (max-width: 43.99rem) {
+            .section-head { align-items: start; flex-direction: column; }
+            .section-head p:last-child { text-align: left; }
+        }
+    </style>
+</head>
+<body>
+    <header class="specimen-header">
+        <div class="ds-container specimen-header__bar ds-meta" style="color:var(--akan-paper)">
+            <span>Design system / 0.1</span>
+            <span>Review candidate</span>
+        </div>
+        <div class="ds-container specimen-header__brand">
+            <div class="specimen-intro">
+                <div>
+                    <p class="ds-kicker" style="color:var(--akan-gold)">Editorial identity system</p>
+                    <h1 class="specimen-wordmark">akan.</h1>
+                </div>
+                <p>A typography-led system for Ghanaian reporting: warm, direct, evidence-conscious, and built to move between urgency and focused reading.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="ds-section">
+            <div class="ds-container">
+                <div class="section-head">
+                    <div><p class="ds-kicker">01 / Foundations</p><h2 class="ds-heading">Color with a job.</h2></div>
+                    <p class="ds-meta">Flag-adjacent without becoming ornamental. Each accent carries a clear editorial role.</p>
+                </div>
+                <div class="ds-grid-4">
+                    <div class="swatch swatch--ink"><span class="swatch__name">Ink</span><span class="swatch__value">#15130F · Text / rules</span></div>
+                    <div class="swatch swatch--earth"><span class="swatch__name">Earth</span><span class="swatch__value">#E5D2AE · Canvas</span></div>
+                    <div class="swatch swatch--paper"><span class="swatch__name">Paper</span><span class="swatch__value">#F4EBDD · Reading</span></div>
+                    <div class="swatch swatch--forest"><span class="swatch__name">Forest</span><span class="swatch__value">#173D2D · Brand depth</span></div>
+                    <div class="swatch swatch--signal"><span class="swatch__name">Signal</span><span class="swatch__value">#BC382A · Emphasis</span></div>
+                    <div class="swatch swatch--gold"><span class="swatch__name">Gold</span><span class="swatch__value">#E8B946 · Highlights</span></div>
+                    <div class="swatch swatch--quiet"><span class="swatch__name">Quiet</span><span class="swatch__value">#615A51 · Secondary</span></div>
+                    <div class="swatch" style="background:var(--akan-white)"><span class="swatch__name">White</span><span class="swatch__value">#FFFDF8 · On signal</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section" style="background:var(--color-surface)">
+            <div class="ds-container">
+                <div class="section-head">
+                    <div><p class="ds-kicker">02 / Typography</p><h2 class="ds-heading">Type is the image.</h2></div>
+                    <p class="ds-meta">Inter carries reporting and hierarchy. DM Mono carries evidence, time, category, and status.</p>
+                </div>
+                <div style="border:var(--rule-strong) solid var(--color-rule)">
+                    <div class="type-row"><span class="type-row__label">Masthead<br>Inter 900</span><p class="type-masthead">akan.</p></div>
+                    <div class="type-row"><span class="type-row__label">Display<br>Fluid / 900</span><p class="ds-display">Ghana grows.<br><span style="color:var(--color-emphasis)">Who gains?</span></p></div>
+                    <div class="type-row"><span class="type-row__label">Section<br>Fluid / 900</span><p class="ds-heading">Today, briefly.</p></div>
+                    <div class="type-row"><span class="type-row__label">Story<br>Fluid / 800</span><p class="ds-subheading">The numbers changed. Daily life did not.</p></div>
+                    <div class="type-row"><span class="type-row__label">Deck<br>18–20 / 500</span><p class="ds-body">Economic growth accelerated in the first quarter, led by technology and mining. The distribution of that recovery tells a more complicated story.</p></div>
+                    <div class="type-row"><span class="type-row__label">Metadata<br>12 / Mono 500</span><p class="ds-meta">Economy · Updated 08:42 GMT · 6 min read</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section">
+            <div class="ds-container">
+                <div class="section-head">
+                    <div><p class="ds-kicker">03 / Spacing</p><h2 class="ds-heading">Rhythm, not decoration.</h2></div>
+                    <p class="ds-meta">A 4px base with deliberate jumps between compact metadata and expansive editorial statements.</p>
+                </div>
+                <div class="spacing-row">
+                    <span class="spacing-token"><i style="height:4px"></i>04</span>
+                    <span class="spacing-token"><i style="height:8px"></i>08</span>
+                    <span class="spacing-token"><i style="height:12px"></i>12</span>
+                    <span class="spacing-token"><i style="height:16px"></i>16</span>
+                    <span class="spacing-token"><i style="height:24px"></i>24</span>
+                    <span class="spacing-token"><i style="height:32px"></i>32</span>
+                    <span class="spacing-token"><i style="height:48px"></i>48</span>
+                    <span class="spacing-token"><i style="height:64px"></i>64</span>
+                    <span class="spacing-token"><i style="height:96px"></i>96</span>
+                    <span class="spacing-token"><i style="height:128px"></i>128</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section" style="background:var(--color-highlight)">
+            <div class="ds-container">
+                <div class="section-head">
+                    <div><p class="ds-kicker" style="color:var(--color-text)">04 / Controls</p><h2 class="ds-heading">Clear actions.</h2></div>
+                    <p class="ds-meta">Square, explicit, keyboard-visible, and large enough for touch.</p>
+                </div>
+                <div class="component-strip">
+                    <button class="ds-button">Default action</button>
+                    <button class="ds-button ds-button--solid">Primary action</button>
+                    <button class="ds-button ds-button--signal">Live update</button>
+                    <span class="ds-label">Economy</span>
+                    <span class="ds-label ds-label--signal">Breaking</span>
+                    <span class="ds-label ds-label--gold">Tracker update</span>
+                    <svg class="ds-arrow" viewBox="0 0 24 24" aria-label="Open story"><path d="M5 19 19 5M9 5h10v10"/></svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section" style="background:var(--color-surface)">
+            <div class="ds-container">
+                <div class="section-head">
+                    <div><p class="ds-kicker">05 / Story hierarchy</p><h2 class="ds-heading">Not every story shouts.</h2></div>
+                    <p class="ds-meta">Surface, scale, whitespace, and proportion establish editorial rank.</p>
+                </div>
+                <div class="lead-specimen">
+                    <article class="lead-specimen__story">
+                        <p class="ds-kicker">Lead report / Economy</p>
+                        <h3 class="ds-display">Growth returns.<br><span style="color:var(--color-emphasis)">Relief doesn't.</span></h3>
+                        <p class="ds-body" style="margin-top:var(--space-6)">Headline growth is accelerating, but household costs and uneven gains complicate the national picture.</p>
+                    </article>
+                    <aside class="lead-specimen__data">
+                        <p class="ds-meta">Real GDP · Year on year</p>
+                        <p style="margin:.25rem 0 0;font-size:4rem;font-weight:900;letter-spacing:-.06em">6.4%</p>
+                        <div class="mini-chart" aria-label="Growth rises from 2.2 to 6.4 percent"><span style="height:34%"></span><span style="height:48%"></span><span style="height:65%"></span><span style="height:58%"></span><span style="height:100%"></span></div>
+                        <p class="ds-meta" style="margin-top:.75rem">Source: GSS · Q1 2026</p>
+                    </aside>
+                </div>
+                <div class="ds-grid-3" style="margin-top:var(--space-6)">
+                    <article class="ds-story">
+                        <p class="ds-kicker">Environment</p>
+                        <div><h3 class="ds-story__title">Storm warning for two regions</h3><p class="ds-story__summary">Residents are urged to avoid flood-prone roads as intense rain moves south.</p></div>
+                        <div class="ds-story__footer"><span class="ds-meta">09:10 GMT · 3 min</span><svg class="ds-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M9 5h10v10"/></svg></div>
+                    </article>
+                    <article class="ds-story ds-story--inverse">
+                        <p class="ds-kicker" style="color:var(--color-highlight)">Judiciary</p>
+                        <div><h3 class="ds-story__title">SkyTrain case moves forward</h3><p class="ds-story__summary">The court opens the next phase of a closely watched infrastructure case.</p></div>
+                        <div class="ds-story__footer"><span class="ds-meta">11:15 GMT · 5 min</span><svg class="ds-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M9 5h10v10"/></svg></div>
+                    </article>
+                    <article class="ds-story ds-story--highlight">
+                        <p class="ds-meta" style="color:var(--color-text)">Tracker / Updated today</p>
+                        <div><h3 class="ds-story__title">Tema interchange: what was promised</h3><p class="ds-story__summary" style="color:var(--color-text)">A living record of deadlines, budgets, contracts, and verified progress.</p></div>
+                        <div class="ds-story__footer"><span class="ds-label">In progress</span><svg class="ds-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M9 5h10v10"/></svg></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section">
+            <div class="ds-container">
+                <div class="section-head">
+                    <div><p class="ds-kicker">06 / Tracker</p><h2 class="ds-heading">Show the record.</h2></div>
+                    <p class="ds-meta">Promises become timelines with dates, evidence, status, and explicit uncertainty.</p>
+                </div>
+                <div class="tracker">
+                    <div class="tracker__head"><span class="ds-label ds-label--gold">In progress</span><h3 class="ds-subheading" style="margin-top:var(--space-5)">Accra–Kumasi highway expansion</h3><p class="ds-body" style="margin-top:var(--space-4)">A living timeline of what government announced, funded, changed, and completed.</p></div>
+                    <div class="tracker__item"><time class="tracker__date">Mar<br>2026</time><div><h4>Funding agreement announced</h4><p>Government publishes the first financing outline. Primary document attached.</p></div></div>
+                    <div class="tracker__item"><time class="tracker__date">Jun<br>2026</time><div><h4>Procurement deadline moves</h4><p>The submission date changes by six weeks. No revised construction start is provided.</p></div></div>
+                    <div class="tracker__item"><time class="tracker__date">Aug<br>2026</time><div><h4>Contractor shortlist published</h4><p>Four firms proceed to the next stage. Last verified 29 August 2026.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section" style="background:var(--color-surface)">
+            <div class="ds-container">
+                <div class="section-head">
+                    <div><p class="ds-kicker">07 / Focused reading</p><h2 class="ds-heading">Let the report breathe.</h2></div>
+                    <p class="ds-meta">Index energy gives way to calmer type, narrower measure, and visible evidence.</p>
+                </div>
+                <article class="article-sample">
+                    <header class="article-sample__head">
+                        <p class="ds-kicker">Analysis / Economy</p>
+                        <h3 class="ds-heading" style="margin-top:var(--space-5);max-width:18ch">The economy is growing. The recovery is still uneven.</h3>
+                        <p class="ds-body" style="margin-top:var(--space-6)">Technology and mining pushed the national number higher, while the pressures households feel every day moved more slowly.</p>
+                        <div class="article-meta ds-meta"><span>By Kofi Mensah</span><span>31 Aug 2026</span><span>Updated 09:15 GMT</span><span>7 min read</span></div>
+                    </header>
+                    <div class="article-sample__body">
+                        <p>Economic growth accelerated during the first quarter, but the headline figure does not describe a uniform recovery. The strongest gains were concentrated in a small number of sectors, while household purchasing power remained under pressure.</p>
+                        <p>That distinction matters. A national average can move in the right direction even when the benefits arrive slowly—or do not arrive at all—for many people.</p>
+                        <aside class="ds-note ds-note--source"><p class="ds-kicker" style="color:var(--color-brand)">Sources and method</p><p style="margin:.5rem 0 0;line-height:1.6">This report uses the Ghana Statistical Service quarterly release and sector tables. Figures were last checked on 31 August 2026.</p></aside>
+                        <aside class="ds-note ds-note--correction" style="margin-top:var(--space-5)"><p class="ds-kicker" style="color:var(--color-text)">Correction</p><p style="margin:.5rem 0 0;line-height:1.6">An earlier version misstated the comparison period. The figure is year-on-year, not quarter-on-quarter.</p></aside>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="specimen-footer">
+        <div class="ds-container">
+            <p class="ds-kicker" style="color:var(--color-highlight)">Akan Reports Design System</p>
+            <p style="margin:var(--space-3) 0 0;font-size:1.25rem;font-weight:700">Version 0.1 · Foundations and core editorial components</p>
+        </div>
+    </footer>
+</body>
+</html>
