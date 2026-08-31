@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Akan Reports article-page design concept.">
     <meta name="robots" content="noindex">
-    <title>Ghana is growing. The recovery is still uneven. — Akan Reports</title>
+    <title>While the theatre changes, Accra's artists find new stages — Akan Reports</title>
     <link rel="stylesheet" href="design_system/tokens.css">
     <style>
         .article-page { min-height: 100vh; }
-        .site-utility { border-bottom: 1px solid var(--akan-ink); background: var(--akan-ink); color: var(--akan-paper); }
-        .site-utility__inner,
         .site-header__inner,
         .article-shell,
         .related-shell,
         .site-footer__inner { width: min(100%, var(--page-max)); margin-inline: auto; padding-inline: var(--gutter); }
-        .site-utility__inner { display: flex; justify-content: space-between; gap: 1rem; padding-block: .5rem; }
-        .site-utility p { margin: 0; color: inherit; }
         .site-header { border-bottom: 2px solid var(--akan-ink); background: var(--akan-earth); }
         .site-header__top { display: flex; align-items: end; justify-content: space-between; gap: 2rem; padding-block: 1.25rem; }
         .wordmark { color: var(--akan-ink); font-size: clamp(3.5rem, 8vw, 6rem); font-weight: 900; letter-spacing: -.075em; line-height: .72; text-decoration: none; }
-        .site-description { max-width: 22rem; margin: 0; border-left: 2px solid var(--akan-ink); padding-left: 1rem; font-size: .875rem; font-weight: 600; line-height: 1.45; }
+        .site-clock { border-left: 2px solid var(--akan-ink); padding-left: 1rem; text-align: right; }
+        .site-clock span { display: block; font-family: var(--font-mono); font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; }
+        .site-clock time { display: block; margin-top: .3rem; color: var(--akan-signal); font-family: var(--font-mono); font-size: clamp(.85rem, 2vw, 1rem); font-weight: 500; }
         .site-nav { overflow-x: auto; border-top: 1px solid var(--akan-ink); scrollbar-width: none; }
         .site-nav::-webkit-scrollbar { display: none; }
         .site-nav ul { display: flex; min-width: max-content; margin: 0; padding: 0; list-style: none; }
@@ -39,24 +37,20 @@
         .article-byline span { color: var(--akan-quiet); }
         .article-header__aside { display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; padding-top: .25rem; }
         .article-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
-        .article-actions .ds-button { background: var(--akan-paper); }
-        .article-actions .ds-button:hover { background: var(--akan-ink); }
+        .article-actions .ds-button { background: var(--akan-paper); color: var(--akan-ink); }
+        .article-actions .ds-button:hover { background: var(--akan-ink); color: var(--akan-paper); }
+        .article-actions .ds-button--solid { background: var(--akan-ink); color: var(--akan-paper); }
+        .article-actions .ds-button--solid:hover { background: var(--akan-signal); color: var(--akan-white); }
         .report-index { border-top: 2px solid var(--akan-ink); }
         .report-index__item { display: grid; grid-template-columns: 2rem 1fr; gap: .75rem; padding-block: .8rem; border-bottom: 1px solid var(--akan-ink); font-size: .875rem; font-weight: 700; }
         .report-index__item span:first-child { font-family: var(--font-mono); font-size: .7rem; }
 
-        .data-hero { border-bottom: 2px solid var(--akan-ink); background: var(--akan-gold); }
-        .data-hero__grid { display: grid; }
-        .data-hero__summary { padding: clamp(1.5rem, 4vw, 3.5rem); border-bottom: 2px solid var(--akan-ink); }
-        .data-value { margin: 1rem 0 0; font-size: clamp(5rem, 15vw, 10rem); font-weight: 900; letter-spacing: -.08em; line-height: .75; }
-        .data-hero__summary p:last-child { max-width: 32rem; margin: 1.75rem 0 0; font-size: 1rem; font-weight: 600; line-height: 1.55; }
-        .data-hero__chart { padding: clamp(1.5rem, 4vw, 3.5rem); background: var(--akan-paper); }
-        .chart-bars { display: grid; height: 15rem; grid-template-columns: repeat(5, 1fr); align-items: end; gap: clamp(.5rem, 2vw, 1.25rem); margin-top: 3rem; border-bottom: 1px solid var(--akan-ink); }
-        .chart-bar { position: relative; background: var(--akan-forest); }
-        .chart-bar:last-child { background: var(--akan-signal); }
-        .chart-bar b { position: absolute; top: -1.6rem; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: .7rem; }
-        .chart-labels { display: grid; grid-template-columns: repeat(5, 1fr); gap: .5rem; margin-top: .6rem; text-align: center; }
-        .chart-labels span { font-family: var(--font-mono); font-size: .65rem; text-transform: uppercase; }
+        .story-hero { margin: 0; border-bottom: 2px solid var(--akan-ink); background: var(--akan-paper); }
+        .story-hero__canvas { display: flex; min-height: clamp(24rem, 58vw, 46rem); align-items: end; overflow: hidden; padding: clamp(1.5rem, 5vw, 4rem); background-color: var(--akan-forest); background-image: repeating-linear-gradient(90deg, transparent 0, transparent 13%, rgba(244,235,221,.09) 13%, rgba(244,235,221,.09) calc(13% + 1px)); color: var(--akan-paper); }
+        .story-hero__type { max-width: 11ch; margin: 0; font-size: clamp(4rem, 14vw, 11rem); font-weight: 900; letter-spacing: -.075em; line-height: .76; text-transform: uppercase; }
+        .story-hero__type span { color: var(--akan-gold); }
+        .story-hero__caption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; padding-block: .85rem; }
+        .story-hero__caption p { margin: 0; }
 
         .article-content { background: var(--akan-earth); }
         .article-content__grid { display: grid; gap: 3rem; }
@@ -70,12 +64,12 @@
         .article-body blockquote { margin: 3.5rem 0; border-block: 2px solid var(--akan-ink); padding-block: 1.6rem; font-size: clamp(1.8rem, 1.25rem + 2.4vw, 3rem); font-weight: 800; letter-spacing: -.04em; line-height: 1.06; }
         .article-body blockquote cite { display: block; margin-top: 1rem; font-family: var(--font-mono); font-size: .7rem; font-style: normal; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
         .article-rail { align-self: start; }
-        .key-figures { border: 2px solid var(--akan-ink); background: var(--akan-paper); }
-        .key-figures__head { padding: 1rem; border-bottom: 2px solid var(--akan-ink); background: var(--akan-ink); color: var(--akan-paper); }
-        .key-figure { padding: 1.15rem; border-bottom: 1px solid var(--akan-ink); }
-        .key-figure:last-child { border-bottom: 0; }
-        .key-figure strong { display: block; font-size: 2.3rem; letter-spacing: -.055em; }
-        .key-figure span { display: block; margin-top: .25rem; color: var(--akan-quiet); font-size: .8rem; line-height: 1.4; }
+        .story-context { border: 2px solid var(--akan-ink); background: var(--akan-paper); }
+        .story-context__head { padding: 1rem; border-bottom: 2px solid var(--akan-ink); background: var(--akan-ink); color: var(--akan-paper); }
+        .story-context__item { padding: 1.15rem; border-bottom: 1px solid var(--akan-ink); }
+        .story-context__item:last-child { border-bottom: 0; }
+        .story-context__item strong { display: block; font-size: .95rem; }
+        .story-context__item span { display: block; margin-top: .35rem; color: var(--akan-quiet); font-size: .8rem; line-height: 1.5; }
         .correction-box { margin-top: 3.5rem; border: 1px solid var(--akan-ink); border-left: .5rem solid var(--akan-gold); padding: 1.25rem; background: var(--akan-paper); }
         .correction-box p { margin: .5rem 0 0; font-size: .9rem; line-height: 1.6; }
 
@@ -98,22 +92,20 @@
 
         @media (min-width: 48rem) {
             .article-header__grid { grid-template-columns: minmax(0, 3fr) minmax(15rem, 1fr); }
-            .data-hero__grid { grid-template-columns: minmax(17rem, .75fr) minmax(0, 1.25fr); }
-            .data-hero__summary { border-right: 2px solid var(--akan-ink); border-bottom: 0; }
             .article-content__grid { grid-template-columns: minmax(0, 3fr) minmax(15rem, 1fr); }
             .article-rail { position: sticky; top: 1.5rem; }
             .related-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
             .site-footer__inner { grid-template-columns: 1fr auto; align-items: end; }
         }
         @media (max-width: 47.99rem) {
-            .site-description { display: none; }
+            .site-clock { padding-left: .75rem; }
             .article-title { max-width: none; }
             .report-index { display: none; }
             .related-head { align-items: start; flex-direction: column; }
         }
         @media print {
-            .site-utility, .site-header, .article-actions, .related, .site-footer, .toast { display: none; }
-            .article-header, .article-content, .data-hero { background: white; }
+            .site-header, .article-actions, .related, .site-footer, .toast { display: none; }
+            .article-header, .article-content, .story-hero { background: white; }
             .article-content__grid { display: block; }
             .article-rail { position: static; margin-top: 2rem; }
         }
@@ -123,18 +115,14 @@
     <div class="article-page">
         <a href="#article-body" class="ds-button" style="position:absolute;left:1rem;top:-6rem;z-index:50;background:var(--akan-ink);color:var(--akan-paper)" onfocus="this.style.top='1rem'" onblur="this.style.top='-6rem'">Skip to article</a>
 
-        <div class="site-utility">
-            <div class="site-utility__inner ds-meta">
-                <p>Vol. 01 · Accra, Ghana</p>
-                <p>Independent · Fact-led · Ghanaian</p>
-            </div>
-        </div>
-
         <header class="site-header">
             <div class="site-header__inner">
                 <div class="site-header__top">
                     <a class="wordmark" href="akan_news_modernist_concept.html" aria-label="Akan Reports home">akan.</a>
-                    <p class="site-description">Signals from Ghana's news cycle. Plus the world that shapes it.</p>
+                    <div class="site-clock">
+                        <span>Accra time</span>
+                        <time id="clock">00:00:00 GMT</time>
+                    </div>
                 </div>
                 <nav class="site-nav" aria-label="Primary navigation">
                     <ul>
@@ -153,14 +141,12 @@
                 <header class="article-header">
                     <div class="article-shell article-header__grid">
                         <div>
-                            <p class="ds-kicker">Analysis / Economy</p>
-                            <h1 class="article-title">Ghana is growing. <span style="color:var(--akan-signal)">The recovery is still uneven.</span></h1>
-                            <p class="article-deck">Technology and mining pushed the economy to its strongest first-quarter expansion in years. The headline number does not describe how that recovery feels—or who is receiving its benefits.</p>
+                            <p class="ds-kicker">Report / Culture</p>
+                            <h1 class="article-title">While the theatre changes, <span style="color:var(--akan-signal)">Accra's artists find new stages.</span></h1>
+                            <p class="article-deck">Renovation has emptied familiar rehearsal rooms at the National Theatre. The companies that worked inside are scattering across community halls, classrooms, and borrowed studios.</p>
                             <div class="article-byline ds-meta">
-                                <strong style="color:var(--akan-ink)">By Kofi Mensah</strong>
-                                <span>Published 31 Aug 2026 · 07:40 GMT</span>
-                                <span>Updated 09:15 GMT</span>
-                                <span>7 min read</span>
+                                <span>Published 31 Aug 2026 · 10:20 GMT</span>
+                                <span>5 min read</span>
                             </div>
                         </div>
                         <aside class="article-header__aside" aria-label="Article tools and outline">
@@ -170,78 +156,66 @@
                             </div>
                             <div class="report-index">
                                 <p class="ds-kicker" style="margin:0 0 .8rem">In this report</p>
-                                <div class="report-index__item"><span>01</span><span>The headline figure</span></div>
-                                <div class="report-index__item"><span>02</span><span>Where growth came from</span></div>
-                                <div class="report-index__item"><span>03</span><span>What households feel</span></div>
+                                <div class="report-index__item"><span>01</span><span>A landmark goes quiet</span></div>
+                                <div class="report-index__item"><span>02</span><span>Rehearsals move</span></div>
+                                <div class="report-index__item"><span>03</span><span>What returns</span></div>
                             </div>
                         </aside>
                     </div>
                 </header>
 
-                <figure class="data-hero" style="margin:0">
-                    <div class="article-shell data-hero__grid" style="padding-block:0">
-                        <figcaption class="data-hero__summary">
-                            <p class="ds-meta" style="color:var(--akan-ink)">Real GDP growth · Year on year</p>
-                            <p class="data-value">6.4%</p>
-                            <p>Growth accelerated sharply in the first quarter, with information and communication technology expanding 25.2%.</p>
-                        </figcaption>
-                        <div class="data-hero__chart">
-                            <p class="ds-kicker">Five-quarter view</p>
-                            <div class="chart-bars" role="img" aria-label="GDP growth rises from 2.2 percent in the first quarter of 2025 to 6.4 percent in the first quarter of 2026">
-                                <div class="chart-bar" style="height:34%"><b>2.2</b></div>
-                                <div class="chart-bar" style="height:48%"><b>3.1</b></div>
-                                <div class="chart-bar" style="height:66%"><b>4.3</b></div>
-                                <div class="chart-bar" style="height:58%"><b>3.8</b></div>
-                                <div class="chart-bar" style="height:100%"><b>6.4</b></div>
-                            </div>
-                            <div class="chart-labels"><span>Q1 25</span><span>Q2</span><span>Q3</span><span>Q4</span><span>Q1 26</span></div>
-                            <p class="ds-meta" style="margin:1rem 0 0">Source: Ghana Statistical Service · Prototype data display</p>
-                        </div>
+                <figure class="story-hero">
+                    <div class="story-hero__canvas" role="img" aria-label="Lead photograph area for a story about the National Theatre in Accra">
+                        <p class="story-hero__type">A stage<br><span>in motion.</span></p>
                     </div>
+                    <figcaption class="article-shell story-hero__caption ds-meta">
+                        <p>National Theatre · Accra</p>
+                        <p>Lead photograph and credit appear here</p>
+                    </figcaption>
                 </figure>
 
                 <div class="article-content">
                     <div class="article-shell article-content__grid">
                         <div class="article-body" id="article-body">
-                            <p>Ghana's economy expanded by 6.4% in the first quarter, a national figure strong enough to suggest that the recovery has gained real momentum. But the composition of that growth—and the distance between expanding sectors and household experience—deserves closer attention.</p>
+                            <p>On a humid Monday evening, the actors are working through a scene in a borrowed room. Plastic chairs have been pushed against the walls. A portable speaker sits near the door. Every few minutes, the rehearsal pauses while someone crosses the corridor outside.</p>
 
-                            <p>The largest push came from information and communication technology, which grew by 25.2%. Mining recovered by 10.7%, adding further weight to the headline figure. Together, a small number of high-performing sectors carried much of the acceleration.</p>
+                            <p>This is not the stage the company knows. For years, its rehearsals were shaped by the National Theatre's rooms, corridors, and familiar routines. With renovation underway, that work has moved into temporary spaces around Accra.</p>
 
-                            <h2>The number is national. The experience is personal.</h2>
+                            <h2>A landmark goes quiet</h2>
 
-                            <p>Gross domestic product measures the value created across the economy. It does not promise that the gains will arrive evenly, immediately, or in forms that households recognize. A fast-growing sector may employ relatively few people, concentrate income in particular regions, or rely heavily on imported equipment.</p>
+                            <p>The National Theatre is both a building and an ecosystem. Performers arrive for rehearsals, technicians maintain equipment, costumiers move between rooms, and audiences gather long before the lights go down. Closing the building interrupts all of those rhythms at once.</p>
 
-                            <p>For many households, the recovery is judged through a different set of indicators: food prices, rent, transport costs, reliable work, and the value of wages after inflation. Those measures can move much more slowly than national output.</p>
+                            <p>Most artists support the need for renovation. Their uncertainty is about the period in between: where productions can develop, whether substitute venues can support the same work, and which smaller companies can absorb the additional cost of moving.</p>
 
                             <blockquote>
-                                Growth answers how much the economy produced. It does not, by itself, answer who gained.
-                                <cite>Akan Reports analysis</cite>
+                                The stage is not only a room. It is the routine that allows people to make work together.
+                                <cite>A rehearsal director in Accra</cite>
                             </blockquote>
 
-                            <h2>Where the gains are concentrated</h2>
+                            <h2>Rehearsals move across the city</h2>
 
-                            <p>The technology expansion is important because it suggests continuing investment in connectivity, digital services, and business infrastructure. The next question is whether that expansion produces broad employment, stronger local companies, and productivity gains outside the largest cities.</p>
+                            <p>Some groups have found community halls. Others are using school rooms after classes, church spaces between services, and private studios offered by friends. Each room changes the work. A narrow floor alters movement; poor acoustics flatten dialogue; an early closing time shortens rehearsal.</p>
 
-                            <p>Mining presents a similar distribution question. Higher production can support exports, taxes, and foreign-exchange earnings, while communities near extraction sites may still evaluate the sector through jobs, environmental costs, infrastructure, and local revenue.</p>
+                            <p>The displacement is also creating unexpected connections. Companies that rarely shared space are exchanging contacts and equipment. Performers are meeting audiences in neighborhoods that may not usually travel to the theatre district.</p>
 
-                            <h2>What to watch next</h2>
+                            <h2>What returns with the building</h2>
 
-                            <p>The next releases should show whether growth is spreading into employment-intensive sectors and whether household consumption strengthens. Wage growth, food inflation, private-sector credit, and regional activity will help explain whether the recovery is becoming more widely felt.</p>
+                            <p>Renovation will eventually be judged by more than a restored exterior. Artists want rehearsal spaces that work, reliable technical systems, accessible public areas, and a building that can support both established companies and new performers.</p>
 
-                            <p>The 6.4% figure is meaningful. The more consequential story is what happens after it: whether expanding sectors begin to change the material conditions through which people recognize economic progress.</p>
+                            <p>For now, the work continues wherever a room can be found. The theatre may be quiet, but the people who gave it its sound have not stopped.</p>
 
                             <aside class="correction-box" aria-labelledby="correction-title">
                                 <p class="ds-kicker" id="correction-title" style="color:var(--akan-ink)">Updates and corrections</p>
-                                <p><strong>09:15 GMT:</strong> This prototype demonstrates how a material update or correction would remain visible on an Akan Reports article.</p>
+                                <p>No updates or corrections have been recorded for this design-prototype article.</p>
                             </aside>
                         </div>
 
-                        <aside class="article-rail" aria-label="Key figures">
-                            <div class="key-figures">
-                                <div class="key-figures__head"><p class="ds-meta" style="margin:0;color:inherit">Key figures</p></div>
-                                <div class="key-figure"><strong>6.4%</strong><span>Real GDP growth, year on year</span></div>
-                                <div class="key-figure"><strong>25.2%</strong><span>ICT-sector expansion</span></div>
-                                <div class="key-figure"><strong>10.7%</strong><span>Mining-sector recovery</span></div>
+                        <aside class="article-rail" aria-label="Story context">
+                            <div class="story-context">
+                                <div class="story-context__head"><p class="ds-meta" style="margin:0;color:inherit">In brief</p></div>
+                                <div class="story-context__item"><strong>The building</strong><span>The National Theatre is undergoing renovation.</span></div>
+                                <div class="story-context__item"><strong>The immediate effect</strong><span>Resident and independent groups are finding temporary rehearsal spaces.</span></div>
+                                <div class="story-context__item"><strong>What to watch</strong><span>How the reopening supports artists, audiences, and new productions.</span></div>
                             </div>
                         </aside>
                     </div>
@@ -255,9 +229,9 @@
                         <p class="ds-meta">Three paths deeper into the story</p>
                     </div>
                     <div class="related-grid">
-                        <article class="related-story"><p class="ds-kicker">Business</p><h3>What the cedi's recovery changes for importers</h3><p>Lower currency pressure has not reached every shelf at the same speed.</p></article>
-                        <article class="related-story"><p class="ds-kicker">Technology</p><h3>Inside Kumasi's expanding startup economy</h3><p>New capital is widening the founder pipeline beyond Accra.</p></article>
-                        <article class="related-story"><p class="ds-kicker">Explainer</p><h3>How Ghana measures economic growth</h3><p>What GDP captures, what it misses, and why revisions matter.</p></article>
+                        <article class="related-story"><p class="ds-kicker">Culture</p><h3>Accra's small theatres are building new audiences</h3><p>Independent rooms are changing where—and how—the city encounters performance.</p></article>
+                        <article class="related-story"><p class="ds-kicker">Architecture</p><h3>The buildings that defined post-independence Accra</h3><p>A new generation is documenting landmarks before the city forgets them.</p></article>
+                        <article class="related-story"><p class="ds-kicker">Report</p><h3>What artists want from a restored National Theatre</h3><p>Accessibility, working equipment, and affordable rehearsal space lead the list.</p></article>
                     </div>
                 </div>
             </section>
@@ -275,7 +249,16 @@
     <script>
         const copyButton = document.getElementById('copyLink');
         const toast = document.getElementById('toast');
+        const clock = document.getElementById('clock');
         let toastTimer;
+
+        function updateClock() {
+            const now = new Date();
+            clock.textContent = new Intl.DateTimeFormat('en-GB', {
+                hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Africa/Accra'
+            }).format(now) + ' GMT';
+            clock.dateTime = now.toISOString();
+        }
 
         copyButton.addEventListener('click', async () => {
             try { await navigator.clipboard.writeText(window.location.href); } catch (error) { /* Clipboard may be unavailable for local files. */ }
@@ -283,6 +266,9 @@
             clearTimeout(toastTimer);
             toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 1800);
         });
+
+        updateClock();
+        setInterval(updateClock, 1000);
     </script>
 </body>
 </html>

@@ -103,7 +103,6 @@ Search covers:
 - Article summaries and body text
 - Topics and tags
 - People and organizations
-- Authors
 - Future tracker records when that capability is introduced
 
 The initial search experience should favor clarity over complex filtering.
@@ -172,7 +171,6 @@ Required elements:
 - Section and content-format label
 - Headline
 - Summary or deck
-- Author
 - Publication and update times
 - Reading time when useful
 - Hero image, document, chart, or other relevant media when available
@@ -195,19 +193,7 @@ Required elements:
 - Clear no-results state
 - Optional subject or date filters only when the archive becomes large enough to require them
 
-### 6. Author page
-
-Required elements:
-
-- Author name
-- Short biography
-- Role or area of interest
-- Disclosure when appropriate
-- Chronological list of published work
-
-The author model must be able to represent a person, a desk, or another disclosed editorial identity.
-
-### 7. Trust and organizational pages
+### 6. Trust and organizational pages
 
 The MVP includes:
 
@@ -247,7 +233,6 @@ The exact implementation may change during the Hugo build, but the preferred pub
 /business/
 /world/
 /stories/<story-slug>/
-/authors/<author-slug>/
 /search/
 /about/
 /methodology/
@@ -276,6 +261,10 @@ The following are not required for the first release:
 - A separate page for every possible topic
 
 These exclusions reduce the time required to begin publishing and gathering evidence about what readers actually use.
+
+## Editorial identity
+
+Akan Reports does not publish stories under invented or individual editorial names by default. Public article metadata should prioritize publication time, update time, reading length, section, and correction status. The publication itself remains responsible for the work.
 
 ## Tracker roadmap
 

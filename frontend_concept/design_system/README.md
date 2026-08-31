@@ -133,7 +133,7 @@ Labels identify section, urgency, status, or content type. They must remain shor
 
 ### Article metadata
 
-Author, publication time, update time, reading time, section, and correction status should form a consistent metadata band.
+Publication time, update time, reading time, section, and correction status should form a consistent metadata band. Akan Reports does not use personal editorial bylines by default.
 
 ### Accountability elements
 
