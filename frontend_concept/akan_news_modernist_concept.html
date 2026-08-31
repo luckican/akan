@@ -82,35 +82,32 @@
 <body class="bg-earth text-ink font-sans antialiased selection:bg-signal selection:text-white">
     <a href="#main" class="fixed left-3 top-3 z-[100] -translate-y-24 bg-ink px-4 py-3 font-mono text-xs uppercase tracking-widest text-paper focus:translate-y-0">Skip to reporting</a>
 
-    <div class="border-b border-ink bg-ink text-paper">
-        <div class="mx-auto flex max-w-[1600px] items-center justify-between px-4 py-2 md:px-8">
-            <p class="font-mono text-[10px] uppercase tracking-[.18em] md:text-xs">Vol. 01 · Issue 031 · Accra</p>
-            <div class="flex items-center gap-5 font-mono text-[10px] uppercase tracking-[.12em] md:text-xs">
-                <span class="hidden sm:inline">Independent · Fact-led · Ghanaian</span>
-                <time id="clock">00:00:00 GMT</time>
-            </div>
-        </div>
-    </div>
-
     <header class="border-b-2 border-ink bg-earth">
         <div class="mx-auto max-w-[1600px] px-4 md:px-8">
             <div class="grid items-end gap-5 py-6 md:grid-cols-[1fr_310px] md:py-8">
                 <div>
                     <p class="mb-2 font-mono text-[10px] font-medium uppercase tracking-[.22em] text-signal md:text-xs">News without noise</p>
-                    <div class="display text-[5.8rem] font-black leading-[.74] lowercase sm:text-[8rem] md:text-[10rem] lg:text-[12rem]">akan.</div>
+                    <a href="akan_news_modernist_concept.html" aria-label="Akan Reports home" class="display block text-[5.8rem] font-black leading-[.74] lowercase no-underline sm:text-[8rem] md:text-[10rem] lg:text-[12rem]">akan.</a>
                 </div>
-                <p class="max-w-sm border-l-2 border-ink pl-4 text-sm font-semibold leading-snug md:mb-2 md:text-base">
-                    Reporting Ghana as it is—through evidence, context and voices close to the story.
-                </p>
+                <div class="flex flex-col gap-5 md:items-end">
+                    <div class="border-l-2 border-ink pl-4 text-right font-mono text-[10px] uppercase tracking-[.12em]">
+                        <span class="block">Accra time</span>
+                        <time id="clock" class="mt-1 block font-medium text-signal">00:00:00 GMT</time>
+                    </div>
+                    <p class="max-w-sm border-l-2 border-ink pl-4 text-sm font-semibold leading-snug md:mb-2 md:text-base">
+                        Reporting Ghana as it is—through evidence, context and voices close to the story.
+                    </p>
+                </div>
             </div>
 
             <div class="flex items-stretch justify-between border-t border-ink">
                 <nav aria-label="Primary navigation" class="min-w-0 overflow-x-auto">
                     <ul class="flex min-w-max">
-                        <li><a href="#top-stories" class="block border-r border-ink px-4 py-3 text-xs font-extrabold uppercase hover:bg-ink hover:text-paper focus:bg-ink focus:text-paper md:px-6">Top stories</a></li>
-                        <li><a href="#briefing" class="block border-r border-ink px-4 py-3 text-xs font-extrabold uppercase hover:bg-ink hover:text-paper focus:bg-ink focus:text-paper md:px-6">Nation</a></li>
+                        <li><a href="akan_news_modernist_concept.html" aria-current="page" class="block border-r border-ink bg-ink px-4 py-3 text-xs font-extrabold uppercase text-paper md:px-6">Home</a></li>
+                        <li><a href="latest_page_concept.html" class="block border-r border-ink px-4 py-3 text-xs font-extrabold uppercase hover:bg-ink hover:text-paper focus:bg-ink focus:text-paper md:px-6">Latest</a></li>
+                        <li><a href="#briefing" class="block border-r border-ink px-4 py-3 text-xs font-extrabold uppercase hover:bg-ink hover:text-paper focus:bg-ink focus:text-paper md:px-6">Ghana</a></li>
                         <li><a href="#markets" class="block border-r border-ink px-4 py-3 text-xs font-extrabold uppercase hover:bg-ink hover:text-paper focus:bg-ink focus:text-paper md:px-6">Business</a></li>
-                        <li><a href="#perspective" class="block border-r border-ink px-4 py-3 text-xs font-extrabold uppercase hover:bg-ink hover:text-paper focus:bg-ink focus:text-paper md:px-6">Culture</a></li>
+                        <li><a href="#perspective" class="block border-r border-ink px-4 py-3 text-xs font-extrabold uppercase hover:bg-ink hover:text-paper focus:bg-ink focus:text-paper md:px-6">World</a></li>
                     </ul>
                 </nav>
                 <button type="button" id="menuBtn" aria-label="About Akan Reports" class="shrink-0 border-l border-ink px-5 font-mono text-lg hover:bg-signal hover:text-white focus:bg-signal focus:text-white">＋</button>
