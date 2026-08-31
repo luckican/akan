@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akan. - Objective News</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'akan-earth': '#E4CDA7', // Warm Ochre/Sand representing the soil
+                        'akan-ink': '#0A0A0A',   // Absolute black for high contrast grids
+                        'akan-red': '#CE1126',   // Independence Red (Flag)
+                        'akan-green': '#006B3F', // Forest Green (Flag)
+                        'akan-gold': '#FCD116',  // Wealth/Gold (Flag)
+                        'akan-grey': '#5A5A5A',
+                        'akan-hover': '#9B8C78'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom ticker animation */
+        @keyframes ticker {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-100%, 0, 0); }
+        }
+        .animate-ticker {
+            display: inline-block;
+            white-space: nowrap;
+            padding-right: 100%;
+            animation: ticker 30s linear infinite;
+        }
+        
+        /* Hide scrollbar for the mobile nav but keep functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-akan-earth text-akan-ink font-sans antialiased overflow-x-hidden selection:bg-akan-ink selection:text-akan-earth">
+
+    <!-- TICKER -->
+    <div class="w-full border-b-2 border-akan-ink bg-akan-green text-akan-gold py-2 overflow-hidden whitespace-nowrap">
+        <div class="animate-ticker font-bold text-sm tracking-wide uppercase">
+            BREAKING: State-owned Enterprises (SOEs) increased revenue by 28.1% to GH¢176.4 billion +++ Supreme Court dismisses injunction application against SkyTrain trial +++ FDA seizes unregistered confectionery shaped like 'cigarette' in Accra +++ GMet warns of severe thunderstorms across Ashanti Region +++ Education Ministry reschedules release of SHS school placement results +++
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="flex flex-col lg:flex-row justify-between lg:items-end p-4 md:p-8 lg:px-12 lg:py-8 border-b-2 border-akan-ink gap-6 lg:gap-0">
+        <div class="text-6xl md:text-7xl font-black tracking-tighter leading-none lowercase">akan.</div>
+        
+        <!-- Mobile scrollable nav, desktop flex nav -->
+        <nav class="w-full lg:w-auto overflow-x-auto no-scrollbar pb-2 lg:pb-0">
+            <ul class="flex gap-6 lg:gap-10 min-w-max">
+                <li><a href="#" class="text-base md:text-lg font-bold uppercase tracking-tight hover:text-akan-red transition-colors">Amansem / Nation</a></li>
+                <li><a href="#" class="text-base md:text-lg font-bold uppercase tracking-tight hover:text-akan-red transition-colors">Sika Sem / Business</a></li>
+                <li><a href="#" class="text-base md:text-lg font-bold uppercase tracking-tight hover:text-akan-red transition-colors">Mfididwuma / Tech</a></li>
+                <li><a href="#" class="text-base md:text-lg font-bold uppercase tracking-tight hover:text-akan-red transition-colors">Amammerɛ / Culture</a></li>
+            </ul>
+        </nav>
+        
+        <div class="text-left lg:text-right font-bold text-sm uppercase tracking-wide">
+            <div>ACCRA, GHANA</div>
+            <div id="clock" class="text-akan-red mt-1">00:00:00 GMT</div>
+        </div>
+    </header>
+
+    <!-- MAIN GRID (Hero + Sidebar) -->
+    <main class="grid grid-cols-1 lg:grid-cols-12 border-b-2 border-akan-ink">
+        
+        <!-- HERO ARTICLE (8 Cols) -->
+        <article class="lg:col-span-8 border-b-2 lg:border-b-0 lg:border-r-2 border-akan-ink p-4 md:p-8 lg:p-12 hover:bg-akan-ink hover:text-akan-earth group cursor-pointer article-trigger" data-headline="GHANA'S ECONOMY GROWS 6.4% IN Q1 DRIVEN BY 25.2% ICT SURGE">
+            
+            <span class="inline-block border border-akan-red bg-akan-red text-white px-2 py-1 text-xs font-bold uppercase tracking-widest mb-6 group-hover:border-akan-earth">Economy / Live</span>
+            
+            <div class="w-full aspect-video bg-[#CBAE87] border border-akan-ink mb-6 md:mb-8 flex items-center justify-center text-akan-ink font-bold uppercase tracking-widest text-xs md:text-sm group-hover:bg-[#1A1A1A] group-hover:border-akan-earth group-hover:text-akan-earth transition-none">
+                [ Objective Data Visualization Placeholder ]
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl lg:text-[4.5vw] font-black uppercase tracking-tighter leading-[1.05] mb-4 md:mb-6">
+                GHANA'S ECONOMY GROWS 6.4% IN Q1 DRIVEN BY 25.2% ICT SURGE
+            </h1>
+            
+            <p class="text-lg md:text-xl font-medium leading-relaxed max-w-[65ch]">
+                The Ghana Statistical Service reports a significant economic rebound, fueled largely by an unprecedented expansion in the Information and Communication Technology sector and a 10.7% recovery in mining outputs across the nation.
+            </p>
+            
+            <div class="text-sm font-medium text-akan-grey uppercase mt-6 group-hover:text-akan-hover">
+                UPDATED: AUG 31, 2026 / BY KOFI MENSAH
+            </div>
+        </article>
+
+        <!-- SIDEBAR ARTICLES (4 Cols) -->
+        <aside class="lg:col-span-4 flex flex-col">
+            
+            <!-- Story Module -->
+            <article class="p-6 md:p-8 border-b-2 border-akan-ink last:border-b-0 flex-grow hover:bg-akan-ink hover:text-akan-earth group cursor-pointer article-trigger" data-headline="GTEC RELEASES NEW LIST OF UNRECOGNISED UNIVERSITIES">
+                <span class="inline-block border border-akan-ink px-2 py-1 text-xs font-bold uppercase tracking-widest mb-4 group-hover:border-akan-earth group-hover:text-akan-earth">Education</span>
+                <h2 class="text-2xl md:text-3xl font-black uppercase tracking-tighter leading-tight mb-3">GTEC RELEASES NEW LIST OF UNRECOGNISED UNIVERSITIES</h2>
+                <p class="text-base leading-relaxed">Over 100 institutions operating within Ghana and internationally face immediate regulatory action following the latest accreditation review.</p>
+                <div class="text-sm font-medium text-akan-grey uppercase mt-4 group-hover:text-akan-hover">14:30 GMT</div>
+            </article>
+
+            <!-- Story Module -->
+            <article class="p-6 md:p-8 border-b-2 border-akan-ink last:border-b-0 flex-grow hover:bg-akan-ink hover:text-akan-earth group cursor-pointer article-trigger" data-headline="SUPREME COURT CLEARS WAY FOR SKYTRAIN TRIAL">
+                <span class="inline-block border border-akan-ink px-2 py-1 text-xs font-bold uppercase tracking-widest mb-4 group-hover:border-akan-earth group-hover:text-akan-earth">Judiciary</span>
+                <h2 class="text-2xl md:text-3xl font-black uppercase tracking-tighter leading-tight mb-3">SUPREME COURT CLEARS WAY FOR SKYTRAIN TRIAL</h2>
+                <p class="text-base leading-relaxed">Injunction application officially dismissed, paving the way for high-profile transit infrastructure hearings to commence in the capital.</p>
+                <div class="text-sm font-medium text-akan-grey uppercase mt-4 group-hover:text-akan-hover">11:15 GMT</div>
+            </article>
+
+            <!-- Story Module -->
+            <article class="p-6 md:p-8 flex-grow hover:bg-akan-ink hover:text-akan-earth group cursor-pointer article-trigger" data-headline="GMET WARNS OF SEVERE THUNDERSTORMS AHEAD OF WEEKEND">
+                <span class="inline-block border border-akan-ink px-2 py-1 text-xs font-bold uppercase tracking-widest mb-4 group-hover:border-akan-earth group-hover:text-akan-earth">Environment</span>
+                <h2 class="text-2xl md:text-3xl font-black uppercase tracking-tighter leading-tight mb-3">GMET WARNS OF SEVERE THUNDERSTORMS AHEAD OF WEEKEND</h2>
+                <p class="text-base leading-relaxed">Meteorological agency issues immediate alerts for Accra and Ashanti regions from afternoon into late night, urging public safety measures.</p>
+                <div class="text-sm font-medium text-akan-grey uppercase mt-4 group-hover:text-akan-hover">09:00 GMT</div>
+            </article>
+
+        </aside>
+    </main>
+
+    <!-- SECONDARY NEWS GRID (To ensure scrolling) -->
+    <section class="p-4 md:p-8 lg:p-12">
+        <h3 class="text-xl md:text-2xl font-black uppercase tracking-tighter border-b-2 border-akan-ink pb-4 mb-8">More Reports</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+            
+            <article class="cursor-pointer group article-trigger" data-headline="NEW COCOA PRICING SYNDICATE FORMED">
+                <div class="w-full aspect-square bg-[#CBAE87] border border-akan-ink mb-4 group-hover:bg-akan-ink transition-none"></div>
+                <h4 class="text-xl font-black uppercase tracking-tighter leading-tight mb-2 group-hover:text-akan-red">NEW COCOA PRICING SYNDICATE FORMED</h4>
+                <p class="text-sm leading-relaxed text-akan-grey">Farmers expected to see a 15% increase in farm-gate prices starting next quarter.</p>
+            </article>
+
+            <article class="cursor-pointer group article-trigger" data-headline="NATIONAL THEATRE RENOVATION BEGINS">
+                <div class="w-full aspect-square bg-[#CBAE87] border border-akan-ink mb-4 group-hover:bg-akan-ink transition-none"></div>
+                <h4 class="text-xl font-black uppercase tracking-tighter leading-tight mb-2 group-hover:text-akan-red">NATIONAL THEATRE RENOVATION BEGINS</h4>
+                <p class="text-sm leading-relaxed text-akan-grey">Decades-old architectural landmark undergoes strict structural reinforcement.</p>
+            </article>
+
+            <article class="cursor-pointer group article-trigger" data-headline="TECH HUB EXPANDS IN KUMASI">
+                <div class="w-full aspect-square bg-[#CBAE87] border border-akan-ink mb-4 group-hover:bg-akan-ink transition-none"></div>
+                <h4 class="text-xl font-black uppercase tracking-tighter leading-tight mb-2 group-hover:text-akan-red">TECH HUB EXPANDS IN KUMASI</h4>
+                <p class="text-sm leading-relaxed text-akan-grey">Local startup incubator receives secondary funding from pan-African investors.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- INTERACTIVE READING MODAL -->
+    <div class="fixed inset-0 bg-akan-earth/95 backdrop-blur-sm z-50 p-4 md:p-8 lg:p-12 overflow-y-auto hidden" id="readingModal">
+        <div class="max-w-4xl mx-auto border-2 border-akan-ink bg-akan-earth shadow-[8px_8px_0px_0px_rgba(10,10,10,1)]">
+            
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center border-b-2 border-akan-ink p-4 md:p-6 bg-akan-earth">
+                <div class="text-3xl font-black lowercase tracking-tighter">akan.</div>
+                <button class="bg-akan-ink text-akan-earth hover:bg-akan-red hover:text-white px-4 py-2 md:px-6 md:py-3 font-bold uppercase tracking-widest text-xs md:text-sm transition-colors" id="closeBtn">
+                    Close Article
+                </button>
+            </div>
+            
+            <!-- Modal Content -->
+            <div class="p-6 md:p-12">
+                <span class="inline-block border border-akan-ink px-2 py-1 text-xs font-bold uppercase tracking-widest mb-6 text-akan-ink">Focused Reading Mode</span>
+                
+                <h1 id="modalHeadline" class="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-tight mb-6">
+                    Headline Placeholder
+                </h1>
+                
+                <div class="text-sm font-medium text-akan-grey uppercase mb-12 border-b-2 border-akan-ink pb-4 inline-block">
+                    REPORTED: AUGUST 31, 2026 / ACCRA BUREAU
+                </div>
+                
+                <div class="space-y-6 max-w-[65ch] text-lg md:text-xl leading-relaxed">
+                    <p>This is the modernist reading environment. By stripping away sidebars, advertisements, and superfluous navigation, the user is forced into a direct, uninterrupted confrontation with the text.</p>
+                    <p>In accordance with Swiss design principles, the typography does the heavy lifting. The grid remains intact, ensuring line lengths are optimized for reading, which is scientifically proven to reduce cognitive fatigue on mobile devices and desktop monitors alike.</p>
+                    <p>Because the majority of Ghanaians consume news on mobile, this interface prioritizes speed, high-contrast legibility in bright sunlight, and large touch targets over decorative elements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Precision Clock Logic
+        function updateClock() {
+            const now = new Date();
+            const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Africa/Accra' };
+            const timeString = new Intl.DateTimeFormat('en-GB', options).format(now);
+            document.getElementById('clock').textContent = timeString + ' GMT';
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Modal Interaction Logic
+        const triggers = document.querySelectorAll('.article-trigger');
+        const modal = document.getElementById('readingModal');
+        const closeBtn = document.getElementById('closeBtn');
+        const modalHeadline = document.getElementById('modalHeadline');
+        const body = document.body;
+
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const headlineText = trigger.getAttribute('data-headline');
+                modalHeadline.textContent = headlineText;
+                modal.classList.remove('hidden');
+                body.classList.add('overflow-hidden'); 
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            body.classList.remove('overflow-hidden'); 
+        });
+        
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                body.classList.remove('overflow-hidden');
+            }
+        });
+    </script>
+</body>
+</html>
