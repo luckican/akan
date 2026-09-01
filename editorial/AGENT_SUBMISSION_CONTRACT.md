@@ -1,6 +1,6 @@
 # Agent Submission Contract
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Required for the MVP
 **Applies to:** Every article submitted by an agent for human review
 
@@ -155,6 +155,7 @@ typographic_hero:
 - At approval, the publishing workflow or reviewer sets `date` to the actual first-publication time if necessary.
 - Change `lastmod` only for a meaningful public update, not spelling, formatting, or workflow edits.
 - A developing story must state the time-sensitive status in the body and be rechecked immediately before approval.
+- Avoid relative-time wording such as “today” or “this morning” in a headline unless the draft is intended for same-day approval and the wording will remain accurate at publication. The body must still give the exact date.
 
 ### Internal source record
 
@@ -181,6 +182,8 @@ Public citations are not the default. Add `source_note` only when readers need s
 
 An unresolved note is visible to the reviewer but makes the draft ineligible for approval until it is resolved, removed, or explicitly accepted in the human decision note.
 
+Use `DRAFT NEEDS REPORTING` in the reporting-agent response when a coherent content bundle exists but one or more material verification notes still block approval. Do not describe that bundle as `DRAFT READY`.
+
 ### Placement and publication state
 
 - Agents submit `draft: true` and `workflow.status: review`.
@@ -205,7 +208,7 @@ in_brief:
     text: "The next verifiable decision, date, or consequence."
 ```
 
-Every item must be supported in `editorial.source_notes` and explained in the body.
+Every item must be supported in `editorial.source_notes` and explained in the body. Condensing a claim for `in_brief` must not remove a material condition, exception, attribution, date, unit, scope, or expression of uncertainty. The same rule applies to the headline, description, cards, and other structured summaries.
 
 ### `home.stat`
 
@@ -256,4 +259,4 @@ Before handing the bundle to the reviewer, the agent must confirm:
 - all public copy has passed `WRITING_STYLE.md` without weakening factual qualifications;
 - `draft` remains `true` and `workflow.status` is `review`.
 
-A submission that fails any required item is incomplete and should not enter human review.
+A submission that fails a required structural item is incomplete and should not enter human review. A structurally complete bundle with disclosed material reporting blockers must be labelled `DRAFT NEEDS REPORTING`, not `DRAFT READY`.

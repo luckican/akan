@@ -1,6 +1,6 @@
 # Akan Reports Content Strategy
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Approved MVP strategy
 **Model:** Signal → Stakes → Follow-through
 
@@ -186,7 +186,8 @@ Identify the next decision, deadline, vote, release, implementation stage, measu
 2. Identify which lens produces the clearest reader value from those facts.
 3. Write the angle as one specific sentence naming the development, affected group, mechanism, evidence gap, or next decision.
 4. Test whether the proposed headline, standfirst, and body can actually deliver that sentence.
-5. Change or narrow the angle when the evidence cannot support it.
+5. Apply the scope test: every substantial section must help answer the headline or perform the primary angle. Remove or clearly subordinate material that does not; propose a separate story when the secondary development deserves substantial treatment of its own.
+6. Change or narrow the angle when the evidence cannot support it.
 
 An angle is not an opinion, a slogan, a mood, or a demand to disagree with other publishers. Distinctiveness can come from clarity, verification, consequence, context, synthesis, or honest uncertainty.
 

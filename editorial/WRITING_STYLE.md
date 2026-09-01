@@ -1,6 +1,6 @@
 # Akan Reports Writing Style
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Required for the MVP
 **Applies to:** Headlines, standfirsts, article bodies, captions, updates, corrections, and other public editorial copy
 
@@ -121,7 +121,7 @@ Good editing requires judgment. These forms are allowed when they make the repor
 
 - **Adverbs:** keep an adverb that supplies evidence, degree, timing, legal meaning, or genuine contrast; remove one that only inflates or softens.
 - **Passive voice:** use it when the actor is unknown, the action or affected person is the proper focus, or naming the actor would misstate the evidence. Prefer active voice when the responsible actor is known and relevant.
-- **Questions:** a question may be an effective headline or structural device when the article genuinely investigates or answers it. Do not use a question to hide the absence of reporting.
+- **Questions:** a question may be an effective headline or structural device when the article genuinely investigates or answers it. Before using one in a headline, identify the sentence or section that supplies the answer and check whether the reporting establishes a party, amount, cause, effect, or only part of what the wording appears to ask. Narrow the question when the evidence provides only a partial answer. Do not use a question to hide the absence of reporting.
 - **Em dashes:** use sparingly when they improve a longer sentence. Do not rely on them as a default rhythm.
 - **Fragments:** use rarely and deliberately. Do not stack them to simulate urgency.
 - **Repetition:** repeat the precise term when replacing it would blur meaning.
@@ -138,6 +138,7 @@ The approved headline “Ghana grows. Who gains?” is valid because the questio
 - Avoid clickbait, unexplained cleverness, generic urgency, and claims the body cannot prove.
 - Prefer a concrete tension or consequence over a slogan.
 - Keep `title` complete and understandable without the visual split fields.
+- Avoid “today,” “this morning,” and similar relative time in a headline unless same-day publication is intended and the wording will be checked again at approval. Prefer wording that remains accurate after the first news cycle.
 
 ### Standfirst
 

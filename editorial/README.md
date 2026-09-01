@@ -18,4 +18,4 @@ Send the agent the contents of `prompts/REPORTING_AGENT.md`. Autonomous discover
 
 The prompt tells the agent to load the strategy, contract, reporting rules, writing style, and content model from the repository; their full text does not need to be pasted into every assignment.
 
-The normal output is one `content/stories/<story-slug>/index.md` file plus an optional legally usable hero image. If the lead cannot support a worthwhile, verified story, the correct output is a `NO DRAFT` review note and no content files.
+The normal output is one `content/stories/<story-slug>/index.md` file plus an optional legally usable hero image. Return `DRAFT READY` only when no known material reporting blocker remains. Return `DRAFT NEEDS REPORTING` when a coherent bundle exists but disclosed verification work still blocks approval. If the lead cannot support a worthwhile, defensible story, return `NO DRAFT` and create no content files.

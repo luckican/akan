@@ -37,15 +37,17 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 4. Apply the story-selection gate and angle framework in `editorial/CONTENT_STRATEGY.md`. Identify the strategy stream, primary angle lens, actual new development, added value, and precise angle.
 5. Find the closest available underlying evidence and any additional sources needed to verify material claims. Do not treat repetition by other publishers as independent confirmation.
 6. Compare qualifying candidates using the ordered criteria in `editorial/CONTENT_STRATEGY.md`. Select no more than one story per run unless the assignment explicitly requests otherwise.
-7. Decide whether the reporting supports a publishable candidate.
-8. If it does, create one complete Markdown content bundle at `content/stories/<story-slug>/` using the required contract.
-9. If it does not, create no article bundle and return a `NO DRAFT` decision with the reason and the missing evidence or weak reader value. A scheduled run is allowed to find nothing worth drafting.
+7. Decide whether the reporting supports a complete candidate, a coherent candidate that still needs material reporting, or no defensible candidate.
+8. If the reporting supports a complete candidate with no material approval blocker, create one complete Markdown content bundle and return `DRAFT READY`.
+9. If a coherent bundle can be created but a material verification issue still blocks approval, create or retain the bundle, disclose the blocker precisely, and return `DRAFT NEEDS REPORTING`.
+10. If the evidence or reader value cannot support a coherent article, create no bundle and return `NO DRAFT` with the reason. A scheduled run is allowed to find nothing worth drafting.
 
 ## Draft requirements
 
 - Produce original reporting and synthesis in Akan Reports' voice. Do not lightly rewrite the triggering article.
 - Assign exactly one valid `editorial.strategy_stream` from `editorial/CONTENT_STRATEGY.md`.
 - Assign exactly one primary `editorial.angle_lens` and a story-specific `editorial.angle`. Do not manufacture a contrarian or analytical angle when a clear `development` lens is the strongest supported choice.
+- Apply the angle scope test: every substantial section must help answer the headline or perform the primary angle. Remove or clearly subordinate material that does not, or propose it as a separate story.
 - Apply `editorial/WRITING_STYLE.md` to all public copy without removing necessary attribution, qualification, or uncertainty.
 - The headline must be accurate, specific, and supported by the body.
 - The standfirst must state what happened and why it matters.
@@ -54,9 +56,9 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 - Public citations and a public source list are not required by default. Attribute statements in the prose whenever the reporting rules require it.
 - Never invent quotes, scenes, interviews, observations, motives, figures, or missing details.
 - Do not claim Akan Reports contacted, interviewed, visited, witnessed, obtained, or independently confirmed something unless that action genuinely occurred in this assignment.
-- Use `editorial.verification_notes` for unresolved checks. Do not conceal uncertainty with confident prose.
+- Use `editorial.verification_notes` for unresolved checks. Scope negative claims to the documents or search actually checked rather than asserting that information has never been published. Do not conceal uncertainty with confident prose.
 - Choose a visual treatment of `image`, `typographic`, or `none`. Do not download or reuse an image unless its provenance and reuse rights are documented. When rights are unclear, choose `none`.
-- Use optional `in_brief` or `home.stat` fields only when they improve understanding and are fully supported.
+- Use optional `in_brief` or `home.stat` fields only when they improve understanding and are fully supported. Structured summaries must preserve every material condition, exception, attribution, date, unit, scope, and expression of uncertainty from the body.
 - Do not add a personal byline or author identity.
 - Leave `draft: true`, `workflow.status: review`, and homepage placement at `none` unless the assignment note explicitly requests a placement proposal.
 - Never approve, publish, merge, or deploy the article.
@@ -66,15 +68,18 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 1. Apply the complete quality gate in `editorial/REPORTING_AND_QUALITY_RULES.md`.
 2. Complete the required style pass in `editorial/WRITING_STYLE.md` after factual verification.
 3. Confirm that the content bundle follows `editorial/AGENT_SUBMISSION_CONTRACT.md` exactly.
-4. Run the project's available content validation and Hugo build checks. If no automated content validator exists, say so explicitly and still run the Hugo build.
-5. Inspect the diff and ensure the assignment changed only the intended article bundle unless a supporting change was explicitly required.
+4. Make one final targeted attempt to resolve every item in `editorial.verification_notes`. Update or remove resolved notes; for anything remaining, record what was checked and whether it blocks approval.
+5. Reopen every material source link and replace or qualify dead or inaccessible sources.
+6. Check that all numerical comparisons measure comparable periods, populations, definitions, categories, contractual quantities, capacities, and operational scopes. A written caveat does not justify drawing a conclusion from unlike figures.
+7. Run the project's available content validation and Hugo build checks. If no automated content validator exists, say so explicitly and still run the Hugo build.
+8. Inspect the diff and ensure the assignment changed only the intended article bundle unless a supporting change was explicitly required.
 
 ## Response to the human reviewer
 
 Return a compact review note in this format:
 
 ```text
-DECISION: DRAFT READY | NO DRAFT
+DECISION: DRAFT READY | DRAFT NEEDS REPORTING | NO DRAFT
 
 Proposed headline: <headline or none>
 Strategy stream: <signal, stakes, context, world, follow-through, or none>
@@ -83,12 +88,12 @@ Angle: <one sentence>
 Why this is worth publishing: <one or two sentences>
 Files created: <paths or none>
 Evidence used: <short list of the principal sources>
-Unresolved issues: <none or exact list>
+Unresolved issues: <none or exact list, including what was checked and whether each issue blocks approval>
 Visual treatment: <image, typographic, none, or not applicable>
 Checks: <validation and build results>
 ```
 
-Do not describe a draft as approved or ready to publish. `DRAFT READY` means only that it is ready for human editorial review.
+Do not describe a draft as approved or ready to publish. `DRAFT READY` means that the bundle is ready for human editorial review with no known material reporting blocker. `DRAFT NEEDS REPORTING` means that a coherent bundle exists but one or more disclosed issues block approval. `NO DRAFT` means the available evidence or reader value does not support a coherent article.
 
 ## Assignment
 

@@ -1,6 +1,6 @@
 # Reporting and Quality Rules
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Required for the MVP
 **Owner:** Human publisher of Akan Reports
 
@@ -32,11 +32,14 @@ Do not draft a story merely because it is trending, emotionally provocative, alr
 - Recheck time-sensitive facts, page status, figures, officeholders, and quoted statements immediately before submission.
 - Never convert an allegation, forecast, press release, social-media post, or interested party's assertion into an unqualified fact.
 - Clearly distinguish what is known, what a source claims, what the evidence suggests, and what remains unknown.
+- Scope negative research claims to evidence the agent can describe. Prefer “the notice does not state,” “the documents reviewed do not show,” or “no figure was found in the sources checked as of [date]” to an unbounded claim that an institution has never published or disclosed something. Record the search boundary in `editorial.source_notes` or `editorial.verification_notes` when the absence is material to the story.
 - Do not infer a person's intent, motive, identity, diagnosis, guilt, or private circumstances without reliable evidence.
 - Do not invent or reconstruct quotes. Quotation marks are reserved for words verified against a recording, transcript, document, or original post.
 - A source cited by another news organisation has not been independently verified merely because multiple outlets repeat it.
 
 When sources conflict, describe the conflict, evaluate which evidence is stronger, and place the unresolved issue in `editorial.verification_notes`.
+
+Before submission, make one final targeted attempt to resolve every verification note. Update or remove a note when stronger evidence resolves it. If it remains unresolved, state what was checked and whether it blocks approval; do not leave a stale note beside public copy that has moved beyond it.
 
 ## 3. Source handling and attribution
 
@@ -44,6 +47,7 @@ Internal sourcing is mandatory even though public citations are not displayed by
 
 - Record direct URLs, access times, the claims each source supports, and relevant limitations.
 - Link to the original item rather than a search result, aggregator, screenshot, or copied version when possible.
+- Reopen every material link before submission. A dead or inaccessible URL does not independently support a claim; locate an accessible original, document copy, or reliable secondary account, and record the limitation.
 - Identify press releases, sponsored research, partisan material, anonymous accounts, and other interested sources as such in internal notes.
 - Never store passwords, paywall credentials, private contact details, confidential documents, or unnecessary personal data in the repository.
 - Attribute claims in the public prose when the identity or interest of the speaker matters, when a claim is disputed, when language is quoted, or when the reader could otherwise mistake an assertion for established fact.
@@ -55,7 +59,8 @@ The agent must not imply that Akan Reports conducted an interview, visited a loc
 
 - Preserve units, currencies, time periods, geographic coverage, sample definitions, and whether a figure is nominal, real, seasonally adjusted, preliminary, projected, or revised.
 - Check arithmetic and comparisons independently of the source text.
-- Do not compare unlike periods or populations without explaining the limitation.
+- Do not compare unlike periods, populations, definitions, categories, contractual quantities, stated capacities, or operational scopes as though they measure the same thing.
+- A caveat does not make an invalid comparison probative. When figures cannot be normalised, describe them separately and do not infer a shortfall, surplus, trend, causal relationship, or performance gap from the difference.
 - Percent and percentage-point changes are different and must be labelled correctly.
 - Avoid false precision. Round only when doing so does not alter the meaning.
 - A large number is not automatically important. Explain the denominator, baseline, historical context, or practical consequence.
@@ -70,9 +75,10 @@ All public copy must also follow `WRITING_STYLE.md`. Apply its style pass only a
 - Prefer precise nouns and active verbs. Remove filler, hype, clichés, and claims such as “shocking,” “historic,” or “game-changing” unless evidence makes the description necessary.
 - A headline may be sharp and curious, but it must not promise more than the reporting delivers.
 - The standfirst must tell the reader what happened and why the story deserves attention; it must add information rather than repeat the headline.
+- Headlines, standfirsts, `in_brief` items, cards, and other summaries must preserve material qualifications, conditions, scope, attribution, dates, and units from the body.
 - Supply enough context for a new reader without turning every story into a complete history.
 - Explain technical terms on first use and spell out uncommon abbreviations.
-- Identify dates and locations when relative phrases such as “today” or “recently” could become misleading after publication.
+- Identify dates and locations when relative phrases such as “today” or “recently” could become misleading after publication. Use relative time in a headline only when same-day publication is intended and its accuracy will be rechecked at approval; prefer the exact date or a durable formulation otherwise.
 - Do not add invented scenes, composite characters, sensory details, emotions, or narrative colour. A scene is used only when it was observed or reliably documented.
 - Analysis may draw an inference from evidence, but the prose must label it as analysis and acknowledge material alternative explanations.
 - Do not imitate another publisher's distinctive wording or lightly rewrite its article. Report from the underlying facts and sources in original language.
@@ -136,8 +142,8 @@ A draft is ready for review only when all answers below are **yes**:
 2. Does the headline accurately match the evidence and body?
 3. Does the standfirst explain both the development and its significance?
 4. Is every material factual claim mapped to recorded evidence?
-5. Are disputed, uncertain, inferred, and attributed statements labelled honestly?
-6. Are names, dates, places, quotations, numbers, units, and links checked?
+5. Are disputed, uncertain, inferred, attributed, and negative research claims labelled and scoped honestly?
+6. Are names, dates, places, quotations, numbers, units, links, comparisons, and structured summaries checked?
 7. Is the article original in wording, free of unsupported scenes or details, and compliant with the `WRITING_STYLE.md` style pass?
 8. Are fairness, privacy, harm, legal, and safety concerns disclosed and addressed?
 9. Is the visual treatment legitimate, useful, and fully documented?
