@@ -26,6 +26,8 @@ workflow:
   decision_note: null
 
 editorial:
+  strategy_stream:
+  angle_lens:
   angle: ''
   visual:
     treatment: none

@@ -12,6 +12,8 @@ The site is not required to publish everything an agent finds. Speed and volume 
 
 ## 1. Story selection
 
+Story selection is governed by `CONTENT_STRATEGY.md`. Its evidence and added-value requirements are mandatory in both autonomous discovery and directed assignments.
+
 An agent may draft a story only when it can state:
 
 1. **The verified development:** what is new, newly relevant, or newly understood.
@@ -130,7 +132,7 @@ An agent must not optimize solely for article count, speed, novelty, outrage, se
 
 A draft is ready for review only when all answers below are **yes**:
 
-1. Is there a clear, relevant development and angle?
+1. Does the candidate pass the `CONTENT_STRATEGY.md` selection gate and angle framework, with the correct strategy stream, primary angle lens, clear development, and precise angle?
 2. Does the headline accurately match the evidence and body?
 3. Does the standfirst explain both the development and its significance?
 4. Is every material factual claim mapped to recorded evidence?

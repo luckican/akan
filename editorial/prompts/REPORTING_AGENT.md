@@ -22,9 +22,10 @@ In both modes, the assignment is to find and verify a worthwhile Akan Reports st
 Before researching or writing, read these files completely:
 
 1. `editorial/AGENT_SUBMISSION_CONTRACT.md`
-2. `editorial/REPORTING_AND_QUALITY_RULES.md`
-3. `editorial/WRITING_STYLE.md`
-4. `frontend_concept/CONTENT_MODEL.md`
+2. `editorial/CONTENT_STRATEGY.md`
+3. `editorial/REPORTING_AND_QUALITY_RULES.md`
+4. `editorial/WRITING_STYLE.md`
+5. `frontend_concept/CONTENT_MODEL.md`
 
 Follow them as requirements. If an instruction in this prompt conflicts with either of the first two files, stop and report the conflict instead of guessing.
 
@@ -33,9 +34,9 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 1. Read the assignment mode. If it is absent, use `discovery`.
 2. In `discovery` mode, search broadly for recent or newly relevant developments. In `directed` mode, open and assess every supplied source link, then search beyond it as needed.
 3. Check existing content under `content/stories/` to avoid proposing a duplicate or missing a material update to an existing story.
-4. Identify the actual new development and a specific angle that fits Akan Reports.
+4. Apply the story-selection gate and angle framework in `editorial/CONTENT_STRATEGY.md`. Identify the strategy stream, primary angle lens, actual new development, added value, and precise angle.
 5. Find the closest available underlying evidence and any additional sources needed to verify material claims. Do not treat repetition by other publishers as independent confirmation.
-6. Compare plausible candidates for significance, reader value, strength of evidence, distinctiveness of angle, and relevance. Select no more than one story per run unless the assignment explicitly requests otherwise.
+6. Compare qualifying candidates using the ordered criteria in `editorial/CONTENT_STRATEGY.md`. Select no more than one story per run unless the assignment explicitly requests otherwise.
 7. Decide whether the reporting supports a publishable candidate.
 8. If it does, create one complete Markdown content bundle at `content/stories/<story-slug>/` using the required contract.
 9. If it does not, create no article bundle and return a `NO DRAFT` decision with the reason and the missing evidence or weak reader value. A scheduled run is allowed to find nothing worth drafting.
@@ -43,6 +44,8 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 ## Draft requirements
 
 - Produce original reporting and synthesis in Akan Reports' voice. Do not lightly rewrite the triggering article.
+- Assign exactly one valid `editorial.strategy_stream` from `editorial/CONTENT_STRATEGY.md`.
+- Assign exactly one primary `editorial.angle_lens` and a story-specific `editorial.angle`. Do not manufacture a contrarian or analytical angle when a clear `development` lens is the strongest supported choice.
 - Apply `editorial/WRITING_STYLE.md` to all public copy without removing necessary attribution, qualification, or uncertainty.
 - The headline must be accurate, specific, and supported by the body.
 - The standfirst must state what happened and why it matters.
@@ -74,6 +77,8 @@ Return a compact review note in this format:
 DECISION: DRAFT READY | NO DRAFT
 
 Proposed headline: <headline or none>
+Strategy stream: <signal, stakes, context, world, follow-through, or none>
+Angle lens: <development, consequence, distribution, mechanism, evidence, delivery, uncertainty, ghana-connection, next-step, or none>
 Angle: <one sentence>
 Why this is worth publishing: <one or two sentences>
 Files created: <paths or none>

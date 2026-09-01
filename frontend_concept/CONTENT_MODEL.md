@@ -4,7 +4,7 @@
 **Status:** Adopted for the MVP
 **Purpose:** Define the contract between reporting agents, human approval, Hugo, and the reader-facing templates.
 
-The normative agent instructions now live in [`editorial/AGENT_SUBMISSION_CONTRACT.md`](../editorial/AGENT_SUBMISSION_CONTRACT.md), [`editorial/REPORTING_AND_QUALITY_RULES.md`](../editorial/REPORTING_AND_QUALITY_RULES.md), and [`editorial/WRITING_STYLE.md`](../editorial/WRITING_STYLE.md). This document remains the architectural overview; if it is less specific than the agent instructions, the agent instructions control.
+The normative agent instructions now live in [`editorial/CONTENT_STRATEGY.md`](../editorial/CONTENT_STRATEGY.md), [`editorial/AGENT_SUBMISSION_CONTRACT.md`](../editorial/AGENT_SUBMISSION_CONTRACT.md), [`editorial/REPORTING_AND_QUALITY_RULES.md`](../editorial/REPORTING_AND_QUALITY_RULES.md), and [`editorial/WRITING_STYLE.md`](../editorial/WRITING_STYLE.md). This document remains the architectural overview; if it is less specific than the agent instructions, the agent instructions control.
 
 ## Core principle
 
@@ -63,6 +63,8 @@ These fields are stored with the content but are not rendered to readers:
 - `workflow.created_at`: When the draft entered the pipeline.
 - `workflow.reviewed_at`: When the human decision was made.
 - `workflow.decision_note`: Optional reason for rejection or requested revision.
+- `editorial.strategy_stream`: The internal Signal, Stakes, Context, World, or Follow-through job defined by the content strategy.
+- `editorial.angle_lens`: The primary Development, Consequence, Distribution, Mechanism, Evidence, Delivery, Uncertainty, Ghana Connection, or Next Step lens defined by the angle framework.
 - `editorial.angle`: The specific reporting angle the draft is meant to deliver.
 - `editorial.visual`: Required treatment, rationale, rights status, and provenance for the story's visual decision.
 - `editorial.verification_notes`: Claims, uncertainties, and checks for the reviewer.
@@ -108,6 +110,8 @@ workflow:
   decision_note:
 
 editorial:
+  strategy_stream: stakes
+  angle_lens: consequence
   angle: "How National Theatre renovation is changing where artists work."
   visual:
     treatment: image

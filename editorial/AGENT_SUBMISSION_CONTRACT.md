@@ -52,6 +52,8 @@ workflow:
   decision_note: null
 
 editorial:
+  strategy_stream: stakes
+  angle_lens: distribution
   angle: "The precise question or consequence this story answers."
   visual:
     treatment: none
@@ -86,6 +88,9 @@ The article body begins after the closing `---`.
 
 - `primary_section` must be exactly one of: `ghana`, `business`, or `world`.
 - `topics` must contain at least one lowercase, hyphenated descriptive label. Topics describe the subject; they are not extra sections.
+- `editorial.strategy_stream` must be exactly one of `signal`, `stakes`, `context`, `world`, or `follow-through`. It records the editorial job defined in `CONTENT_STRATEGY.md`; it is not a public section or story format.
+- `editorial.angle_lens` must be exactly one of `development`, `consequence`, `distribution`, `mechanism`, `evidence`, `delivery`, `uncertainty`, `ghana-connection`, or `next-step`. It records the primary lens from the approved angle framework.
+- `editorial.angle` must state the exact story-specific angle in one sentence. It cannot merely repeat the lens name or broad topic.
 - `format` must be exactly one of:
   - `signal` — a concise, verified development with limited analysis;
   - `report` — a reported account that explains the development and its consequences;
@@ -247,6 +252,7 @@ Before handing the bundle to the reviewer, the agent must confirm:
 - all unresolved verification work is disclosed;
 - the visual decision and, if applicable, the image file and rights information are complete;
 - the story complies with `REPORTING_AND_QUALITY_RULES.md`;
+- the story passes `CONTENT_STRATEGY.md` and records the correct strategy stream, primary angle lens, and precise angle;
 - all public copy has passed `WRITING_STYLE.md` without weakening factual qualifications;
 - `draft` remains `true` and `workflow.status` is `review`.
 
