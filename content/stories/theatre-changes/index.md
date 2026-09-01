@@ -1,5 +1,7 @@
 ---
 title: "While the theatre changes, Accra's artists find new stages"
+headline_lead: "While the theatre changes,"
+headline_emphasis: "Accra's artists find new stages."
 description: "Renovation has emptied familiar rehearsal rooms. The companies that worked inside are adapting across the city."
 dek: "Renovation has emptied familiar rehearsal rooms at the National Theatre. The companies that worked inside are scattering across community halls, classrooms, and borrowed studios."
 date: 2026-08-31T10:20:00Z
@@ -12,8 +14,14 @@ topics:
   - arts
 format: report
 
+typographic_hero:
+  lead: "A stage"
+  emphasis: "in motion."
+  caption: "National Theatre · Accra"
+  credit: "Lead photograph and credit appear here"
+
 home:
-  position: secondary
+  position: focus
   weight: 20
   expires: 2026-09-03T00:00:00Z
 

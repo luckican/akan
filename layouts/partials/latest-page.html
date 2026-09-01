@@ -1,0 +1,25 @@
+{{ $stories := (where site.RegularPages "Section" "stories").ByDate.Reverse }}
+<h1 class="visually-hidden">Latest reports</h1>
+<section class="filter-bar" aria-label="Filter latest reports">
+    <div class="list-shell filters">
+        <button class="filter-button" type="button" data-story-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-story-filter="ghana" aria-pressed="false">Ghana</button>
+        <button class="filter-button" type="button" data-story-filter="business" aria-pressed="false">Business</button>
+        <button class="filter-button" type="button" data-story-filter="world" aria-pressed="false">World</button>
+    </div>
+</section>
+<div class="latest-feed" data-filter-scope>
+    {{ range $stories.GroupByDate "2 January 2006" }}
+    <section class="day-group" data-day-group>
+        {{ $groupDate := (index .Pages 0).Date }}
+        {{ $today := now.Format "2006-01-02" }}
+        {{ $yesterday := now.AddDate 0 0 -1 | time.Format "2006-01-02" }}
+        <div class="list-shell"><h2 class="day-heading">{{ if eq ($groupDate.Format "2006-01-02") $today }}Today · {{ else if eq ($groupDate.Format "2006-01-02") $yesterday }}Yesterday · {{ end }}{{ .Key }}</h2></div>
+        <div class="list-shell">
+            {{ range .Pages }}{{ partial "story-row.html" . }}{{ end }}
+        </div>
+    </section>
+    {{ end }}
+    <div class="list-shell empty-state" data-empty-state><h2>No reports here yet.</h2><p>Choose another section to return to the feed.</p></div>
+</div>
+<section class="archive-action"><div class="list-shell"><p>Earlier reporting continues in chronological order as the archive grows.</p></div></section>

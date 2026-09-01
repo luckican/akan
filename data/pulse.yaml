@@ -1,0 +1,20 @@
+kicker: Akan data desk
+title: The pulse
+description: A fast read on the numbers shaping business and household decisions today.
+items:
+  - label: USD / GHS
+    value: "10.42"
+    change: "▼ 0.18%"
+    direction: down
+  - label: Inflation
+    value: "13.7%"
+    change: "▼ 1.2 pts"
+    direction: down
+  - label: Cocoa / tonne
+    value: "$7,182"
+    change: "▲ 2.4%"
+    direction: up
+  - label: GSE Composite
+    value: "6,084"
+    change: "▲ 0.7%"
+    direction: up

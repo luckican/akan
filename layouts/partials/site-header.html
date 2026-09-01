@@ -1,0 +1,25 @@
+<header class="site-header{{ if .IsHome }} site-header--home{{ end }}">
+    <div class="site-header__inner">
+        <div class="site-header__top">
+            <div>
+                <a class="wordmark" href="{{ site.Home.RelPermalink }}" aria-label="Akan Reports home">akan.</a>
+            </div>
+            <div class="masthead-aside">
+                <div class="site-clock">
+                    <span>Accra time</span>
+                    <time id="clock">00:00:00 GMT</time>
+                </div>
+            </div>
+        </div>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="{{ site.Home.RelPermalink }}"{{ if .IsHome }} aria-current="page"{{ end }}>Home</a></li>
+                <li><a href="/latest/"{{ if eq .RelPermalink "/latest/" }} aria-current="page"{{ end }}>Latest</a></li>
+                <li><a href="/ghana/"{{ if eq (.Params.primary_section | default "") "ghana" }} aria-current="page"{{ end }}>Ghana</a></li>
+                <li><a href="/business/"{{ if eq (.Params.primary_section | default "") "business" }} aria-current="page"{{ end }}>Business</a></li>
+                <li><a href="/world/"{{ if eq (.Params.primary_section | default "") "world" }} aria-current="page"{{ end }}>World</a></li>
+                <li><a class="search-link" href="/search/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>Search</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

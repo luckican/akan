@@ -1,0 +1,13 @@
+{{ $story := . }}
+{{ $topics := $story.Params.topics | default (slice) }}
+<a class="story-row{{ if $story.Params.breaking.active }} story-row--breaking{{ end }}" href="{{ $story.RelPermalink }}" data-story data-section="{{ $story.Params.primary_section }}" data-topics="{{ delimit $topics " " }}">
+    <time class="story-time" datetime="{{ $story.Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ $story.Date.UTC.Format "15:04" }}<span>{{ $story.ReadingTime }} min</span></time>
+    <div class="story-copy">
+        <div>
+            <div class="story-labels"><span>{{ if $story.Params.breaking.active }}Developing · {{ end }}{{ $story.Params.primary_section | title }}{{ if gt (len $topics) 0 }} / {{ index $topics 0 | title }}{{ end }}</span><span>{{ $story.Params.format | title }}</span></div>
+            <h3 class="story-headline">{{ $story.Title }}</h3>
+        </div>
+        <p class="story-summary">{{ $story.Description }}</p>
+    </div>
+    <svg class="story-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M9 5h10v10"/></svg>
+</a>

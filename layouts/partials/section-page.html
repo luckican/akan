@@ -1,0 +1,49 @@
+{{ $sectionKey := .Params.primary_section }}
+{{ $stories := (where (where site.RegularPages "Section" "stories") "Params.primary_section" $sectionKey).ByDate.Reverse }}
+{{ $leadCandidates := where $stories "Params.section_lead" true }}
+{{ $lead := false }}
+{{ if gt (len $leadCandidates) 0 }}
+    {{ $lead = index $leadCandidates 0 }}
+{{ else if gt (len $stories) 0 }}
+    {{ $lead = index $stories 0 }}
+{{ end }}
+{{ $sideStories := slice }}
+{{ $weightedSideStories := where $stories "Params.section_side_weight" "ne" nil }}
+{{ if gt (len $weightedSideStories) 0 }}
+    {{ $sideStories = first 2 ($weightedSideStories.ByParam "section_side_weight") }}
+{{ else }}
+    {{ with $lead }}{{ $sideStories = first 2 (where $stories "RelPermalink" "ne" .RelPermalink) }}{{ end }}
+{{ end }}
+
+<section class="topic-bar" aria-label="Filter {{ .Title }} reporting by topic">
+    <div class="list-shell topics">
+        <button class="filter-button" type="button" data-topic-filter="all" aria-pressed="true">All {{ .Title }}</button>
+        {{ range .Params.topics }}<button class="filter-button" type="button" data-topic-filter="{{ . }}" aria-pressed="false">{{ if eq . "policy" }}Politics &amp; policy{{ else }}{{ . | humanize | title }}{{ end }}</button>{{ end }}
+    </div>
+</section>
+
+{{ with $lead }}
+<section class="section-lead" data-section-lead aria-labelledby="section-lead-title">
+    <div class="list-shell section-lead__grid">
+        <a class="section-lead__main" href="{{ .RelPermalink }}">
+            <div class="section-lead__meta"><span>Lead report{{ with index (.Params.topics | default (slice)) 0 }} / {{ . | humanize | title }}{{ end }}</span><span>{{ if ne .Lastmod .Date }}Updated {{ end }}{{ .Date.UTC.Format "15:04 GMT" }} · {{ .ReadingTime }} min</span></div>
+            <h1 id="section-lead-title">{{ if and .Params.headline_lead .Params.headline_emphasis }}{{ .Params.headline_lead }} <span>{{ .Params.headline_emphasis }}</span>{{ else }}{{ .Title }}{{ end }}</h1>
+            <div class="section-lead__bottom"><p>{{ .Params.section_dek | default .Description }}</p><span>Read the report <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M9 5h10v10"/></svg></span></div>
+        </a>
+        <aside class="section-lead__side" aria-label="More important {{ $.Title }} reporting">
+            {{ range $index, $story := $sideStories }}
+            <a class="section-side-story{{ if eq $index 1 }} section-side-story--dark{{ end }}" href="{{ $story.RelPermalink }}"><div><p class="ds-kicker">{{ $story.Params.format | title }}{{ with index ($story.Params.topics | default (slice "")) 0 }} / {{ . | title }}{{ end }}</p><h2>{{ $story.Title }}</h2><p>{{ $story.Description }}</p></div><span>{{ $story.ReadingTime }} min read</span></a>
+            {{ end }}
+        </aside>
+    </div>
+</section>
+{{ end }}
+
+<section class="section-recent" data-filter-scope aria-labelledby="section-recent-title">
+    <div class="list-shell">
+        <header class="list-heading"><h2 id="section-recent-title" data-section-list-title>Recent {{ .Title }} reports</h2><p>Newest first</p></header>
+        <div>{{ range $stories }}{{ partial "section-story-row.html" . }}{{ end }}</div>
+        <div class="empty-state" data-empty-state><h2>No reports here yet.</h2><p>Choose another topic to return to {{ .Title }} reporting.</p></div>
+        <div class="section-archive"><p>Earlier {{ .Title }} reporting continues in chronological order as the archive grows.</p></div>
+    </div>
+</section>

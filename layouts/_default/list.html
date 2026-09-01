@@ -1,0 +1,13 @@
+{{ define "main" }}
+    {{ if eq .Layout "latest" }}
+        {{ partial "latest-page.html" . }}
+    {{ else if eq .Layout "section" }}
+        {{ partial "section-page.html" . }}
+    {{ else if eq .Layout "search" }}
+        {{ partial "search-page.html" . }}
+    {{ else if eq .Layout "standard" }}
+        {{ partial "standard-page.html" . }}
+    {{ else }}
+        {{ partial "generic-list.html" . }}
+    {{ end }}
+{{ end }}

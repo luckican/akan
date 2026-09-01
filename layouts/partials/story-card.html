@@ -1,0 +1,10 @@
+{{ $story := .story }}
+{{ $class := .class | default "story-card" }}
+<a class="{{ $class }}" href="{{ $story.RelPermalink }}">
+    <div>
+        <p class="story-card__meta"><span>{{ if .index }}{{ with index ($story.Params.topics | default (slice)) 0 }}{{ . | humanize | title }}{{ else }}{{ $story.Params.primary_section | title }}{{ end }}{{ else }}{{ $story.Params.primary_section | title }} / {{ $story.Params.format | title }}{{ end }}</span>{{ with .index }}<span>{{ printf "%02d" . }}</span>{{ end }}</p>
+        <h3>{{ $story.Title }}</h3>
+        <p class="story-card__summary">{{ $story.Description }}</p>
+    </div>
+    <div class="story-card__foot"><time datetime="{{ $story.Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ $story.Date.UTC.Format "2 Jan · 15:04 GMT" }}</time><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M9 5h10v10"/></svg></div>
+</a>

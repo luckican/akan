@@ -1,0 +1,116 @@
+{{ define "main" }}
+<article>
+    <header class="article-header">
+        <div class="article-shell article-header__grid">
+            <div>
+                <p class="ds-kicker">{{ .Params.format | title }}{{ with index (.Params.topics | default (slice)) 0 }} / {{ . | humanize | title }}{{ end }}</p>
+                <h1 class="article-title">
+                    {{ if and .Params.headline_lead .Params.headline_emphasis }}
+                        {{ .Params.headline_lead }} <span>{{ .Params.headline_emphasis }}</span>
+                    {{ else }}
+                        {{ .Title }}
+                    {{ end }}
+                </h1>
+                <p class="article-deck">{{ .Params.dek | default .Description }}</p>
+                <div class="article-meta ds-meta">
+                    <span>Published {{ .Date.UTC.Format "2 Jan 2006 · 15:04 GMT" }}</span>
+                    {{ if ne .Lastmod .Date }}<span>Updated {{ .Lastmod.UTC.Format "2 Jan 2006 · 15:04 GMT" }}</span>{{ end }}
+                    <span>{{ .ReadingTime }} min read</span>
+                </div>
+            </div>
+            <aside class="article-header__aside" aria-label="Article tools and outline">
+                <div class="article-actions">
+                    <button class="ds-button ds-button--solid" type="button" id="copyLink">Copy link</button>
+                    <button class="ds-button" type="button" id="printArticle">Print</button>
+                </div>
+                {{ if .Fragments.Identifiers }}
+                <nav class="report-index" aria-label="In this report">
+                    <p class="ds-kicker">In this report</p>
+                    <div class="report-index__toc">{{ .Fragments.ToHTML 2 2 true }}</div>
+                </nav>
+                {{ end }}
+            </aside>
+        </div>
+    </header>
+
+    {{ with .Params.hero }}
+    <figure class="story-hero">
+        <div class="article-shell story-hero__image-wrap">
+            {{ $image := $.Resources.GetMatch .src }}
+            {{ with $image }}<img class="story-hero__image" src="{{ .RelPermalink }}" alt="{{ $.Params.hero.alt }}">{{ end }}
+        </div>
+        <figcaption class="article-shell story-hero__caption ds-meta">
+            <p>{{ .caption }}</p><p>{{ .credit }}</p>
+        </figcaption>
+    </figure>
+    {{ else with .Params.typographic_hero }}
+    <figure class="story-hero story-hero--type">
+        <div class="story-hero__canvas" aria-hidden="true"><p>{{ .lead }}<br><span>{{ .emphasis }}</span></p></div>
+        {{ if or .caption .credit }}<figcaption class="article-shell story-hero__caption ds-meta"><p>{{ .caption }}</p><p>{{ .credit }}</p></figcaption>{{ end }}
+    </figure>
+    {{ end }}
+
+    <div class="article-content">
+        <div class="article-shell article-content__grid">
+            <div class="article-body">
+                {{ .Content }}
+
+                {{ with .Params.methodology_note }}
+                <aside class="article-note" aria-labelledby="methodology-note-title">
+                    <p class="ds-kicker" id="methodology-note-title">Methodology note</p>
+                    <p>{{ . }}</p>
+                </aside>
+                {{ end }}
+
+                {{ with .Params.source_note }}
+                <aside class="article-note" aria-labelledby="source-note-title">
+                    <p class="ds-kicker" id="source-note-title">Source note</p>
+                    <p>{{ . }}</p>
+                </aside>
+                {{ end }}
+
+                <aside class="correction-box" aria-labelledby="correction-title">
+                    <p class="ds-kicker" id="correction-title">Updates and corrections</p>
+                    {{ with .Params.corrections }}
+                        {{ range . }}<p><strong>{{ time.Format "2 Jan 2006" .date }}:</strong> {{ .note }}</p>{{ end }}
+                    {{ else }}
+                        <p>No updates or corrections have been recorded.</p>
+                    {{ end }}
+                </aside>
+            </div>
+
+            {{ with .Params.in_brief }}
+            <aside class="article-rail" aria-label="Story context">
+                <div class="story-context">
+                    <div class="story-context__head"><p class="ds-meta">In brief</p></div>
+                    {{ range . }}
+                    <div class="story-context__item"><strong>{{ .label }}</strong><span>{{ .text }}</span></div>
+                    {{ end }}
+                </div>
+            </aside>
+            {{ end }}
+        </div>
+    </div>
+</article>
+
+{{ $related := site.RegularPages.Related . | first 3 }}
+{{ with .Params.related }}
+    {{ $selected := slice }}
+    {{ range . }}
+        {{ with site.GetPage (printf "/stories/%s" .) }}{{ $selected = $selected | append . }}{{ end }}
+    {{ end }}
+    {{ if gt (len $selected) 0 }}{{ $related = $selected }}{{ end }}
+{{ end }}
+{{ with $related }}
+<section class="related" aria-labelledby="related-title">
+    <div class="article-shell related-shell">
+        <div class="related-head"><div><p class="ds-kicker">Continue reading</p><h2 id="related-title">Related reports</h2></div><p class="ds-meta">Three paths deeper into the story</p></div>
+        <div class="related-grid">
+            {{ range . }}
+            <a class="related-story" href="{{ .RelPermalink }}"><p class="ds-kicker">{{ .Params.primary_section | title }}</p><h3>{{ .Title }}</h3><p>{{ .Description }}</p></a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

@@ -3,13 +3,20 @@ locale: en-gh
 title: Akan Reports
 enableRobotsTXT: true
 summaryLength: 32
+disableKinds:
+  - taxonomy
+  - term
+
+outputs:
+  home:
+    - html
+    - json
 
 permalinks:
-  stories: /stories/:slug/
-
-taxonomies:
-  topic: topics
-  format: formats
+  page:
+    stories: /stories/:contentbasename/
+  section:
+    stories: /stories/
 
 params:
   description: "Signals from Ghana's news cycle. Plus the world that shapes it."

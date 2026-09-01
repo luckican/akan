@@ -1,0 +1,7 @@
+{{ $pages := .RegularPages.ByDate.Reverse }}
+<section class="generic-list">
+    <div class="list-shell">
+        <header class="list-heading"><h1>{{ .Title }}</h1><p>{{ .Description }}</p></header>
+        {{ range $pages }}{{ partial "story-row.html" . }}{{ end }}
+    </div>
+</section>

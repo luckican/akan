@@ -1,0 +1,8 @@
+<article class="standard-page">
+    <div class="standard-shell">
+        <p class="ds-kicker">Akan Reports</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="standard-deck">{{ . }}</p>{{ end }}
+        <div class="standard-body">{{ .Content }}</div>
+    </div>
+</article>

@@ -28,7 +28,9 @@ No personal author or byline field is required. Published work appears as report
 ## Optional public fields
 
 - `dek`: A longer secondary summary when `description` is too short for the article header.
+- `headline_lead` and `headline_emphasis`: Optional display treatment for splitting a headline across normal and emphasized text. `title` remains the canonical complete headline.
 - `hero`: Image filename, alternative text, caption, and credit.
+- `typographic_hero`: Optional `lead` and `emphasis` lines for a designed type-only hero when no image is used. Most stories need neither hero treatment.
 - `in_brief`: A small list of facts or context shown only when it helps the story.
 - `corrections`: Dated public correction or clarification entries.
 - `methodology_note`: Public explanation for data, calculations, or reporting methods when needed.
