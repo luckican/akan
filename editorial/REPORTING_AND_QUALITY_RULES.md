@@ -61,6 +61,8 @@ The agent must not imply that Akan Reports conducted an interview, visited a loc
 
 ## 5. Writing and structure
 
+All public copy must also follow `WRITING_STYLE.md`. Apply its style pass only after factual verification; style must never remove a necessary qualification or attribution.
+
 - Lead with the news, consequence, or central question—not background about the process of reporting it.
 - Write in clear international English appropriate for readers in and beyond Ghana.
 - Prefer precise nouns and active verbs. Remove filler, hype, clichés, and claims such as “shocking,” “historic,” or “game-changing” unless evidence makes the description necessary.
@@ -134,7 +136,7 @@ A draft is ready for review only when all answers below are **yes**:
 4. Is every material factual claim mapped to recorded evidence?
 5. Are disputed, uncertain, inferred, and attributed statements labelled honestly?
 6. Are names, dates, places, quotations, numbers, units, and links checked?
-7. Is the article original in wording and free of unsupported scenes or details?
+7. Is the article original in wording, free of unsupported scenes or details, and compliant with the `WRITING_STYLE.md` style pass?
 8. Are fairness, privacy, harm, legal, and safety concerns disclosed and addressed?
 9. Is the visual treatment legitimate, useful, and fully documented?
 10. Are the Markdown bundle and all required metadata complete?

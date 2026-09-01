@@ -247,6 +247,7 @@ Before handing the bundle to the reviewer, the agent must confirm:
 - all unresolved verification work is disclosed;
 - the visual decision and, if applicable, the image file and rights information are complete;
 - the story complies with `REPORTING_AND_QUALITY_RULES.md`;
+- all public copy has passed `WRITING_STYLE.md` without weakening factual qualifications;
 - `draft` remains `true` and `workflow.status` is `review`.
 
 A submission that fails any required item is incomplete and should not enter human review.

@@ -48,7 +48,7 @@ The initial Akan Reports stack is:
 - **Content storage:** Markdown, YAML, JSON, and article media files
 - **Version control:** Git
 - **Repository service:** GitHub Free initially, with Forgejo as an open-source migration option
-- **Styling:** Tailwind CSS compiled as part of the build
+- **Styling:** Custom CSS with shared design tokens; Tailwind is not a current dependency
 - **Search:** Pagefind
 - **Deployment:** Automated static builds delivered through a CDN
 - **Analytics:** Google Analytics and Google Search Console, with Umami, GoatCounter, or an equivalent open-source platform available when privacy, ownership, or self-hosting is preferred

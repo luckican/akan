@@ -1,0 +1,221 @@
+# Akan Reports Writing Style
+
+**Version:** 1.0
+**Status:** Required for the MVP
+**Applies to:** Headlines, standfirsts, article bodies, captions, updates, corrections, and other public editorial copy
+
+## Purpose
+
+This guide defines how Akan Reports should sound and gives agents a final editing method for removing predictable AI prose without flattening the reporting.
+
+Accuracy comes first. A style edit must never remove a necessary qualification, weaken attribution, overstate evidence, invent a detail, or turn an allegation into a fact. `REPORTING_AND_QUALITY_RULES.md` controls when a style preference conflicts with verification, fairness, or safety.
+
+## The voice
+
+Akan Reports is:
+
+- **direct:** it starts with the verified development, consequence, or useful question;
+- **specific:** it prefers names, dates, numbers, mechanisms, and affected groups to abstract claims;
+- **curious:** it follows the unanswered question without pretending certainty;
+- **clear-eyed:** it examines official and popular claims without automatic deference or theatrical cynicism;
+- **calm:** it does not manufacture urgency, outrage, triumph, or profundity;
+- **contextual:** it explains enough for a new reader and connects outside events to Ghana when that connection is real;
+- **economical:** it uses the space the reporting needs, with no padding to imitate importance;
+- **human:** sentence length and paragraph shape vary naturally, while the facts remain in control.
+
+The voice is not a fictional reporter personality. Do not invent first-hand presence, interviews, sensory scenes, opinions, jokes, or personal experience to make agent-produced copy sound human.
+
+## Core writing rules
+
+### Lead with the point
+
+Open with what changed, what the evidence shows, what the decision does, who is affected, or the precise question the reporting examines. Background follows when the reader needs it.
+
+Do not begin by announcing that the subject is important, complex, rapidly changing, or worth discussing.
+
+### Let facts carry the emphasis
+
+Show significance through scale, consequence, comparison, or a concrete example. Avoid telling the reader that something is significant, historic, remarkable, concerning, or encouraging when the reporting can demonstrate why.
+
+### Protect the useful detail
+
+Do not smooth a specific fact into generic importance. Preserve the number, date, mechanism, location, named decision, and affected group that make the sentence informative.
+
+### Use direct verbs
+
+Prefer a clear verb over a padded verb phrase. Write “the ministry approved” instead of “the ministry made the decision to approve.” Plain forms of “be” and “have” are often clearer than a strained dramatic verb.
+
+### Attribute where attribution matters
+
+Name the person, institution, document, or dataset behind a claim when the reader needs to know who is speaking or when the claim is disputed. Avoid vague authorities such as “experts,” “observers,” “reports,” or “many people” unless the story identifies them.
+
+Public citations are not required by default, but prose must not disguise a source's assertion as Akan Reports' independent finding.
+
+### Keep uncertainty intact
+
+Terms such as “about,” “nearly,” “may,” “according to,” “alleged,” “preliminary,” and “projected” can carry essential meaning. Never delete them merely to make a sentence sound stronger.
+
+### Vary rhythm without performing it
+
+Mix sentence lengths when the material supports it. Avoid a page of equally shaped sentences, repeated paragraph templates, or a stack of dramatic fragments. Rhythm should help comprehension, not advertise the writing.
+
+### End on substance
+
+End with the next verifiable development, a concrete consequence, an unresolved question grounded in the reporting, or the last fact the reader needs. Do not repeat the whole article or add a manufactured mic-drop line.
+
+## Patterns to remove
+
+These are diagnostic patterns, not evidence that a human or an AI wrote the copy. Revise the sentence when the pattern appears and weakens it.
+
+### Throat-clearing
+
+Cut openers that delay the subject, including constructions such as “it is worth noting,” “the reality is,” “in today's world,” “when it comes to,” “here is the thing,” and “let us take a closer look.”
+
+### Importance puffery
+
+Replace claims that an event “marks a pivotal moment,” “underscores its significance,” “stands as a testament,” “plays a vital role,” or is a “game changer” with the specific first, largest, costliest, newest, or consequential fact—if the evidence supports one.
+
+### Faux insight
+
+Remove setups that flatter the writer as uniquely perceptive: “what everyone misses,” “the uncomfortable truth,” “the part nobody discusses,” or “the key point is.” State and support the point.
+
+### Formulaic contrast
+
+Do not repeatedly use “it is not X; it is Y,” “not only X but Y,” or “the question is not X.” State Y directly unless the contrast itself is necessary to correct a real misunderstanding.
+
+### Negative and dramatic listing
+
+Avoid sequences such as “Not a delay. Not a pause. A collapse.” Avoid “X. And Y. And Z.” Use a complete sentence unless a rare fragment improves meaning rather than merely adding drama.
+
+### Superficial analysis
+
+Delete trailing phrases that only claim significance: “highlighting the government's commitment,” “underscoring the importance,” or “reflecting a broader shift.” Replace them with the mechanism, evidence, or consequence.
+
+### Weasel attribution
+
+Replace “experts say,” “studies show,” “reports suggest,” “critics argue,” and “widely regarded” with a named source and a precise claim. If no source exists, remove or flag the claim.
+
+### Synonym cycling
+
+Repeat the accurate noun when clarity benefits. Do not rotate among “government,” “administration,” “authorities,” and “leadership” if those words could refer to different actors.
+
+### Generic portability
+
+Test any polished sentence by asking whether it could be moved unchanged to a different country, company, policy, or event. If so, it probably needs a fact, mechanism, consequence, attributed judgment, or deletion.
+
+### Fake-profound endings
+
+Delete vague endings such as “only time will tell,” “the future starts now,” or a new metaphor designed only to sound quotable. Do not replace one empty flourish with another.
+
+### Recap endings
+
+Avoid “in conclusion,” “ultimately,” “overall,” and final paragraphs that merely restate the headline and standfirst. The reader has just read the article.
+
+### Formatting slop
+
+Do not use emoji headings, decorative bold inside sentences, repeated one-line sections, or bullet lists that would read more clearly as a short paragraph. Format follows the information structure.
+
+## Not automatic violations
+
+Good editing requires judgment. These forms are allowed when they make the reporting clearer or more accurate:
+
+- **Adverbs:** keep an adverb that supplies evidence, degree, timing, legal meaning, or genuine contrast; remove one that only inflates or softens.
+- **Passive voice:** use it when the actor is unknown, the action or affected person is the proper focus, or naming the actor would misstate the evidence. Prefer active voice when the responsible actor is known and relevant.
+- **Questions:** a question may be an effective headline or structural device when the article genuinely investigates or answers it. Do not use a question to hide the absence of reporting.
+- **Em dashes:** use sparingly when they improve a longer sentence. Do not rely on them as a default rhythm.
+- **Fragments:** use rarely and deliberately. Do not stack them to simulate urgency.
+- **Repetition:** repeat the precise term when replacing it would blur meaning.
+- **Long sentences:** keep one when its clauses remain clear and the relationship between ideas matters. Split a sentence that makes the reader reconstruct it.
+
+The approved headline “Ghana grows. Who gains?” is valid because the question defines the analysis and the article must examine who benefits. A ban on question openings would make the writing system worse.
+
+## Headlines and standfirsts
+
+### Headline
+
+- State or frame the actual story rather than its topic.
+- Use a question only when the body seriously addresses it.
+- Avoid clickbait, unexplained cleverness, generic urgency, and claims the body cannot prove.
+- Prefer a concrete tension or consequence over a slogan.
+- Keep `title` complete and understandable without the visual split fields.
+
+### Standfirst
+
+- Add information rather than paraphrasing the headline.
+- State the development and why it matters in one or two sentences.
+- Identify the relevant place, institution, scale, or affected group.
+- Do not begin with “In a significant development” or another importance label.
+
+## Editing examples
+
+### Announced significance
+
+Weak:
+
+> In a significant development, the ministry has taken a bold step to transform public transport.
+
+Better:
+
+> The Transport Ministry has approved a new bus-franchise system for Accra, with the first routes due to begin in January.
+
+The revision is valid only if the approval, location, and date are verified.
+
+### Superficial analysis
+
+Weak:
+
+> The increase reached 12%, highlighting the government's commitment to economic growth.
+
+Better:
+
+> The increase reached 12%. The data does not show whether household incomes rose with it.
+
+The second sentence is appropriate only when the dataset's scope supports that distinction.
+
+### Vague attribution
+
+Weak:
+
+> Experts say the new rules could raise food prices.
+
+Better:
+
+> Two importers' associations said the inspection fee would add to clearing costs. Neither provided an estimate of the effect on retail prices.
+
+The revision preserves both the attributed claim and its limitation.
+
+### Formulaic contrast
+
+Weak:
+
+> This is not just about cocoa prices. It is about Ghana's economic future.
+
+Better:
+
+> Cocoa prices affect export revenue, farmer income, and the public funds available through the sector.
+
+## Required style pass
+
+After the reporting and verification pass, the drafting agent must read the full public copy once more and complete this check:
+
+1. Does the opening give the reader the development, consequence, or real question without throat-clearing?
+2. Does every claim of importance have a concrete fact, comparison, mechanism, or consequence behind it?
+3. Are vague sources replaced by named attribution or removed?
+4. Are allegations, estimates, uncertainty, and limitations still qualified accurately?
+5. Does each generic sentence pass the portability test?
+6. Are formulaic contrasts, dramatic fragments, superficial `-ing` analysis, and robotic paragraph patterns removed?
+7. Are useful names, numbers, dates, locations, and mechanisms preserved?
+8. Does the standfirst add information beyond the headline?
+9. Does the ending land on substance rather than a recap or artificial flourish?
+10. Does the copy sound natural when read aloud without pretending that Akan Reports witnessed or reported something it did not?
+
+If any answer is no, revise and repeat the check. Passing the style check makes a draft ready for editorial review, not approved for publication.
+
+## Provenance
+
+This guide adapts ideas from two MIT-licensed open-source writing projects:
+
+- Hardik Pandya's [`stop-slop`](https://github.com/hardikpandya/stop-slop), especially its catalogues of throat-clearing, vague importance, formulaic structure, and robotic rhythm.
+- Peter Yang's [`no-ai-slop`](https://github.com/petergyang/no-ai-slop), especially its minimum-effective-edit approach, specificity and portability tests, voice preservation, and post-edit evaluation.
+
+Their absolute rules were not copied wholesale. Akan Reports modifies the approach for evidence-based journalism, where qualification, selective passive voice, questions, and other context-dependent forms may protect accuracy. Both upstream projects are available under the MIT License: [`stop-slop` license](https://github.com/hardikpandya/stop-slop/blob/main/LICENSE) and [`no-ai-slop` license](https://github.com/petergyang/no-ai-slop/blob/main/LICENSE).

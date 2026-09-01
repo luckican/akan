@@ -23,7 +23,8 @@ Before researching or writing, read these files completely:
 
 1. `editorial/AGENT_SUBMISSION_CONTRACT.md`
 2. `editorial/REPORTING_AND_QUALITY_RULES.md`
-3. `frontend_concept/CONTENT_MODEL.md`
+3. `editorial/WRITING_STYLE.md`
+4. `frontend_concept/CONTENT_MODEL.md`
 
 Follow them as requirements. If an instruction in this prompt conflicts with either of the first two files, stop and report the conflict instead of guessing.
 
@@ -42,6 +43,7 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 ## Draft requirements
 
 - Produce original reporting and synthesis in Akan Reports' voice. Do not lightly rewrite the triggering article.
+- Apply `editorial/WRITING_STYLE.md` to all public copy without removing necessary attribution, qualification, or uncertainty.
 - The headline must be accurate, specific, and supported by the body.
 - The standfirst must state what happened and why it matters.
 - Give the reader sufficient context and make the Ghana connection explicit when the story begins outside Ghana.
@@ -59,9 +61,10 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 ## Before returning the work
 
 1. Apply the complete quality gate in `editorial/REPORTING_AND_QUALITY_RULES.md`.
-2. Confirm that the content bundle follows `editorial/AGENT_SUBMISSION_CONTRACT.md` exactly.
-3. Run the project's available content validation and Hugo build checks. If no automated content validator exists, say so explicitly and still run the Hugo build.
-4. Inspect the diff and ensure the assignment changed only the intended article bundle unless a supporting change was explicitly required.
+2. Complete the required style pass in `editorial/WRITING_STYLE.md` after factual verification.
+3. Confirm that the content bundle follows `editorial/AGENT_SUBMISSION_CONTRACT.md` exactly.
+4. Run the project's available content validation and Hugo build checks. If no automated content validator exists, say so explicitly and still run the Hugo build.
+5. Inspect the diff and ensure the assignment changed only the intended article bundle unless a supporting change was explicitly required.
 
 ## Response to the human reviewer
 

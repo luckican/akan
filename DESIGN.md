@@ -1,7 +1,7 @@
 # Akan Reports Design System
 
-**Version:** 0.1 review candidate  
-**Status:** Foundations and core editorial components ready for visual review
+**Version:** 1.0
+**Status:** Adopted MVP foundations and core editorial components
 
 ## Purpose
 
@@ -108,7 +108,7 @@ Uppercase is reserved for short labels and display headlines. Summaries, caption
 
 ### Masthead
 
-Includes issue/location metadata, the large lowercase wordmark, a short positioning line, primary navigation, and a compact utility action.
+Includes the large lowercase wordmark, the Accra clock on the same line, and primary navigation. Do not reintroduce the rejected issue/location strip, volume label, or positioning sentence without explicit approval.
 
 ### Breaking strip
 
@@ -191,9 +191,9 @@ Charts use Ink, Forest, Signal, Gold, and neutral tints. Every graphic requires 
 
 ## Implementation guidance
 
-`tokens.css` is the canonical prototype token file. When the Hugo site is built, these values should be transferred into production CSS variables and the Tailwind theme configuration. Components should consume semantic tokens such as `--color-emphasis`, not duplicate raw hex values.
+`frontend_concept/design_system/tokens.css` preserves the prototype tokens. `assets/css/site.css` is the production source for the current Hugo implementation. Keep their foundational values aligned when the system changes, and make production components consume shared CSS custom properties rather than duplicating raw values. Tailwind is not a current dependency.
 
-The current homepage remains a concept. It should be refactored to use the approved system only after this review candidate is accepted.
+The approved concept files under `frontend_concept/` remain visual references for the production Hugo templates. Material changes to hierarchy, brand treatment, or responsive behavior require visual review against those references.
 
 ## Governance
 

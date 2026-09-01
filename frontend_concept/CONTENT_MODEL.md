@@ -4,7 +4,7 @@
 **Status:** Adopted for the MVP
 **Purpose:** Define the contract between reporting agents, human approval, Hugo, and the reader-facing templates.
 
-The normative agent instructions now live in [`editorial/AGENT_SUBMISSION_CONTRACT.md`](../editorial/AGENT_SUBMISSION_CONTRACT.md) and [`editorial/REPORTING_AND_QUALITY_RULES.md`](../editorial/REPORTING_AND_QUALITY_RULES.md). This document remains the architectural overview; if it is less specific than the agent instructions, the agent instructions control.
+The normative agent instructions now live in [`editorial/AGENT_SUBMISSION_CONTRACT.md`](../editorial/AGENT_SUBMISSION_CONTRACT.md), [`editorial/REPORTING_AND_QUALITY_RULES.md`](../editorial/REPORTING_AND_QUALITY_RULES.md), and [`editorial/WRITING_STYLE.md`](../editorial/WRITING_STYLE.md). This document remains the architectural overview; if it is less specific than the agent instructions, the agent instructions control.
 
 ## Core principle
 
