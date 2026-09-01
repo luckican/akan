@@ -1,8 +1,10 @@
 # Akan Reports MVP Content Model
 
-**Version:** 0.1  
-**Status:** Working proposal  
+**Version:** 1.0
+**Status:** Adopted for the MVP
 **Purpose:** Define the contract between reporting agents, human approval, Hugo, and the reader-facing templates.
+
+The normative agent instructions now live in [`editorial/AGENT_SUBMISSION_CONTRACT.md`](../editorial/AGENT_SUBMISSION_CONTRACT.md) and [`editorial/REPORTING_AND_QUALITY_RULES.md`](../editorial/REPORTING_AND_QUALITY_RULES.md). This document remains the architectural overview; if it is less specific than the agent instructions, the agent instructions control.
 
 ## Core principle
 
@@ -62,8 +64,9 @@ These fields are stored with the content but are not rendered to readers:
 - `workflow.reviewed_at`: When the human decision was made.
 - `workflow.decision_note`: Optional reason for rejection or requested revision.
 - `editorial.angle`: The specific reporting angle the draft is meant to deliver.
+- `editorial.visual`: Required treatment, rationale, rights status, and provenance for the story's visual decision.
 - `editorial.verification_notes`: Claims, uncertainties, and checks for the reviewer.
-- `editorial.source_notes`: URLs and notes used during reporting, whether or not they are publicly cited.
+- `editorial.source_notes`: Structured internal evidence records used during reporting, whether or not they are publicly cited. At least one is required.
 
 Internal fields must never be rendered by the public templates. They are not secrets if the Git repository is public, so credentials, private personal data, and paid-source login details must never be stored here.
 
@@ -106,10 +109,22 @@ workflow:
 
 editorial:
   angle: "How National Theatre renovation is changing where artists work."
+  visual:
+    treatment: image
+    rationale: "Shows the temporary space at the centre of the report."
+    rights_status: original
+    source_url:
   verification_notes:
     - "Confirm renovation timetable before approval."
   source_notes:
-    - "Interview and background-source URLs remain here for review."
+    - id: source-1
+      type: interview
+      name: "Interview record"
+      url:
+      accessed_at: 2026-08-31T09:30:00Z
+      supports:
+        - "The company is rehearsing in a temporary room."
+      notes: "Confirm the renovation timetable separately."
 ---
 ```
 

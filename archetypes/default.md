@@ -19,14 +19,26 @@ breaking:
   expires:
 
 workflow:
-  status: draft
+  status: review
   agent:
   created_at: '{{ .Date }}'
-  reviewed_at:
-  decision_note:
+  reviewed_at: null
+  decision_note: null
 
 editorial:
   angle: ''
+  visual:
+    treatment: none
+    rationale: ''
+    rights_status: not_applicable
+    source_url: null
   verification_notes: []
-  source_notes: []
+  source_notes:
+    - id: source-1
+      type:
+      name: ''
+      url: null
+      accessed_at: '{{ .Date }}'
+      supports: []
+      notes: ''
 ---
