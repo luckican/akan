@@ -67,4 +67,4 @@ A ministry statement, reported by the Ghana News Agency and signed by press secr
 
 Ministry data showed that about 20,000 qualified students still did not have their school choices on the CSSPS platform. Officials said the extension is meant to keep those students from being left out of placement into senior high schools and technical and vocational institutions.
 
-Parents, guardians, students and school heads were urged to use the window to complete outstanding uploads before the new release date. The next confirmed public step is the results release on 4 September, after which families will need the official portal, not unofficial links, to check placements.
+Parents, guardians, students and school heads were urged to use the window to complete outstanding uploads before the new release date. If you are waiting for a placement, the practical change is simple: work with 4 September, not 31 August, and use the official portal when the results appear. We will be checking whether the ministry meets the new release date.

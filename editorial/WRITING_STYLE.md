@@ -1,6 +1,6 @@
 # Akan Reports Writing Style
 
-**Version:** 1.3
+**Version:** 1.4
 **Status:** Required for the MVP
 **Applies to:** Headlines, standfirsts, article bodies, captions, updates, corrections, and other public editorial copy
 
@@ -28,19 +28,21 @@ Akan Reports is:
 
 ### Talk to the reader
 
-Public story copy should sound like Akan Reports speaking to a capable reader. Prefer **you** when naming the reader's stake, what they can check, or what a figure does and does not show. Prefer **we** when the publication is stating what Akan Reports is establishing, leaving open, or not claiming from the evidence.
+Public story copy should sound like Akan Reports speaking to a capable reader and taking responsibility for the reporting. Impersonal wire copy is not the default. Prefer **you** when naming the reader's stake, what they can check, or what a figure does and does not show. Use **we** when the publication is stating what it checked, found, concluded, could not establish, is leaving open, or is not claiming from the evidence.
 
-Use this address when it makes the reporting clearer. Do not sprinkle “you” or “we” into every sentence, and do not turn a Signal into a lecture.
+Direct factual sentences often need no pronoun. Do not sprinkle “you” or “we” into every sentence, impose a quota, or turn a Signal into a lecture. The test applies to the voice of the whole story: when the reporting makes a check, judgment, synthesis or statement about the limits of the evidence, it should not hide the publication behind passive or institutional phrasing.
 
 **Do:**
 
 - “You can see the new floor, the industry’s projected pump levels, and the international price move behind them.”
 - “The release shows which industries expanded. It does not show how households shared the gain.”
 - “We could not establish the refining charge from the notice itself.”
+- “We reviewed the published figures and found no breakdown of how the gain was shared across households.”
 
 **Do not:**
 
 - Invent first-hand presence: “we visited,” “we spoke to,” “I watched,” or scenes that did not happen in this assignment.
+- Hide a genuine reporting action behind evasive phrasing such as “no evidence was found” when Akan Reports can accurately say what it reviewed and what **we** did not find.
 - Use “we” for opinions, predictions, or advocacy Akan Reports has not established.
 - Replace plain facts with chatty filler (“here’s the thing you need to know”).
 - Write impersonal handbook openers (“Accuracy comes first,” “Readers should note,” “It is important to understand”).
@@ -245,10 +247,11 @@ After the reporting and verification pass, the drafting agent must read the full
 7. Are useful names, numbers, dates, locations, and mechanisms preserved?
 8. Does the standfirst add information beyond the headline?
 9. Does the ending land on substance rather than a recap or artificial flourish?
-10. Does the copy sound like Akan Reports talking to the reader, using **you** / **we** where they clarify stake or publication stance, without inventing presence, interviews, or opinions?
+10. Does the copy sound like Akan Reports talking to the reader and taking responsibility for its reporting, using **we** for genuine checks, findings, limits and framing, and **you** where it clarifies the reader's stake?
 11. Could an intelligent non-specialist enter the story without already knowing the institution, profession, acronym or regulatory process involved?
 12. Does the article's shape arise from this reporting rather than from a repeated house template?
 13. Is the public copy free of em dashes and imitations such as double hyphens?
+14. Where the story makes a check, synthesis or judgment about the evidence, does it own that work instead of hiding behind passive or faceless phrasing?
 
 If any answer is no, revise and repeat the check. Passing the style check makes a draft ready for editorial review, not approved for publication.
 

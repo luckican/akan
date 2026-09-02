@@ -75,7 +75,7 @@ editorial:
 
 Ghana’s economy expanded by 6.4% in real terms in the first quarter of 2026, according to provisional figures from the Ghana Statistical Service. The rate is slightly higher than the 6.2% recorded in the same quarter of 2025. Non-oil GDP grew 6.3%.
 
-The national number is clear. Who gained from it is not. The release shows which industries expanded and how much each contributed to the total. It does not show wages, jobs by income group, or household living standards.
+We can see where the national growth came from. We cannot yet say who gained from it. The release shows which industries expanded and how much each contributed to the total, but it does not show wages, jobs by income group, or household living standards.
 
 ## Where the growth came from
 
@@ -91,4 +91,4 @@ In nominal terms, services made up 45.7% of output, industry 32.9% and agricultu
 
 A sectoral rebound is not the same as broader relief. The GSS figures measure output, not how income from ICT firms, mines or traders reached workers, suppliers or public revenue. Fishing, accommodation and food services, and water and sewerage moved in the opposite direction from the headline, which already shows that the quarter was uneven across activities.
 
-The Service itself described the estimates as provisional and subject to revision. The next scheduled GDP release covers the second quarter of 2026. Until labour-market, income and price data for the same period are read beside these numbers, claims about who gained remain beyond what this release can support.
+The Service itself described the estimates as provisional and subject to revision. The next scheduled GDP release covers the second quarter of 2026. Until we can read labour-market, income and price data for the same period beside these numbers, we cannot responsibly say how the growth was shared.

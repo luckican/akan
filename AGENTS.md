@@ -77,7 +77,7 @@ hugo.yaml                    Hugo configuration
 - Public source lists and citations are optional, not the default. Internal source records are mandatory for agent-produced reporting.
 - Discovery and story selection must follow `editorial/CONTENT_STRATEGY.md`; neither virality nor a supplied link bypasses its gate.
 - Every agent-produced draft must use the approved angle framework. A straight `development` angle is valid for important widely covered news; do not manufacture contrarianism.
-- Public editorial copy must pass the house-style check in `editorial/WRITING_STYLE.md` after factual verification. Story copy should address the reader as Akan Reports talking to them (**you** / **we** where it clarifies), without inventing first-hand presence.
+- Public editorial copy must pass the house-style check in `editorial/WRITING_STYLE.md` after factual verification. The default voice is Akan Reports speaking as an accountable publication, not a faceless summary service. Use **we** to own checks, findings, limits and editorial framing, and **you** when it clarifies the reader's stake. Do not force pronouns into every paragraph or invent first-hand presence.
 - Do not use em dashes in public editorial copy or agent-facing documentation. Rewrite with a comma, colon, semicolon, parentheses, or a separate sentence.
 - Every agent-created article remains `draft: true` and `workflow.status: review` until a human approves it.
 - Agents may recommend placement but must not approve, merge, publish, deploy, or set a story live unless the user explicitly authorizes that action.

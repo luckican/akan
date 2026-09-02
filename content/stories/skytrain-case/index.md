@@ -84,9 +84,9 @@ The order means the criminal trial can continue while a separate Supreme Court a
 
 Asamoah had asked the Supreme Court to stop the High Court from going ahead until his certiorari application was heard. Justice Dzamefe rejected that request.
 
-According to contemporaneous court reporting, the justice held that Asamoah’s own affidavit did not show a serious case for the injunction; that the complaints belonged in an appeal rather than as grounds to freeze the trial; that the High Court judge had not acted without jurisdiction, or beyond jurisdiction, in ruling on the no-case submission; and that Asamoah had not shown what irreparable harm would follow if the trial continued.
+We are relying on contemporaneous court reports for the justice’s stated reasons. Those reports say Asamoah’s own affidavit did not show a serious case for the injunction; that the complaints belonged in an appeal rather than as grounds to freeze the trial; that the High Court judge had not acted without jurisdiction, or beyond jurisdiction, in ruling on the no-case submission; and that Asamoah had not shown what irreparable harm would follow if the trial continued.
 
-The practical effect is limited and precise: the High Court does not have to wait for the Supreme Court to finish with the certiorari application before taking the next steps in the trial.
+What we can say from those reports is limited and precise: the High Court does not have to wait for the Supreme Court to finish with the certiorari application before taking the next steps in the trial.
 
 ## What remains open
 
@@ -96,4 +96,4 @@ On Tuesday, 1 September 2026, the Court of Appeal separately dismissed Ameyaw-Ak
 
 ## The next confirmed step
 
-The Accra High Court, presided over by Justice Audrey Kocuvie-Tay, has set Wednesday, 23 September 2026, as the final extended deadline for the accused to file their defence processes if they wish to do so. Whether they open a defence, and what evidence they put forward, will shape the next phase of the trial.
+The Accra High Court, presided over by Justice Audrey Kocuvie-Tay, has set Wednesday, 23 September 2026, as the final extended deadline for the accused to file their defence processes if they wish to do so. We will be watching whether they open a defence and what evidence they put forward, because that will shape the next phase of the trial.

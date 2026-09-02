@@ -106,6 +106,7 @@ The Markdown body is required and must be publication-ready. It must:
 
 - open with the most important verified development, observation, or question;
 - contain enough context for a reader who has not followed the story;
+- use Akan Reports' owned publication voice rather than defaulting to an impersonal wire summary;
 - use `##` headings when they genuinely help navigation;
 - contain no source list, agent commentary, prompts, TODO markers, or verification notes intended only for the reviewer;
 - contain no HTML unless the template system explicitly supports it.

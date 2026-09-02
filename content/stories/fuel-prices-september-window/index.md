@@ -73,10 +73,10 @@ editorial:
 
 Petrol and diesel became more expensive to sell from Tuesday, 1 September 2026, after the National Petroleum Authority raised the price floors for the 1–16 September window and oil marketers projected higher pump prices.
 
-The petrol floor moved to GH¢14.53 a litre from GH¢13.92. The diesel floor rose to GH¢15.60 from GH¢15.19. The LPG floor edged down to GH¢10.85 a kilogramme from GH¢10.98. Those floors are minimums: oil marketing companies may price above them once premiums and margins are added, so pump prices differ across stations.
+The petrol floor moved to GH¢14.53 a litre from GH¢13.92. The diesel floor rose to GH¢15.60 from GH¢15.19. The LPG floor edged down to GH¢10.85 a kilogramme from GH¢10.98. If you buy fuel, do not read those floors as one national pump price. Oil marketing companies may charge more once premiums and margins are added, so prices differ across stations.
 
 The Chamber of Oil Marketing Companies said its outlook for the same window pointed to petrol rising about 4.8%, toward roughly GH¢16.39 a litre, and diesel about 2.1%, toward roughly GH¢17.60 a litre, with LPG slightly cheaper. It linked the move to higher international crude and refined-product prices (average crude up 1.75% to US$92.11 a barrel) even though the cedi strengthened by about 3.6% against the dollar in the mid-August reference period. The stronger currency was not enough, COMAC said, to offset the imported cost increase.
 
 Government has also extended a GH¢2 per litre cut in the diesel regulatory margin into the September window, according to reports of the National Petroleum Authority’s account of the intervention. That cushion affects diesel more than petrol; it does not freeze pump prices, and it does not change the higher floors already set for the fortnight.
 
-For households and businesses, the confirmed change is the new window and the higher petrol and diesel floors. What any one station charges above those floors will vary through 16 September.
+What we can establish for this window is the direction: higher petrol and diesel floors, with LPG slightly lower. We cannot give you one price for every station because marketers can charge above the floor. The price at any one pump may vary through 16 September.
