@@ -1,6 +1,6 @@
 # Akan Reports Writing Style
 
-**Version:** 1.4
+**Version:** 1.5
 **Status:** Required for the MVP
 **Applies to:** Headlines, standfirsts, article bodies, captions, updates, corrections, and other public editorial copy
 
@@ -129,6 +129,14 @@ Repeat the accurate noun when clarity benefits. Do not rotate among “governmen
 
 Test any polished sentence by asking whether it could be moved unchanged to a different country, company, policy, or event. If so, it probably needs a fact, mechanism, consequence, attributed judgment, or deletion.
 
+### Templated language
+
+Do not write from a reusable article script. Stock openings, transition phrases, paragraph sequences, evidence disclaimers, reader-address formulas, and endings are prohibited when they are repeated by habit rather than required by the reporting.
+
+Phrases such as “what we can establish,” “at this point,” “the next test,” and “we will be watching” may occasionally be accurate, but they must not become recurring slots filled with a different subject. Repeated use across recent stories is a failed style check. Rewrite from the specific fact, uncertainty, consequence, deadline, or reporting action in the story.
+
+Compare the draft with recent Akan Reports articles before submission. Look beyond identical wording. A sequence that repeatedly moves from announcement, to background, to generic consequence, to “what happens next” is still templated even when every sentence is different.
+
 ### Fake-profound endings
 
 Delete vague endings such as “only time will tell,” “the future starts now,” or a new metaphor designed only to sound quotable. Do not replace one empty flourish with another.
@@ -252,6 +260,7 @@ After the reporting and verification pass, the drafting agent must read the full
 12. Does the article's shape arise from this reporting rather than from a repeated house template?
 13. Is the public copy free of em dashes and imitations such as double hyphens?
 14. Where the story makes a check, synthesis or judgment about the evidence, does it own that work instead of hiding behind passive or faceless phrasing?
+15. Has the draft been compared with recent stories and cleared of repeated sentence frames, transitions, paragraph shapes, reader-address formulas and endings?
 
 If any answer is no, revise and repeat the check. Passing the style check makes a draft ready for editorial review, not approved for publication.
 

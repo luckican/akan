@@ -79,4 +79,4 @@ The Chamber of Oil Marketing Companies said its outlook for the same window poin
 
 Government has also extended a GH¢2 per litre cut in the diesel regulatory margin into the September window, according to reports of the National Petroleum Authority’s account of the intervention. That cushion affects diesel more than petrol; it does not freeze pump prices, and it does not change the higher floors already set for the fortnight.
 
-What we can establish for this window is the direction: higher petrol and diesel floors, with LPG slightly lower. We cannot give you one price for every station because marketers can charge above the floor. The price at any one pump may vary through 16 September.
+The direction for this window is clear: higher petrol and diesel floors, with LPG slightly lower. There is no single national pump price for us to report because marketers can charge above the floor. The price at any one station may vary through 16 September.

@@ -96,7 +96,7 @@ editorial:
 
 From 30 December 2026, large and medium companies that first place cocoa or cocoa products on the European Union market, or export them from it, must be able to show three things: the cocoa is deforestation-free, it was produced legally, and it is covered by a due diligence statement with plot-level traceability. Most micro and small operators follow on 30 June 2027, except those already covered by the older EU timber rules, which face the December date.
 
-For Ghana, that European deadline is consequential. Cocoa makes up about 95% of the export value of the seven commodities covered by the regulation in Ghana, the EU’s ambassador in Accra said in May 2026. What we can already see is that access to Europe’s market depends less on a press release and more on whether beans can be linked to a mapped farm that was not carved from forest after 31 December 2020.
+For Ghana, that European deadline is consequential. Cocoa makes up about 95% of the export value of the seven commodities covered by the regulation in Ghana, the EU’s ambassador in Accra said in May 2026. Access to Europe’s market depends less on a press release and more on whether beans can be linked to a mapped farm that was not carved from forest after 31 December 2020.
 
 ## What exporters must prove
 
@@ -118,4 +118,4 @@ For farmers and cooperatives, the practical requirements are less about reading 
 
 We could not establish what those requirements will cost at farm or cooperative level. The sources we reviewed describe a service fee for company access to GCTS data but do not publish the fee, and they give no verified per-farmer cost for registration, devices or segregation of compliant cocoa. Officials and technical reviews acknowledge the logistical strain of keeping EU-bound cocoa separate, verifying the national data, and financing the system over time.
 
-What we can confirm now is the deadline: 30 December 2026 for large and medium operators. We will be watching whether Ghana’s systems turn mapped farms into uninterrupted EU market access when the trading season meets that date.
+For now, the firm marker is 30 December 2026 for large and medium operators. The trading season that meets that date will show whether Ghana’s systems can turn mapped farms into uninterrupted EU market access.

@@ -91,4 +91,4 @@ In nominal terms, services made up 45.7% of output, industry 32.9% and agricultu
 
 A sectoral rebound is not the same as broader relief. The GSS figures measure output, not how income from ICT firms, mines or traders reached workers, suppliers or public revenue. Fishing, accommodation and food services, and water and sewerage moved in the opposite direction from the headline, which already shows that the quarter was uneven across activities.
 
-The Service itself described the estimates as provisional and subject to revision. The next scheduled GDP release covers the second quarter of 2026. Until we can read labour-market, income and price data for the same period beside these numbers, we cannot responsibly say how the growth was shared.
+The Service itself described the estimates as provisional and subject to revision. The next scheduled GDP release covers the second quarter of 2026. On this release alone, we cannot responsibly say how the growth was shared. That requires labour-market, income and price data for the same period.

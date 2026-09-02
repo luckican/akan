@@ -197,7 +197,7 @@ GoldBod has announced two refining deals of its own. It signed with Gold Coast R
 
 Both deals are for gold GoldBod supplies. Gold that a self-financing aggregator buys with its own money is a different channel. Neither compliance notice says how much refining capacity is set aside for that channel, or on what terms. We found no such allocation in the GoldBod notices, releases and refinery-deal reports we reviewed as of 1 September 2026.
 
-What we can establish from the public record is stated capacity, not measured output. Gold Coast Refinery’s executive chairman, Dr Said Deraz, said in February that the plant can process up to two tonnes a week while the GoldBod deal provided for one tonne. GoldBod’s chief executive, Sammy Gyamfi, said the same month that the weekly volume can rise if the plant’s capacity grows. Neither statement measures what the plant currently processes, and neither describes capacity reserved for aggregator-owned gold.
+The public record gives stated capacity, not measured output. Gold Coast Refinery’s executive chairman, Dr Said Deraz, said in February that the plant can process up to two tonnes a week while the GoldBod deal provided for one tonne. GoldBod’s chief executive, Sammy Gyamfi, said the same month that the weekly volume can rise if the plant’s capacity grows. Neither statement measures what the plant currently processes, and neither describes capacity reserved for aggregator-owned gold.
 
 ## The cost the industry is already talking about
 
@@ -207,4 +207,4 @@ The refining step also sits inside a longer ambition. GoldBod wants at least one
 
 A second GoldBod notice, issued on 17 August, took effect on the same day as the refining rule. It makes X-ray fluorescence (XRF), a scan that measures what the metal is made of without destroying it, the standard way to judge the purity of gold bought by GoldBod and its licensed buyers. The older water-density method is no longer the final word. If a buyer cannot use XRF for genuine operational reasons, a water-density reading counts only as a guide and the gold must be bought at a purity discount of at least 0.5 per cent. GoldBod’s own XRF test then sets the final purity and payment.
 
-We will be watching two practical questions as the rule beds in. Will GoldBod name the refineries that handle aggregator-owned gold and publish what refining costs? And will export approvals for the 67 licensed buyers in this group keep moving at their earlier pace now that a refining step, and a private charge, sits in front of every shipment?
+Two practical questions now test how this rule works. Will GoldBod name the refineries that handle aggregator-owned gold and publish what refining costs? And will export approvals for the 67 licensed buyers in this group keep moving at their earlier pace now that a refining step, and a private charge, sits in front of every shipment?

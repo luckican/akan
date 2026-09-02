@@ -86,6 +86,7 @@ All public copy must also follow `WRITING_STYLE.md`. Apply its style pass only a
 - Do not add invented scenes, composite characters, sensory details, emotions, or narrative colour. A scene is used only when it was observed or reliably documented.
 - Analysis may draw an inference from evidence, but the prose must label it as analysis and acknowledge material alternative explanations.
 - Do not imitate another publisher's distinctive wording or lightly rewrite its article. Report from the underlying facts and sources in original language.
+- Do not reuse a house script for openings, transitions, reader address, evidence limits, or endings. Repeated language from recent Akan Reports stories is a defect unless the wording is an exact factual or technical term.
 - No personal byline, invented reporter identity, or agent disclosure appears in the article body.
 
 There is no minimum word count. A concise signal is preferable to a padded report; a complex investigation must not be compressed until essential context disappears.
@@ -149,10 +150,11 @@ A draft is ready for review only when all answers below are **yes**:
 5. Are disputed, uncertain, inferred, attributed, and negative research claims labelled and scoped honestly?
 6. Are names, dates, places, quotations, numbers, units, links, comparisons, and structured summaries checked?
 7. Is the article original in wording, free of unsupported scenes or details, and compliant with the `WRITING_STYLE.md` style pass?
-8. Are fairness, privacy, harm, legal, and safety concerns disclosed and addressed?
-9. Is the visual treatment legitimate, useful, and fully documented?
-10. Are the Markdown bundle and all required metadata complete?
-11. Are unresolved issues listed rather than concealed?
-12. Are `draft: true` and `workflow.status: review` unchanged?
+8. Is the language and structure specific to this story rather than copied from a house template or recent draft?
+9. Are fairness, privacy, harm, legal, and safety concerns disclosed and addressed?
+10. Is the visual treatment legitimate, useful, and fully documented?
+11. Are the Markdown bundle and all required metadata complete?
+12. Are unresolved issues listed rather than concealed?
+13. Are `draft: true` and `workflow.status: review` unchanged?
 
 Passing this gate means the draft may be shown to the human reviewer. It does not mean the story is approved.
