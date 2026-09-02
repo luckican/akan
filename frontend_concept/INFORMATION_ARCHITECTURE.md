@@ -40,6 +40,7 @@ Permanent supporting links appear in the footer or utility navigation:
 - Methodology
 - Corrections
 - Contact
+- Disclaimer
 - Privacy
 - Terms
 
@@ -201,6 +202,7 @@ The MVP includes:
 - Methodology
 - Corrections
 - Contact
+- Disclaimer
 - Privacy
 - Terms
 - 404 error page
@@ -238,6 +240,7 @@ The exact implementation may change during the Hugo build, but the preferred pub
 /methodology/
 /corrections/
 /contact/
+/disclaimer/
 /privacy/
 /terms/
 ```

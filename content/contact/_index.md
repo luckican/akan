@@ -1,7 +1,11 @@
 ---
 title: Contact
-description: Contact Akan Reports.
 layout: standard
+draft: true
 ---
 
-Contact details will appear here before launch. Please do not send confidential or sensitive material until a secure reporting channel is published.
+Write to us at [news@akanreports.com](mailto:news@akanreports.com).
+
+That address covers general questions, corrections, press enquiries, and rights requests. If you are writing about a specific story, please include the URL.
+
+We do not currently offer a secure tip or whistleblowing channel, so please do not send confidential or sensitive material by ordinary email.
