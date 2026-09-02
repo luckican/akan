@@ -27,6 +27,10 @@
     <meta name="twitter:description" content="{{ $description }}">
     {{ with $socialImage }}<meta name="twitter:image" content="{{ . }}">{{ end }}
     <title>{{ $pageTitle }}</title>
+    <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/dm-mono-400.woff2" as="font" type="font/woff2" crossorigin>
     {{ $styles := resources.Get "css/site.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 </head>
