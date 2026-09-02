@@ -1,0 +1,42 @@
+{{- if and .IsPage (eq .Section "stories") -}}
+{{- $canonical := .Params.canonical_url | default .Permalink -}}
+{{- $headline := .Title -}}
+{{- if and .Params.headline_lead .Params.headline_emphasis -}}
+  {{- $headline = printf "%s %s" .Params.headline_lead .Params.headline_emphasis -}}
+{{- end -}}
+{{- $description := .Params.dek | default .Description | default site.Params.description -}}
+{{- $image := "" -}}
+{{- with .Params.hero -}}
+  {{- with $.Resources.GetMatch .src -}}
+    {{- $image = .Permalink -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- $image = absURL "images/og-default.png" -}}
+{{- end -}}
+{{- $orgRef := dict "@id" (printf "%s#organization" site.BaseURL) -}}
+{{- $article := dict
+  "@context" "https://schema.org"
+  "@type" "NewsArticle"
+  "mainEntityOfPage" (dict
+    "@type" "WebPage"
+    "@id" $canonical
+  )
+  "headline" $headline
+  "description" $description
+  "datePublished" (.Date.UTC.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.UTC.Format "2006-01-02T15:04:05Z07:00")
+  "isAccessibleForFree" true
+  "inLanguage" "en-GH"
+  "author" $orgRef
+  "publisher" $orgRef
+  "image" (slice $image)
+-}}
+{{- with .Params.primary_section -}}
+  {{- $article = merge $article (dict "articleSection" .) -}}
+{{- end -}}
+{{- with .Params.topics -}}
+  {{- $article = merge $article (dict "keywords" (delimit . ", ")) -}}
+{{- end -}}
+{{- printf "<script type=\"application/ld+json\">%s</script>" ($article | jsonify) | safeHTML -}}
+{{- end -}}
