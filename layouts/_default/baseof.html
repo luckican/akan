@@ -29,7 +29,6 @@
         {{ $pageType = "404" }}
     {{ end }}
     {{ $pageSection := .Params.primary_section | default "" }}
-    {{ $pageFormat := .Params.format | default "" }}
     {{ $pageTopic := "" }}
     {{ with index (.Params.topics | default (slice)) 0 }}{{ $pageTopic = . }}{{ end }}
     <meta charset="UTF-8">
@@ -76,7 +75,6 @@
 <body
     data-page-type="{{ $pageType }}"
     {{ with $pageSection }}data-page-section="{{ . }}"{{ end }}
-    {{ with $pageFormat }}data-page-format="{{ . }}"{{ end }}
     {{ with $pageTopic }}data-page-topic="{{ . }}"{{ end }}
 >
     <a class="skip-link ds-button" href="#main-content">Skip to content</a>

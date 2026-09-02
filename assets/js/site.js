@@ -19,7 +19,6 @@
         return {
             page_type: body.dataset.pageType || '',
             section: body.dataset.pageSection || '',
-            format: body.dataset.pageFormat || '',
             topic: body.dataset.pageTopic || ''
         };
     }
@@ -201,7 +200,6 @@
             item.title,
             item.description,
             item.section,
-            item.format,
             ...(item.topics || [])
         ].join(' ').toLowerCase().includes(query));
         renderSearchResults(matches, query);
