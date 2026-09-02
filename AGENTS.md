@@ -6,6 +6,8 @@ This is the first repository file every agent must read. It routes work to the a
 
 Akan Reports is a Hugo-based news publication following consequential developments in Ghana and the wider world that shapes it. It writes for intelligent, curious non-specialists rather than assuming an audience of officials or industry insiders. The reader-facing design direction, Hugo template system, and MVP content strategy are approved foundations. Placeholder stories are design fixtures, not verified reporting or editorial precedent.
 
+**Site operations (homepage knobs, Pulse, deploy, publishing):** read `OPERATING_MANUAL.md`.
+
 ## Required reading by task
 
 ### Reporting or drafting a story
@@ -61,12 +63,13 @@ archetypes/                  Hugo templates for creating content files
 assets/css/site.css          Production design tokens and styles
 assets/js/site.js            Minimal client-side interactions
 content/                     Hugo pages and story bundles
-data/                        Structured site data
+data/                        Structured site data (e.g. Pulse)
 editorial/                   Editorial contracts, rules, and prompts
 frontend_concept/            Approved concepts and product documentation
 layouts/                     Production Hugo templates
 skills/                      IDE-agnostic agent skills
 hugo.yaml                    Hugo configuration
+OPERATING_MANUAL.md          Site operator guide (knobs and publishing)
 ```
 
 ## Cross-project rules

@@ -2,6 +2,8 @@
 
 Hugo site for [akanreports.com](https://akanreports.com): reporting on consequential developments in Ghana and the wider world that shapes it.
 
+**Operator guide:** [OPERATING_MANUAL.md](OPERATING_MANUAL.md) — where every knob is (homepage placement, Pulse, config, deploy, publishing).
+
 ## Local development
 
 ```sh

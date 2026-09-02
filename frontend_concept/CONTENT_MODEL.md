@@ -46,11 +46,14 @@ Reading time is calculated by Hugo and does not need to be supplied by an agent.
 
 Placement is editorial metadata rather than part of the article body:
 
-- `home.position`: `lead`, `secondary`, `briefing`, `focus`, or `none`.
-- `home.weight`: Ordering within a homepage position.
+- `home.position`: `lead`, `secondary`, `briefing`, `focus`, `world`, or `none`.
+- `home.weight`: Ordering within a homepage position (lower numbers sort first; each slot has a cap).
 - `home.expires`: Optional time after which the story should leave that position.
 - `breaking.active`: Whether the story qualifies for the breaking strip.
 - `breaking.expires`: Required when breaking is active so stale alerts cannot remain indefinitely.
+- `section_lead`: When `true`, prefer this story as the lead on its section page.
+
+See `OPERATING_MANUAL.md` for caps and recipes.
 
 Agents may propose placement. Approval confirms both publication and placement unless the reviewer changes it.
 
