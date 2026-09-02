@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Akan Reports">
-  <rect width="32" height="32" fill="#173D2D"/>
-  <path fill="#F4EBDD" d="M22.2 9.1c-1.5-1.4-3.6-2.1-6.1-2.1-4.9 0-8.3 3.1-8.3 7.6v9.2h4.2v-2.4c1.1 1.7 3.1 2.8 5.5 2.8 4.2 0 7.3-3.2 7.3-7.5 0-3.8-2.1-6.3-2.6-6.6zm-4.4 12.2c-2.3 0-4.1-1.8-4.1-4.2s1.8-4.2 4.1-4.2 4.1 1.8 4.1 4.2-1.8 4.2-4.1 4.2z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Akan Reports">
+  <rect width="512" height="512" fill="#173D2D"/>
+  <g fill="#F4EBDD">
+    <polygon points="72,408 200,104 252,104 252,168 172,408"/>
+    <polygon points="252,104 368,104 252,252 368,408 320,408 252,308 252,408 172,408 252,252"/>
+  </g>
+  <circle cx="384" cy="384" r="32" fill="#BC382A"/>
 </svg>
