@@ -1,12 +1,12 @@
 # Reporting and Quality Rules
 
-**Version:** 1.1
+**Version:** 1.2
 **Status:** Required for the MVP
 **Owner:** Human publisher of Akan Reports
 
 ## Editorial purpose
 
-Akan Reports follows signals from Ghana's news cycle and the wider world that shapes it. A publishable story must do at least one useful job: report a meaningful development, explain why it matters, test a public claim, reveal a consequence, connect an outside event to Ghana, or help a reader understand what happens next.
+Akan Reports follows signals from Ghana's news cycle and the wider world that shapes it. A publishable story must do at least one useful job: report a meaningful development, test a public claim, reveal a consequence, connect an outside event to Ghana, illuminate a system or leave the reader with a clearer understanding than the originating material provided.
 
 The site is not required to publish everything an agent finds. Speed and volume never override accuracy, relevance, or the human approval step.
 
@@ -18,10 +18,12 @@ An agent may draft a story only when it can state:
 
 1. **The verified development:** what is new, newly relevant, or newly understood.
 2. **The angle:** the specific question, consequence, tension, or affected group the story examines.
-3. **The reader value:** what a curious reader understands after reading that was not clear from the originating item alone.
+3. **The reader value:** what an intelligent non-specialist gains that was not clear from the originating item alone.
 4. **The Ghana connection:** direct for Ghana and Business stories; explicit and meaningful for World stories.
 
 Do not draft a story merely because it is trending, emotionally provocative, already published elsewhere, or likely to generate clicks. A rewrite that adds no verification, context, synthesis, explanation, or distinct angle is not sufficient.
+
+An announcement may be important to the institution that issued it without being a worthwhile Akan Reports article. A specialist subject qualifies when the reporting can make it useful or interesting beyond the professional group directly involved. If that broader value is limited, use a concise Signal when one is justified or return `NO DRAFT`; do not manufacture length or significance.
 
 ## 2. Evidence and verification
 
@@ -71,13 +73,15 @@ The agent must not imply that Akan Reports conducted an interview, visited a loc
 All public copy must also follow `WRITING_STYLE.md`. Apply its style pass only after factual verification; style must never remove a necessary qualification or attribution.
 
 - Lead with the news, consequence, or central question—not background about the process of reporting it.
-- Write in clear international English appropriate for readers in and beyond Ghana.
+- Write in clear international English for intelligent readers in and beyond Ghana without assuming professional knowledge of the subject.
 - Prefer precise nouns and active verbs. Remove filler, hype, clichés, and claims such as “shocking,” “historic,” or “game-changing” unless evidence makes the description necessary.
 - A headline may be sharp and curious, but it must not promise more than the reporting delivers.
 - The standfirst must tell the reader what happened and why the story deserves attention; it must add information rather than repeat the headline.
-- Headlines, standfirsts, `in_brief` items, cards, and other summaries must preserve material qualifications, conditions, scope, attribution, dates, and units from the body.
+- Headlines, standfirsts, `highlights`, cards, and other summaries must preserve material qualifications, conditions, scope, attribution, dates, and units from the body.
 - Supply enough context for a new reader without turning every story into a complete history.
 - Explain technical terms on first use and spell out uncommon abbreviations.
+- Translate institutional and industry language into ordinary terms. Include procedural detail when it advances the story, not merely because it appeared in a source document.
+- Do not let a sequence of official titles, clauses, programme names or technical distinctions turn the article into an executive briefing. Establish the reader's point of entry before asking them to carry specialist detail.
 - Identify dates and locations when relative phrases such as “today” or “recently” could become misleading after publication. Use relative time in a headline only when same-day publication is intended and its accuracy will be rechecked at approval; prefer the exact date or a durable formulation otherwise.
 - Do not add invented scenes, composite characters, sensory details, emotions, or narrative colour. A scene is used only when it was observed or reliably documented.
 - Analysis may draw an inference from evidence, but the prose must label it as analysis and acknowledge material alternative explanations.
@@ -138,7 +142,7 @@ An agent must not optimize solely for article count, speed, novelty, outrage, se
 
 A draft is ready for review only when all answers below are **yes**:
 
-1. Does the candidate pass the `CONTENT_STRATEGY.md` selection gate and angle framework, with the correct strategy stream, primary angle lens, clear development, and precise angle?
+1. Does the candidate pass the `CONTENT_STRATEGY.md` selection gate, audience test and angle framework, with the correct strategy stream, primary angle lens, clear development, precise angle and genuine non-specialist reader value?
 2. Does the headline accurately match the evidence and body?
 3. Does the standfirst explain both the development and its significance?
 4. Is every material factual claim mapped to recorded evidence?

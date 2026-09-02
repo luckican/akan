@@ -79,15 +79,22 @@
                 </aside>
             </div>
 
-            {{ with .Params.in_brief }}
-            <aside class="article-rail" aria-label="Story context">
+            {{ with .Params.highlights }}
+            <aside class="article-rail" aria-labelledby="story-highlights-title">
                 <div class="story-context">
-                    <div class="story-context__head"><p class="ds-meta">In brief</p></div>
-                    {{ range . }}
-                    <div class="story-context__item"><strong>{{ .label }}</strong><span>{{ .text }}</span></div>
-                    {{ end }}
+                    <div class="story-context__head"><p class="ds-meta" id="story-highlights-title">Highlights</p></div>
+                    <ul class="story-context__list">{{ range . }}<li class="story-context__item">{{ . }}</li>{{ end }}</ul>
                 </div>
             </aside>
+            {{ else }}
+                {{ with .Params.in_brief }}
+                <aside class="article-rail" aria-labelledby="story-highlights-title">
+                    <div class="story-context">
+                        <div class="story-context__head"><p class="ds-meta" id="story-highlights-title">Highlights</p></div>
+                        <ul class="story-context__list">{{ range . }}<li class="story-context__item">{{ .text }}</li>{{ end }}</ul>
+                    </div>
+                </aside>
+                {{ end }}
             {{ end }}
         </div>
     </div>

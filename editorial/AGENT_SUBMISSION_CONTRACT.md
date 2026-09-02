@@ -1,6 +1,6 @@
 # Agent Submission Contract
 
-**Version:** 1.1
+**Version:** 1.2
 **Status:** Required for the MVP
 **Applies to:** Every article submitted by an agent for human review
 
@@ -25,7 +25,7 @@ Every `index.md` must begin with this structure. Fields marked `null` are intent
 ```yaml
 ---
 title: "The complete public headline"
-description: "One or two sentences stating what happened and why it matters."
+description: "One or two sentences stating the development and the point of the story."
 date: 2026-09-01T12:00:00Z
 lastmod: 2026-09-01T12:00:00Z
 draft: true
@@ -55,6 +55,7 @@ editorial:
   strategy_stream: stakes
   angle_lens: distribution
   angle: "The precise question or consequence this story answers."
+  reader_value: "What an intelligent non-specialist gains from this story."
   visual:
     treatment: none
     rationale: "Why this treatment is appropriate."
@@ -91,6 +92,7 @@ The article body begins after the closing `---`.
 - `editorial.strategy_stream` must be exactly one of `signal`, `stakes`, `context`, `world`, or `follow-through`. It records the editorial job defined in `CONTENT_STRATEGY.md`; it is not a public section or story format.
 - `editorial.angle_lens` must be exactly one of `development`, `consequence`, `distribution`, `mechanism`, `evidence`, `delivery`, `uncertainty`, `ghana-connection`, or `next-step`. It records the primary lens from the approved angle framework.
 - `editorial.angle` must state the exact story-specific angle in one sentence. It cannot merely repeat the lens name or broad topic.
+- `editorial.reader_value` must state in one sentence what an intelligent non-specialist gains from the story. It is an internal editorial test, not a public slogan, required section or promise that every story has an immediate personal effect.
 - `format` must be exactly one of:
   - `signal` — a concise, verified development with limited analysis;
   - `report` — a reported account that explains the development and its consequences;
@@ -196,19 +198,17 @@ Use `DRAFT NEEDS REPORTING` in the reporting-agent response when a coherent cont
 
 Structured facts are optional. Use them only when they improve comprehension; do not repeat decorative numbers.
 
-### `in_brief`
+### `highlights`
 
-Use for two to four concise, independently supported facts shown beside the article body:
+Use for two to four concise, independently supported statements shown beside the article body:
 
 ```yaml
-in_brief:
-  - label: "What changed"
-    text: "The precise fact in one or two sentences."
-  - label: "What to watch"
-    text: "The next verifiable decision, date, or consequence."
+highlights:
+  - "The precise fact in one or two sentences."
+  - "A second useful fact, condition or piece of context."
 ```
 
-Every item must be supported in `editorial.source_notes` and explained in the body. Condensing a claim for `in_brief` must not remove a material condition, exception, attribution, date, unit, scope, or expression of uncertainty. The same rule applies to the headline, description, cards, and other structured summaries.
+`highlights` is optional and has no required categories. Do not force every story into the same sequence or use it merely to restate the standfirst. Every item must be supported in `editorial.source_notes` and explained in the body. Condensing a claim must not remove a material condition, exception, attribution, date, unit, scope, or expression of uncertainty. The same rule applies to the headline, description, cards, and other structured summaries.
 
 ### `home.stat`
 
@@ -256,6 +256,7 @@ Before handing the bundle to the reviewer, the agent must confirm:
 - the visual decision and, if applicable, the image file and rights information are complete;
 - the story complies with `REPORTING_AND_QUALITY_RULES.md`;
 - the story passes `CONTENT_STRATEGY.md` and records the correct strategy stream, primary angle lens, and precise angle;
+- `editorial.reader_value` identifies a genuine gain for the intended non-specialist reader without dictating the article's structure;
 - all public copy has passed `WRITING_STYLE.md` without weakening factual qualifications;
 - `draft` remains `true` and `workflow.status` is `review`.
 

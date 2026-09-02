@@ -28,13 +28,10 @@ home:
 breaking:
   active: false
 
-in_brief:
-  - label: The building
-    text: The National Theatre is undergoing renovation.
-  - label: The immediate effect
-    text: Resident and independent groups are finding temporary rehearsal spaces.
-  - label: What to watch
-    text: How the reopening supports artists, audiences, and new productions.
+highlights:
+  - The National Theatre is undergoing renovation.
+  - Resident and independent groups are finding temporary rehearsal spaces.
+  - The reopening will determine what facilities return for artists, audiences, and new productions.
 
 workflow:
   status: review

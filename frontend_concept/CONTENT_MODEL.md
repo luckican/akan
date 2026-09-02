@@ -1,6 +1,6 @@
 # Akan Reports MVP Content Model
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Adopted for the MVP
 **Purpose:** Define the contract between reporting agents, human approval, Hugo, and the reader-facing templates.
 
@@ -33,7 +33,7 @@ No personal author or byline field is required. Published work appears as report
 - `headline_lead` and `headline_emphasis`: Optional display treatment for splitting a headline across normal and emphasized text. `title` remains the canonical complete headline.
 - `hero`: Image filename, alternative text, caption, and credit.
 - `typographic_hero`: Optional `lead` and `emphasis` lines for a designed type-only hero when no image is used. Most stories need neither hero treatment.
-- `in_brief`: A small list of facts or context shown only when it helps the story.
+- `highlights`: An optional list of two to four supported statements shown beside the article body. Items have no required labels or categories, and the component should be omitted when it does not improve the story.
 - `corrections`: Dated public correction or clarification entries.
 - `methodology_note`: Public explanation for data, calculations, or reporting methods when needed.
 - `source_note`: Public source disclosure when editorially necessary. It is not shown by default.
@@ -66,6 +66,7 @@ These fields are stored with the content but are not rendered to readers:
 - `editorial.strategy_stream`: The internal Signal, Stakes, Context, World, or Follow-through job defined by the content strategy.
 - `editorial.angle_lens`: The primary Development, Consequence, Distribution, Mechanism, Evidence, Delivery, Uncertainty, Ghana Connection, or Next Step lens defined by the angle framework.
 - `editorial.angle`: The specific reporting angle the draft is meant to deliver.
+- `editorial.reader_value`: What an intelligent non-specialist gains from the story. This is an internal review test and does not prescribe public headings or article structure.
 - `editorial.visual`: Required treatment, rationale, rights status, and provenance for the story's visual decision.
 - `editorial.verification_notes`: Claims, uncertainties, and checks for the reviewer.
 - `editorial.source_notes`: Structured internal evidence records used during reporting, whether or not they are publicly cited. At least one is required.
@@ -113,6 +114,7 @@ editorial:
   strategy_stream: stakes
   angle_lens: consequence
   angle: "How National Theatre renovation is changing where artists work."
+  reader_value: "A non-specialist can understand how closing one cultural building changes the work happening around it."
   visual:
     treatment: image
     rationale: "Shows the temporary space at the centre of the report."

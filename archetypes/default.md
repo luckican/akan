@@ -29,6 +29,7 @@ editorial:
   strategy_stream:
   angle_lens:
   angle: ''
+  reader_value: ''
   visual:
     treatment: none
     rationale: ''

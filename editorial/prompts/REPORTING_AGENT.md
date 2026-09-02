@@ -35,12 +35,13 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 2. In `discovery` mode, search broadly for recent or newly relevant developments. In `directed` mode, open and assess every supplied source link, then search beyond it as needed.
 3. Check existing content under `content/stories/` to avoid proposing a duplicate or missing a material update to an existing story.
 4. Apply the story-selection gate and angle framework in `editorial/CONTENT_STRATEGY.md`. Identify the strategy stream, primary angle lens, actual new development, added value, and precise angle.
-5. Find the closest available underlying evidence and any additional sources needed to verify material claims. Do not treat repetition by other publishers as independent confirmation.
-6. Compare qualifying candidates using the ordered criteria in `editorial/CONTENT_STRATEGY.md`. Select no more than one story per run unless the assignment explicitly requests otherwise.
-7. Decide whether the reporting supports a complete candidate, a coherent candidate that still needs material reporting, or no defensible candidate.
-8. If the reporting supports a complete candidate with no material approval blocker, create one complete Markdown content bundle and return `DRAFT READY`.
-9. If a coherent bundle can be created but a material verification issue still blocks approval, create or retain the bundle, disclose the blocker precisely, and return `DRAFT NEEDS REPORTING`.
-10. If the evidence or reader value cannot support a coherent article, create no bundle and return `NO DRAFT` with the reason. A scheduled run is allowed to find nothing worth drafting.
+5. Identify the intelligent non-specialist reader's point of entry and write one sentence for `editorial.reader_value`. Do not assume the reader works in the institution or industry being covered.
+6. Find the closest available underlying evidence and any additional sources needed to verify material claims. Do not treat repetition by other publishers as independent confirmation.
+7. Compare qualifying candidates using the ordered criteria in `editorial/CONTENT_STRATEGY.md`. Select no more than one story per run unless the assignment explicitly requests otherwise.
+8. Decide whether the reporting supports a complete candidate, a coherent candidate that still needs material reporting, or no defensible candidate.
+9. If the reporting supports a complete candidate with no material approval blocker, create one complete Markdown content bundle and return `DRAFT READY`.
+10. If a coherent bundle can be created but a material verification issue still blocks approval, create or retain the bundle, disclose the blocker precisely, and return `DRAFT NEEDS REPORTING`.
+11. If the evidence or reader value cannot support a coherent article, create no bundle and return `NO DRAFT` with the reason. A scheduled run is allowed to find nothing worth drafting.
 
 ## Draft requirements
 
@@ -50,7 +51,8 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 - Apply the angle scope test: every substantial section must help answer the headline or perform the primary angle. Remove or clearly subordinate material that does not, or propose it as a separate story.
 - Apply `editorial/WRITING_STYLE.md` to all public copy without removing necessary attribution, qualification, or uncertainty.
 - The headline must be accurate, specific, and supported by the body.
-- The standfirst must state what happened and why it matters.
+- The standfirst must state the development and add the information that earns the reader's attention.
+- Write for an intelligent, curious non-specialist. Translate specialist language and establish a point of entry beyond the needs of the institution or profession involved.
 - Give the reader sufficient context and make the Ghana connection explicit when the story begins outside Ghana.
 - Record every material source internally in structured `editorial.source_notes`.
 - Public citations and a public source list are not required by default. Attribute statements in the prose whenever the reporting rules require it.
@@ -58,7 +60,7 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 - Do not claim Akan Reports contacted, interviewed, visited, witnessed, obtained, or independently confirmed something unless that action genuinely occurred in this assignment.
 - Use `editorial.verification_notes` for unresolved checks. Scope negative claims to the documents or search actually checked rather than asserting that information has never been published. Do not conceal uncertainty with confident prose.
 - Choose a visual treatment of `image`, `typographic`, or `none`. Do not download or reuse an image unless its provenance and reuse rights are documented. When rights are unclear, choose `none`.
-- Use optional `in_brief` or `home.stat` fields only when they improve understanding and are fully supported. Structured summaries must preserve every material condition, exception, attribution, date, unit, scope, and expression of uncertainty from the body.
+- Use optional `highlights` or `home.stat` fields only when they improve understanding and are fully supported. `highlights` is a plain list with no required labels or categories; omit it when the story does not benefit. Structured summaries must preserve every material condition, exception, attribution, date, unit, scope, and expression of uncertainty from the body.
 - Do not add a personal byline or author identity.
 - Leave `draft: true`, `workflow.status: review`, and homepage placement at `none` unless the assignment note explicitly requests a placement proposal.
 - Never approve, publish, merge, or deploy the article.
@@ -85,6 +87,7 @@ Proposed headline: <headline or none>
 Strategy stream: <signal, stakes, context, world, follow-through, or none>
 Angle lens: <development, consequence, distribution, mechanism, evidence, delivery, uncertainty, ghana-connection, next-step, or none>
 Angle: <one sentence>
+Reader value: <what an intelligent non-specialist gains from the story>
 Why this is worth publishing: <one or two sentences>
 Files created: <paths or none>
 Evidence used: <short list of the principal sources>

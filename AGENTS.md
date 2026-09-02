@@ -4,7 +4,7 @@ This is the first repository file every agent must read. It routes work to the a
 
 ## Project
 
-Akan Reports is a Hugo-based news publication following consequential developments in Ghana and the wider world that shapes it. The reader-facing design direction, Hugo template system, and MVP content strategy are approved foundations. Placeholder stories are design fixtures, not verified reporting or editorial precedent.
+Akan Reports is a Hugo-based news publication following consequential developments in Ghana and the wider world that shapes it. It writes for intelligent, curious non-specialists rather than assuming an audience of officials or industry insiders. The reader-facing design direction, Hugo template system, and MVP content strategy are approved foundations. Placeholder stories are design fixtures, not verified reporting or editorial precedent.
 
 ## Required reading by task
 

@@ -66,10 +66,9 @@
         .article-rail { align-self: start; }
         .story-context { border: 2px solid var(--akan-ink); background: var(--akan-paper); }
         .story-context__head { padding: 1rem; border-bottom: 2px solid var(--akan-ink); background: var(--akan-ink); color: var(--akan-paper); }
-        .story-context__item { padding: 1.15rem; border-bottom: 1px solid var(--akan-ink); }
+        .story-context__list { margin: 0; padding: 0; list-style: none; }
+        .story-context__item { padding: 1.15rem; border-bottom: 1px solid var(--akan-ink); font-size: .88rem; line-height: 1.55; }
         .story-context__item:last-child { border-bottom: 0; }
-        .story-context__item strong { display: block; font-size: .95rem; }
-        .story-context__item span { display: block; margin-top: .35rem; color: var(--akan-quiet); font-size: .8rem; line-height: 1.5; }
         .correction-box { margin-top: 3.5rem; border: 1px solid var(--akan-ink); border-left: .5rem solid var(--akan-gold); padding: 1.25rem; background: var(--akan-paper); }
         .correction-box p { margin: .5rem 0 0; font-size: .9rem; line-height: 1.6; }
 
@@ -211,12 +210,14 @@
                             </aside>
                         </div>
 
-                        <aside class="article-rail" aria-label="Story context">
+                        <aside class="article-rail" aria-labelledby="prototype-highlights-title">
                             <div class="story-context">
-                                <div class="story-context__head"><p class="ds-meta" style="margin:0;color:inherit">In brief</p></div>
-                                <div class="story-context__item"><strong>The building</strong><span>The National Theatre is undergoing renovation.</span></div>
-                                <div class="story-context__item"><strong>The immediate effect</strong><span>Resident and independent groups are finding temporary rehearsal spaces.</span></div>
-                                <div class="story-context__item"><strong>What to watch</strong><span>How the reopening supports artists, audiences, and new productions.</span></div>
+                                <div class="story-context__head"><p class="ds-meta" id="prototype-highlights-title" style="margin:0;color:inherit">Highlights</p></div>
+                                <ul class="story-context__list">
+                                    <li class="story-context__item">The National Theatre is undergoing renovation.</li>
+                                    <li class="story-context__item">Resident and independent groups are finding temporary rehearsal spaces.</li>
+                                    <li class="story-context__item">The reopening will determine what facilities return for artists, audiences, and new productions.</li>
+                                </ul>
                             </div>
                         </aside>
                     </div>

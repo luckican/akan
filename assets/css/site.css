@@ -289,10 +289,9 @@ img { display: block; max-width: 100%; }
 .story-context { border: 2px solid var(--akan-ink); background: var(--akan-paper); }
 .story-context__head { padding: 1rem; border-bottom: 2px solid var(--akan-ink); background: var(--akan-ink); color: var(--akan-paper); }
 .story-context__head p { margin: 0; color: inherit; }
-.story-context__item { padding: 1.15rem; border-bottom: 1px solid var(--akan-ink); }
+.story-context__list { margin: 0; padding: 0; list-style: none; }
+.story-context__item { padding: 1.15rem; border-bottom: 1px solid var(--akan-ink); font-size: .88rem; line-height: 1.55; }
 .story-context__item:last-child { border-bottom: 0; }
-.story-context__item strong { display: block; font-size: .95rem; }
-.story-context__item span { display: block; margin-top: .35rem; color: var(--akan-quiet); font-size: .8rem; line-height: 1.5; }
 .correction-box { max-width: var(--reading-max); margin-top: 3.5rem; border: 1px solid var(--akan-ink); border-left: .5rem solid var(--akan-gold); padding: 1.25rem; background: var(--akan-paper); }
 .correction-box .ds-kicker { color: var(--akan-ink); }
 .correction-box p { margin: .5rem 0 0; font-size: .9rem; line-height: 1.6; }

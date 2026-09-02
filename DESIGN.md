@@ -1,6 +1,6 @@
 # Akan Reports Design System
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Adopted MVP foundations and core editorial components
 
 ## Purpose
@@ -134,6 +134,10 @@ Labels identify section, urgency, status, or content type. They must remain shor
 ### Article metadata
 
 Publication time, update time, reading time, section, and correction status should form a consistent metadata band. Akan Reports does not use personal editorial bylines by default.
+
+### Article highlights
+
+Highlights are an optional article-rail component containing two to four concise statements. Use one heading, “Highlights,” and plain statements without repeated sublabels or required categories. Omit the component when it does not materially improve the reading experience; it is not a mandatory article structure.
 
 ### Accountability elements
 

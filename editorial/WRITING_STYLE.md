@@ -1,6 +1,6 @@
 # Akan Reports Writing Style
 
-**Version:** 1.1
+**Version:** 1.2
 **Status:** Required for the MVP
 **Applies to:** Headlines, standfirsts, article bodies, captions, updates, corrections, and other public editorial copy
 
@@ -9,6 +9,8 @@
 This guide defines how Akan Reports should sound and gives agents a final editing method for removing predictable AI prose without flattening the reporting.
 
 Accuracy comes first. A style edit must never remove a necessary qualification, weaken attribution, overstate evidence, invent a detail, or turn an allegation into a fact. `REPORTING_AND_QUALITY_RULES.md` controls when a style preference conflicts with verification, fairness, or safety.
+
+The assumed reader is intelligent and curious, not professionally initiated into the subject. Write like a well-informed person making a complex story clear to another capable person. Do not write like an institution addressing its peers, an analyst briefing executives or a teacher simplifying material for a child.
 
 ## The voice
 
@@ -25,11 +27,13 @@ Akan Reports is:
 
 The voice is not a fictional reporter personality. Do not invent first-hand presence, interviews, sensory scenes, opinions, jokes, or personal experience to make agent-produced copy sound human.
 
+Different stories should sound like themselves. Verification and clarity are consistent; section order, rhythm, length, opening style and use of devices such as `highlights` are not fixed templates.
+
 ## Core writing rules
 
 ### Lead with the point
 
-Open with what changed, what the evidence shows, what the decision does, who is affected, or the precise question the reporting examines. Background follows when the reader needs it.
+Open with the central fact, what the evidence shows, what a decision does, who is affected, or the precise question the reporting examines. Background follows when the reader needs it.
 
 Do not begin by announcing that the subject is important, complex, rapidly changing, or worth discussing.
 
@@ -143,7 +147,7 @@ The approved headline “Ghana grows. Who gains?” is valid because the questio
 ### Standfirst
 
 - Add information rather than paraphrasing the headline.
-- State the development and why it matters in one or two sentences.
+- State the development and add the information that earns the reader's attention.
 - Identify the relevant place, institution, scale, or affected group.
 - Do not begin with “In a significant development” or another importance label.
 
@@ -209,6 +213,8 @@ After the reporting and verification pass, the drafting agent must read the full
 8. Does the standfirst add information beyond the headline?
 9. Does the ending land on substance rather than a recap or artificial flourish?
 10. Does the copy sound natural when read aloud without pretending that Akan Reports witnessed or reported something it did not?
+11. Could an intelligent non-specialist enter the story without already knowing the institution, profession, acronym or regulatory process involved?
+12. Does the article's shape arise from this reporting rather than from a repeated house template?
 
 If any answer is no, revise and repeat the check. Passing the style check makes a draft ready for editorial review, not approved for publication.
 

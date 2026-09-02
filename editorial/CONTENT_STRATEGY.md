@@ -1,27 +1,37 @@
 # Akan Reports Content Strategy
 
-**Version:** 1.1
+**Version:** 1.2
 **Status:** Approved MVP strategy
 **Model:** Signal → Stakes → Follow-through
 
 ## Editorial promise
 
-Akan Reports finds consequential developments in Ghana and the world around it, verifies what changed, explains who it affects and what remains unclear, then returns when the outcome becomes visible.
+Akan Reports finds consequential developments in Ghana and the world around it, establishes the facts, traces where their weight lands and returns when the outcome becomes visible.
 
 This strategy is a working editorial hypothesis for an experimental publication. It gives agents enough direction to select and shape stories without pretending the publication's identity can be perfected before real articles meet real readers.
 
 The current positioning line, “Signals from Ghana's news cycle. Plus the world that shapes it,” is compatible with this strategy but is not a permanent tagline or a story-selection rule.
 
+## Who we write for
+
+Akan Reports writes for intelligent, curious non-specialists in Ghana and for readers elsewhere who want to understand Ghana and the world shaping it. They are interested in public life, money, culture, power and change, but they are not assumed to know an institution's internal language, an industry's professional roles or the history behind every continuing story.
+
+The reporting may enter specialised subjects, but the assumed reader is not a regulator, executive, lawyer, analyst or communications professional. Institutions and industries are usually actors and sources, not the audience. Akan Reports should translate their language, establish the wider interest and give procedural detail only the space the story needs.
+
+This does not mean simplifying away complexity or forcing every development into an immediate personal effect. A curious reader may value explanation, discovery, scale, tension, surprise, cultural meaning or a clearer view of how Ghana works. The form follows the reporting: some stories need a short Signal, some need sustained analysis or narrative, and some do not merit publication.
+
+The audience definition is a starting point rather than a fixed demographic profile. It should be reviewed with evidence from real published work and reader behaviour.
+
 ## The editorial model
 
 ### 1. Signal
 
-A Signal tells the reader what changed, using the amount of context the development requires.
+A Signal captures a verified new or newly relevant development using the amount of context it requires.
 
 It should:
 
 - identify a verified new or newly relevant development;
-- state who acted, what changed, when, and where;
+- state who acted, what they did, when, and where;
 - explain the immediate consequence or the next known step;
 - distinguish confirmed facts from claims and unknowns.
 
@@ -126,7 +136,7 @@ Every agent-produced draft must choose one primary `editorial.angle_lens` and wr
 
 #### `development`
 
-**Question:** What changed?
+**Question:** What is new or newly visible?
 
 Use for a consequential new fact, decision, event, date, result, or update. State the change precisely, including who acted, when it applies, and the next confirmed step.
 
@@ -247,15 +257,16 @@ The public sections `ghana`, `business`, and `world` are navigation destinations
 
 ## Story-selection gate
 
-Before researching a full draft, an agent must test a candidate against five questions:
+Before researching a full draft, an agent must test a candidate against six questions:
 
 1. **Newness:** Is something new, newly documented, newly relevant, or newly understandable?
 2. **Consequence:** Does it affect money, power, opportunity, public services, daily life, culture, or Ghana's place in the world?
 3. **Evidence:** Can the central facts be verified to the standard in `REPORTING_AND_QUALITY_RULES.md`?
 4. **Added value:** Can Akan Reports add consequence, context, synthesis, explanation, or follow-through beyond the originating material?
 5. **Angle:** Is there a precise reporting question or consequence rather than a broad topic?
+6. **Reader fit:** Can an intelligent non-specialist follow the story and gain something beyond an update intended mainly for the institution or profession involved?
 
-Evidence and added value are mandatory. A candidate must also pass at least two of the other three questions. If it does not, the correct result is `NO DRAFT`.
+Evidence, added value and reader fit are mandatory. A candidate must also pass at least two of the other three questions. If it does not, the correct result is `NO DRAFT`.
 
 A directed link is still only a lead. A popular or widely repeated item does not bypass the gate.
 

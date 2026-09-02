@@ -8,7 +8,7 @@ These documents define what an editorial agent must deliver before a draft can b
 4. [Reporting and quality rules](REPORTING_AND_QUALITY_RULES.md) — the evidence, writing, image, safety, and review standards every draft must meet.
 5. [Writing style](WRITING_STYLE.md) — the Akan Reports voice and the required anti-slop editing pass for public copy.
 
-The content strategy, submission contract, reporting rules, and writing style are normative for the MVP. If an example story conflicts with them, the normative documents take precedence.
+The content strategy, submission contract, reporting rules, and writing style are normative for the MVP. They define a curious non-specialist audience without imposing one article shape. If an example story conflicts with them, the normative documents take precedence.
 
 The human reviewer remains the publisher. An agent may research, propose, and draft, but it cannot approve its own work or set `draft: false`.
 
