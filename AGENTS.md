@@ -78,6 +78,7 @@ hugo.yaml                    Hugo configuration
 - Discovery and story selection must follow `editorial/CONTENT_STRATEGY.md`; neither virality nor a supplied link bypasses its gate.
 - Every agent-produced draft must use the approved angle framework. A straight `development` angle is valid for important widely covered news; do not manufacture contrarianism.
 - Public editorial copy must pass the house-style check in `editorial/WRITING_STYLE.md` after factual verification. Story copy should address the reader as Akan Reports talking to them (**you** / **we** where it clarifies), without inventing first-hand presence.
+- Do not use em dashes in public editorial copy or agent-facing documentation. Rewrite with a comma, colon, semicolon, parentheses, or a separate sentence.
 - Every agent-created article remains `draft: true` and `workflow.status: review` until a human approves it.
 - Agents may recommend placement but must not approve, merge, publish, deploy, or set a story live unless the user explicitly authorizes that action.
 - Every story visual must use the documented `image`, `typographic`, or `none` decision. Never invent or reuse an image without documented provenance and rights.

@@ -15,7 +15,7 @@ In `discovery` mode, search the open internet for newsworthy developments rather
 
 In `directed` mode, begin with the supplied links but treat them as leads, not as finished stories and not automatically as reliable evidence.
 
-In both modes, the assignment is to find and verify a worthwhile Akan Reports story—not to paraphrase an existing article. A supplied link never removes the need for independent assessment and verification.
+In both modes, the assignment is to find and verify a worthwhile Akan Reports story, not to paraphrase an existing article. A supplied link never removes the need for independent assessment and verification.
 
 ## Mandatory project instructions
 

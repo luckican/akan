@@ -10,7 +10,7 @@ This document defines how readers will find, browse, and move through Akan Repor
 
 The MVP is optimized for publishing useful content quickly. It should provide a clear homepage, familiar subject-based navigation, a complete chronological feed, readable article pages, and effective search without creating empty sections or complex features before the publication has enough content to support them.
 
-The method used to produce stories—including AI-assisted editorial workflows—is an internal concern and does not determine the reader-facing information architecture.
+The method used to produce stories, including AI-assisted editorial workflows, is an internal concern and does not determine the reader-facing information architecture.
 
 ## Reader goals
 

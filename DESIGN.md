@@ -7,7 +7,7 @@
 
 The Akan Reports design system turns the approved homepage direction into reusable rules for the complete publication. It is designed for a reader-facing Ghanaian news product, independent of how stories are produced or published.
 
-The system should make Akan Reports recognizable through typography, proportion, color, data clarity, and editorial pacing—not through decoration or generic news-site conventions.
+The system should make Akan Reports recognizable through typography, proportion, color, data clarity, and editorial pacing, not through decoration or generic news-site conventions.
 
 ## Design principles
 
@@ -56,7 +56,7 @@ The Signal and Quiet values are slightly darker than the initial concept. This r
 - Use Paper on Forest or Ink for inverse content.
 - Use White on Signal for small labels and buttons.
 - Use Signal sparingly for genuine emphasis, not every category.
-- Use Gold for highlights, live information, and selected data—not warning text.
+- Use Gold for highlights, live information, and selected data, not warning text.
 - Never communicate status by color alone; pair color with text or an icon.
 - Do not place Quiet text on Earth unless the token passes the required contrast at the rendered size.
 

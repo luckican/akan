@@ -1,6 +1,6 @@
 # Akan Reports
 
-Hugo site for [akanreports.com](https://akanreports.com) — reporting on consequential developments in Ghana and the wider world that shapes it.
+Hugo site for [akanreports.com](https://akanreports.com): reporting on consequential developments in Ghana and the wider world that shapes it.
 
 ## Local development
 

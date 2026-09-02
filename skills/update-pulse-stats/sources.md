@@ -4,7 +4,7 @@ Use these as the first stop. If a URL moves, search the organisation’s officia
 
 ## USD / GHS
 
-- Bank of Ghana — Daily interbank FX rates: https://www.bog.gov.gh/treasury-and-the-markets/daily-interbank-fx-rates/
+- Bank of Ghana, Daily interbank FX rates: https://www.bog.gov.gh/treasury-and-the-markets/daily-interbank-fx-rates/
 - Prefer the USD row mid / weighted median (or buy/sell midpoint if only those are published).
 - State the rate type in the run report (e.g. “BoG interbank mid”).
 - Avoid unlabelled parallel-market or dealer screenshots as the sole source.

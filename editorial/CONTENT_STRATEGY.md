@@ -83,7 +83,7 @@ It should:
 Illustrative headlines:
 
 - “What accreditation means for students already enrolled.”
-- “How school placement works—and where families get stuck.”
+- “How school placement works, and where families get stuck.”
 - “Why cocoa prices abroad do not become farmer income directly.”
 - “What happens after Parliament passes a bill?”
 

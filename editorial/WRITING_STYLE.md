@@ -97,7 +97,7 @@ Cut openers that delay the subject, including constructions such as “it is wor
 
 ### Importance puffery
 
-Replace claims that an event “marks a pivotal moment,” “underscores its significance,” “stands as a testament,” “plays a vital role,” or is a “game changer” with the specific first, largest, costliest, newest, or consequential fact—if the evidence supports one.
+Replace claims that an event “marks a pivotal moment,” “underscores its significance,” “stands as a testament,” “plays a vital role,” or is a “game changer” with the specific first, largest, costliest, newest, or consequential fact, if the evidence supports one.
 
 ### Faux insight
 
@@ -139,6 +139,10 @@ Avoid “in conclusion,” “ultimately,” “overall,” and final paragraphs
 
 Do not use emoji headings, decorative bold inside sentences, repeated one-line sections, or bullet lists that would read more clearly as a short paragraph. Format follows the information structure.
 
+### Em dashes
+
+Do not use em dashes. Rewrite the sentence with a comma, colon, semicolon, parentheses, or a full stop. Do not substitute an en dash or double hyphen to imitate the same rhythm.
+
 ## Not automatic violations
 
 Good editing requires judgment. These forms are allowed when they make the reporting clearer or more accurate:
@@ -146,7 +150,6 @@ Good editing requires judgment. These forms are allowed when they make the repor
 - **Adverbs:** keep an adverb that supplies evidence, degree, timing, legal meaning, or genuine contrast; remove one that only inflates or softens.
 - **Passive voice:** use it when the actor is unknown, the action or affected person is the proper focus, or naming the actor would misstate the evidence. Prefer active voice when the responsible actor is known and relevant.
 - **Questions:** a question may be an effective headline or structural device when the article genuinely investigates or answers it. Before using one in a headline, identify the sentence or section that supplies the answer and check whether the reporting establishes a party, amount, cause, effect, or only part of what the wording appears to ask. Narrow the question when the evidence provides only a partial answer. Do not use a question to hide the absence of reporting.
-- **Em dashes:** use sparingly when they improve a longer sentence. Do not rely on them as a default rhythm.
 - **Fragments:** use rarely and deliberately. Do not stack them to simulate urgency.
 - **Repetition:** repeat the precise term when replacing it would blur meaning.
 - **Long sentences:** keep one when its clauses remain clear and the relationship between ideas matters. Split a sentence that makes the reader reconstruct it.
@@ -242,9 +245,10 @@ After the reporting and verification pass, the drafting agent must read the full
 7. Are useful names, numbers, dates, locations, and mechanisms preserved?
 8. Does the standfirst add information beyond the headline?
 9. Does the ending land on substance rather than a recap or artificial flourish?
-10. Does the copy sound like Akan Reports talking to the reader—using **you** / **we** where they clarify stake or publication stance—without inventing presence, interviews, or opinions?
+10. Does the copy sound like Akan Reports talking to the reader, using **you** / **we** where they clarify stake or publication stance, without inventing presence, interviews, or opinions?
 11. Could an intelligent non-specialist enter the story without already knowing the institution, profession, acronym or regulatory process involved?
 12. Does the article's shape arise from this reporting rather than from a repeated house template?
+13. Is the public copy free of em dashes and imitations such as double hyphens?
 
 If any answer is no, revise and repeat the check. Passing the style check makes a draft ready for editorial review, not approved for publication.
 

@@ -94,11 +94,11 @@ The article body begins after the closing `---`.
 - `editorial.angle` must state the exact story-specific angle in one sentence. It cannot merely repeat the lens name or broad topic.
 - `editorial.reader_value` must state in one sentence what an intelligent non-specialist gains from the story. It is an internal editorial test, not a public slogan, required section or promise that every story has an immediate personal effect.
 - `format` must be exactly one of:
-  - `signal` — a concise, verified development with limited analysis;
-  - `report` — a reported account that explains the development and its consequences;
-  - `analysis` — evidence-based interpretation that clearly separates inference from fact;
-  - `explainer` — an answer to a defined question or process;
-  - `feature` — a substantially reported narrative or thematic story.
+  - `signal`: a concise, verified development with limited analysis;
+  - `report`: a reported account that explains the development and its consequences;
+  - `analysis`: evidence-based interpretation that clearly separates inference from fact;
+  - `explainer`: an answer to a defined question or process;
+  - `feature`: a substantially reported narrative or thematic story.
 
 ### Article body
 
@@ -116,9 +116,9 @@ There is no universal word count. The story should be as long as the reporting s
 
 Every submission must make one visual decision in `editorial.visual.treatment`:
 
-- `image` — include a locally stored hero image and the public `hero` fields below;
-- `typographic` — use `typographic_hero` when the story merits the designed type treatment;
-- `none` — the standard article header is sufficient.
+- `image`: include a locally stored hero image and the public `hero` fields below;
+- `typographic`: use `typographic_hero` when the story merits the designed type treatment;
+- `none`: the standard article header is sufficient.
 
 For `image`, all of the following are required:
 
