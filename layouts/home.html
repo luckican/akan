@@ -32,6 +32,8 @@
     {{ $worldStories = where $worldStories "RelPermalink" "ne" .RelPermalink }}
 {{ end }}
 {{ $secondaryStories = first 2 (sort $secondaryStories "Weight") }}
+{{ $briefingStories = first 3 (sort $briefingStories "Weight") }}
+{{ $worldStories = first 3 (sort $worldStories "Weight") }}
 
 {{ range first 1 (sort $breakingStories "Lastmod" "desc") }}
 <a class="breaking-strip" href="{{ .RelPermalink }}"><span class="breaking-strip__badge">Live</span><strong>{{ .Title }}</strong><span>Updated {{ .Lastmod.UTC.Format "15:04 GMT" }}</span></a>
@@ -79,8 +81,8 @@
 <section class="home-briefing" aria-labelledby="briefing-title">
     <div class="home-shell">
         <header class="module-heading"><div><p class="ds-kicker">The essential read</p><h2 id="briefing-title">Today, briefly.</h2></div><p class="module-heading__note">Developments worth knowing before the day gets away from you.</p></header>
-        <div class="home-card-grid">
-            {{ range first 3 (sort $briefingStories "Weight") }}
+        <div class="home-card-grid home-card-grid--{{ len $briefingStories }}">
+            {{ range $briefingStories }}
                 {{ partial "story-card.html" (dict "story" .) }}
             {{ end }}
         </div>
@@ -112,8 +114,8 @@
 <section class="home-world" aria-labelledby="world-title">
     <div class="home-shell">
         <header class="module-heading module-heading--inverse"><div><p class="ds-kicker">Beyond Ghana</p><h2 id="world-title">The world that shapes it</h2></div><a href="/world/">All World reports</a></header>
-        <div class="home-world__grid">
-            {{ range first 3 (sort $worldStories "Weight") }}
+        <div class="home-world__grid home-world__grid--{{ len $worldStories }}">
+            {{ range $worldStories }}
                 {{ partial "story-card.html" (dict "story" . "class" "story-card story-card--inverse") }}
             {{ end }}
         </div>
