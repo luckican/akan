@@ -24,8 +24,9 @@
         clock.dateTime = now.toISOString();
     }
 
-    function showToast() {
+    function showToast(message) {
         if (!toast) return;
+        toast.textContent = message;
         toast.classList.add('is-visible');
         clearTimeout(toastTimer);
         toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 1800);
@@ -33,8 +34,12 @@
 
     if (copyButton) {
         copyButton.addEventListener('click', async () => {
-            try { await navigator.clipboard.writeText(window.location.href); } catch (error) { /* Clipboard availability varies by browser. */ }
-            showToast();
+            try {
+                await navigator.clipboard.writeText(window.location.href);
+                showToast('Link copied');
+            } catch (error) {
+                showToast('Could not copy link');
+            }
         });
     }
 

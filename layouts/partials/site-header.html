@@ -18,7 +18,7 @@
                 <li><a href="/ghana/"{{ if eq (.Params.primary_section | default "") "ghana" }} aria-current="page"{{ end }}>Ghana</a></li>
                 <li><a href="/business/"{{ if eq (.Params.primary_section | default "") "business" }} aria-current="page"{{ end }}>Business</a></li>
                 <li><a href="/world/"{{ if eq (.Params.primary_section | default "") "world" }} aria-current="page"{{ end }}>World</a></li>
-                <li><a class="search-link" href="/search/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>Search</a></li>
+                <li><a class="search-link" href="/search/"{{ if eq .RelPermalink "/search/" }} aria-current="page"{{ end }}><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>Search</a></li>
             </ul>
         </nav>
     </div>

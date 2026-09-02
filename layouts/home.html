@@ -1,22 +1,56 @@
 {{ define "main" }}
 {{ $stories := where site.RegularPages "Section" "stories" }}
-{{ $leadStories := where $stories "Params.home.position" "lead" }}
-{{ $secondaryStories := where $stories "Params.home.position" "secondary" }}
-{{ $briefingStories := where $stories "Params.home.position" "briefing" }}
-{{ $focusStories := where $stories "Params.home.position" "focus" }}
-{{ $worldStories := where $stories "Params.home.position" "world" }}
-{{ $breakingStories := where $stories "Params.breaking.active" true }}
+{{ $now := now }}
+{{ $homeStories := slice }}
+{{ $breakingStories := slice }}
+{{ range $stories }}
+    {{ $homeExpiry := .Params.home.expires }}
+    {{ if or (not $homeExpiry) ((time.AsTime $homeExpiry).After $now) }}
+        {{ $homeStories = $homeStories | append . }}
+    {{ end }}
+    {{ $breakingExpiry := .Params.breaking.expires }}
+    {{ if and .Params.breaking.active (or (not $breakingExpiry) ((time.AsTime $breakingExpiry).After $now)) }}
+        {{ $breakingStories = $breakingStories | append . }}
+    {{ end }}
+{{ end }}
+{{ $leadCandidates := where $homeStories "Params.home.position" "lead" }}
+{{ $fallbackLeadCandidates := where $homeStories "Params.home.position" "in" (slice "secondary" "briefing" "focus" "world") }}
+{{ $lead := false }}
+{{ if gt (len $leadCandidates) 0 }}
+    {{ $lead = index (sort $leadCandidates "Weight") 0 }}
+{{ else if gt (len $fallbackLeadCandidates) 0 }}
+    {{ $lead = index (sort $fallbackLeadCandidates "Date" "desc") 0 }}
+{{ end }}
+{{ $secondaryStories := where $homeStories "Params.home.position" "secondary" }}
+{{ $briefingStories := where $homeStories "Params.home.position" "briefing" }}
+{{ $focusStories := where $homeStories "Params.home.position" "focus" }}
+{{ $worldStories := where $homeStories "Params.home.position" "world" }}
+{{ with $lead }}
+    {{ $secondaryStories = where $secondaryStories "RelPermalink" "ne" .RelPermalink }}
+    {{ $briefingStories = where $briefingStories "RelPermalink" "ne" .RelPermalink }}
+    {{ $focusStories = where $focusStories "RelPermalink" "ne" .RelPermalink }}
+    {{ $worldStories = where $worldStories "RelPermalink" "ne" .RelPermalink }}
+{{ end }}
+{{ $secondaryStories = first 2 (sort $secondaryStories "Weight") }}
 
-{{ range first 1 $breakingStories.ByLastmod.Reverse }}
+{{ range first 1 (sort $breakingStories "Lastmod" "desc") }}
 <a class="breaking-strip" href="{{ .RelPermalink }}"><span class="breaking-strip__badge">Live</span><strong>{{ .Title }}</strong><span>Updated {{ .Lastmod.UTC.Format "15:04 GMT" }}</span></a>
 {{ end }}
 
+{{ with $lead }}
+{{ $leadHeadline := .Title }}
+{{ if and .Params.headline_lead .Params.headline_emphasis }}{{ $leadHeadline = printf "%s %s" .Params.headline_lead .Params.headline_emphasis }}{{ end }}
+{{ $leadHeadlineClass := "" }}
+{{ if gt (len $leadHeadline) 110 }}
+    {{ $leadHeadlineClass = "home-lead__title--very-long" }}
+{{ else if gt (len $leadHeadline) 70 }}
+    {{ $leadHeadlineClass = "home-lead__title--long" }}
+{{ end }}
 <section class="home-lead" aria-label="Top stories">
-    <div class="home-shell home-lead__grid">
-        {{ range first 1 $leadStories.ByWeight }}
+    <div class="home-shell home-lead__grid{{ if eq (len $secondaryStories) 0 }} home-lead__grid--solo{{ end }}">
         <a class="home-lead__story" href="{{ .RelPermalink }}">
             <div class="home-lead__meta"><span>Lead report{{ with index (.Params.topics | default (slice)) 0 }} / {{ . | title }}{{ end }}</span><span>{{ .ReadingTime }} min read</span></div>
-            <h1>{{ if and .Params.headline_lead .Params.headline_emphasis }}{{ .Params.headline_lead }} <span>{{ .Params.headline_emphasis }}</span>{{ else }}{{ .Title }}{{ end }}</h1>
+            <h1{{ with $leadHeadlineClass }} class="{{ . }}"{{ end }}>{{ if and .Params.headline_lead .Params.headline_emphasis }}{{ .Params.headline_lead }} <span>{{ .Params.headline_emphasis }}</span>{{ else }}{{ .Title }}{{ end }}</h1>
             <div class="home-lead__bottom"><p>{{ .Description }}</p><span class="home-lead__time">{{ .Date.UTC.Format "2 Jan · 15:04 GMT" }}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M9 5h10v10"/></svg></div>
             {{ with .Params.home.stat }}
             <div class="lead-stat" aria-label="{{ .label }}: {{ .value }}{{ .unit }}">
@@ -27,26 +61,32 @@
             </div>
             {{ end }}
         </a>
-        {{ end }}
 
+        {{ if gt (len $secondaryStories) 0 }}
         <div class="home-secondary">
-            {{ range $index, $story := first 2 $secondaryStories.ByWeight }}
+            {{ range $index, $story := $secondaryStories }}
                 {{ partial "story-card.html" (dict "story" $story "class" "home-secondary__story" "index" (add $index 1)) }}
             {{ end }}
         </div>
+        {{ end }}
     </div>
 </section>
+{{ else }}
+<h1 class="visually-hidden">{{ site.Title }}</h1>
+{{ end }}
 
+{{ if gt (len $briefingStories) 0 }}
 <section class="home-briefing" aria-labelledby="briefing-title">
     <div class="home-shell">
-        <header class="module-heading"><div><p class="ds-kicker">The essential read</p><h2 id="briefing-title">Today, briefly.</h2></div><p class="module-heading__note">Three developments worth knowing before the day gets away from you.</p></header>
+        <header class="module-heading"><div><p class="ds-kicker">The essential read</p><h2 id="briefing-title">Today, briefly.</h2></div><p class="module-heading__note">Developments worth knowing before the day gets away from you.</p></header>
         <div class="home-card-grid">
-            {{ range first 3 $briefingStories.ByWeight }}
+            {{ range first 3 (sort $briefingStories "Weight") }}
                 {{ partial "story-card.html" (dict "story" .) }}
             {{ end }}
         </div>
     </div>
 </section>
+{{ end }}
 
 {{ with hugo.Data.pulse }}
 <section class="home-pulse" aria-labelledby="pulse-title">
@@ -59,23 +99,25 @@
 </section>
 {{ end }}
 
-{{ range first 1 $focusStories.ByWeight }}
+{{ range first 1 (sort $focusStories "Weight") }}
 <section class="home-focus">
     <div class="home-shell home-focus__grid">
         <a class="home-focus__story" href="{{ .RelPermalink }}"><p class="ds-kicker">In focus / {{ .Params.primary_section | title }}</p><h2>{{ .Title }}</h2><p>{{ .Description }}</p><span>Read the report</span></a>
-        <aside class="home-focus__note"><p class="ds-kicker">Focus</p><p>{{ .Params.editorial.angle | default .Description }}</p></aside>
+        <aside class="home-focus__note"><p class="ds-kicker">Focus</p><p>{{ .Description }}</p></aside>
     </div>
 </section>
 {{ end }}
 
+{{ if gt (len $worldStories) 0 }}
 <section class="home-world" aria-labelledby="world-title">
     <div class="home-shell">
         <header class="module-heading module-heading--inverse"><div><p class="ds-kicker">Beyond Ghana</p><h2 id="world-title">The world that shapes it</h2></div><a href="/world/">All World reports</a></header>
         <div class="home-world__grid">
-            {{ range first 3 $worldStories.ByWeight }}
+            {{ range first 3 (sort $worldStories "Weight") }}
                 {{ partial "story-card.html" (dict "story" . "class" "story-card story-card--inverse") }}
             {{ end }}
         </div>
     </div>
 </section>
+{{ end }}
 {{ end }}

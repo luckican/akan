@@ -1,10 +1,18 @@
 {{ define "main" }}
+{{ $headline := .Title }}
+{{ if and .Params.headline_lead .Params.headline_emphasis }}{{ $headline = printf "%s %s" .Params.headline_lead .Params.headline_emphasis }}{{ end }}
+{{ $headlineClass := "article-title" }}
+{{ if gt (len $headline) 115 }}
+    {{ $headlineClass = "article-title article-title--very-long" }}
+{{ else if gt (len $headline) 78 }}
+    {{ $headlineClass = "article-title article-title--long" }}
+{{ end }}
 <article>
     <header class="article-header">
         <div class="article-shell article-header__grid">
             <div>
                 <p class="ds-kicker">{{ .Params.format | title }}{{ with index (.Params.topics | default (slice)) 0 }} / {{ . | humanize | title }}{{ end }}</p>
-                <h1 class="article-title">
+                <h1 class="{{ $headlineClass }}">
                     {{ if and .Params.headline_lead .Params.headline_emphasis }}
                         {{ .Params.headline_lead }} <span>{{ .Params.headline_emphasis }}</span>
                     {{ else }}
@@ -23,7 +31,7 @@
                     <button class="ds-button ds-button--solid" type="button" id="copyLink">Copy link</button>
                     <button class="ds-button" type="button" id="printArticle">Print</button>
                 </div>
-                {{ if .Fragments.Identifiers }}
+                {{ if ge (len .Fragments.Identifiers) 2 }}
                 <nav class="report-index" aria-label="In this report">
                     <p class="ds-kicker">In this report</p>
                     <div class="report-index__toc">{{ .Fragments.ToHTML 2 2 true }}</div>
@@ -111,7 +119,7 @@
 {{ with $related }}
 <section class="related" aria-labelledby="related-title">
     <div class="article-shell related-shell">
-        <div class="related-head"><div><p class="ds-kicker">Continue reading</p><h2 id="related-title">Related reports</h2></div><p class="ds-meta">Three paths deeper into the story</p></div>
+        <div class="related-head"><div><p class="ds-kicker">Continue reading</p><h2 id="related-title">Related reports</h2></div><p class="ds-meta">More reporting connected to this story</p></div>
         <div class="related-grid">
             {{ range . }}
             <a class="related-story" href="{{ .RelPermalink }}"><p class="ds-kicker">{{ .Params.primary_section | title }}</p><h3>{{ .Title }}</h3><p>{{ .Description }}</p></a>
