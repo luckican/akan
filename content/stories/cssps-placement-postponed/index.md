@@ -12,8 +12,8 @@ topics:
 format: signal
 
 home:
-  position: none
-  weight: 100
+  position: briefing
+  weight: 10
   expires: null
 
 breaking:

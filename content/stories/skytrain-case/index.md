@@ -11,10 +11,11 @@ topics:
   - infrastructure
   - public-finance
 format: report
+section_side_weight: 10
 
 home:
-  position: none
-  weight: 100
+  position: briefing
+  weight: 20
   expires: null
 
 breaking:

@@ -13,8 +13,8 @@ topics:
 format: report
 
 home:
-  position: none
-  weight: 100
+  position: briefing
+  weight: 30
   expires: null
 
 breaking:

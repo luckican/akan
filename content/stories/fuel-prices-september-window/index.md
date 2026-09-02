@@ -13,8 +13,8 @@ topics:
 format: signal
 
 home:
-  position: none
-  weight: 100
+  position: lead
+  weight: 10
   expires: null
 
 breaking:

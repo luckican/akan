@@ -11,10 +11,11 @@ topics:
   - public-services
   - labour
 format: report
+section_lead: true
 
 home:
-  position: none
-  weight: 100
+  position: secondary
+  weight: 10
   expires: null
 
 breaking:

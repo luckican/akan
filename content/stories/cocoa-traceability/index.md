@@ -11,10 +11,11 @@ topics:
   - agriculture
   - environment
 format: explainer
+section_lead: true
 
 home:
-  position: none
-  weight: 100
+  position: world
+  weight: 10
   expires: null
 
 breaking:

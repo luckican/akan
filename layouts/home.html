@@ -102,9 +102,16 @@
 {{ end }}
 
 {{ range first 1 (sort $focusStories "Weight") }}
+{{ $focusHeadline := .Title }}
+{{ $focusHeadlineClass := "" }}
+{{ if gt (len $focusHeadline) 110 }}
+    {{ $focusHeadlineClass = "home-focus__title--very-long" }}
+{{ else if gt (len $focusHeadline) 70 }}
+    {{ $focusHeadlineClass = "home-focus__title--long" }}
+{{ end }}
 <section class="home-focus">
     <div class="home-shell home-focus__grid">
-        <a class="home-focus__story" href="{{ .RelPermalink }}"><p class="ds-kicker">In focus / {{ .Params.primary_section | title }}</p><h2>{{ .Title }}</h2><p>{{ .Description }}</p><span>Read the report</span></a>
+        <a class="home-focus__story" href="{{ .RelPermalink }}"><p class="ds-kicker">In focus / {{ .Params.primary_section | title }}</p><h2{{ with $focusHeadlineClass }} class="{{ . }}"{{ end }}>{{ .Title }}</h2><p>{{ .Description }}</p><span>Read the report</span></a>
         <aside class="home-focus__note"><p class="ds-kicker">Focus</p><p>{{ .Description }}</p></aside>
     </div>
 </section>

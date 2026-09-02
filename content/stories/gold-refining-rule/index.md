@@ -1,8 +1,8 @@
 ---
-title: "Aggregators must now refine gold in Ghana. Who bears the charge?"
-description: "A GoldBod directive effective 1 September stops self-financing aggregators exporting unrefined gold doré and assigns the refining charge to the aggregator or its approved offtaker. The notice does not name the approved refineries or state what refining will cost."
+title: "Gold for export must now be refined in Ghana. Who pays?"
+description: "From 1 September, a class of licensed gold buyers can no longer ship unrefined metal out of the country. The Ghana Gold Board says they or their trading partners must pay for local refining first, but has not said what that will cost."
 date: 2026-09-01T23:44:00Z
-lastmod: 2026-09-01T23:44:00Z
+lastmod: 2026-09-02T12:30:00Z
 draft: true
 
 primary_section: business
@@ -11,10 +11,11 @@ topics:
   - commodities
   - trade
 format: report
+section_lead: true
 
 home:
-  position: none
-  weight: 100
+  position: focus
+  weight: 20
   expires: null
 
 breaking:
@@ -30,16 +31,17 @@ workflow:
 
 in_brief:
   - label: What changed
-    text: "From 1 September 2026 GoldBod will not approve the export of gold doré that a self-financing aggregator bought under an arrangement with an approved offtaker unless the gold was first refined in Ghana at a refinery GoldBod has approved or designated."
-  - label: Who bears the charge
-    text: "The notice assigns the refining cost to the self-financing aggregator or the approved offtaker in accordance with their commercial arrangements, payable before the refined gold is exported. It does not state the amount of the charge."
+    text: "From 1 September 2026, licensed buyers who fund their own gold purchases must refine that gold in Ghana before they can export it."
+  - label: Who pays
+    text: "The refining bill falls on the buyer or its approved trading partner, under their private contract. The notice does not say how much refining costs."
   - label: What to watch
-    text: "Whether GoldBod names the refineries approved for aggregator-owned doré and publishes the refining charge, and whether export approvals for the 67 licensed aggregators continue at their previous pace."
+    text: "Whether GoldBod names the refineries for this channel, publishes the charge, and keeps export approvals moving for the 67 licensed buyers in this group."
 
 editorial:
   strategy_stream: stakes
   angle_lens: mechanism
-  angle: "What a self-financing aggregator must now do before gold doré can leave Ghana, which contractual party the GoldBod notice assigns the refining charge to, and what the notice leaves unspecified."
+  angle: "What Ghana’s new local-refining rule changes for gold bought by self-financing aggregators before export, who must pay the refining charge, and what the notice still leaves unknown."
+  reader_value: "A non-specialist can see that some gold can no longer leave Ghana unrefined, who is meant to pay for refining, and which practical questions the public notice does not answer."
   visual:
     treatment: none
     rationale: "The story turns on the text of a regulatory notice and on which party it assigns a cost to. No image with documented reuse rights adds to the reader's understanding, and the standard article header is sufficient."
@@ -177,30 +179,32 @@ editorial:
       notes: "Used only for the LBMA's own definition of the list, which the page states in text. The 67 gold refiner entries did not render when the page was fetched, so no individual refiner was read from it. This limitation is why the article attributes accreditation status to the LBMA's Ghana engagement material rather than to a direct reading of the list."
 ---
 
-Gold doré that a self-financing aggregator buys from an approved offtaker can no longer leave Ghana unless it has been refined inside the country first. Under a Ghana Gold Board directive effective 1 September 2026, the Board processes an export request only after confirming that the gold was refined in Ghana, that the refining charges have been paid or otherwise settled, and that assay, regulatory and other export conditions have been met.
+Some of the gold bought for export from Ghana’s artisanal and small-scale market can no longer leave the country as raw metal. From 1 September 2026, the Ghana Gold Board will only process an export request after that gold has been refined inside Ghana, the refining bill has been settled, and the usual assay and export checks have been met.
 
-The notice names the party that carries the cost. Its third section states that the refining charge "shall be borne by the Self-Financing Aggregator or the approved Offtaker in accordance with their commercial arrangements," payable before the refined gold is exported. The charge sits with the private parties to the trade rather than with GoldBod. The notice does not say how much refining will cost, or how the charge should be worked out.
+The people covered are a specific group of licensed buyers known as self-financing aggregators: traders who buy gold with their own money rather than with GoldBod’s funds. Their approved trading partners, called offtakers in the notice, are covered too. Large industrial mines are outside this rule.
 
-GoldBod's Compliance Directorate issued the directive on 24 August 2026 under the Ghana Gold Board Act, 2025 (Act 1140), to be read alongside guidelines on offtaker onboarding issued on 13 July. Aggregators had to amend existing offtake agreements to carry the refining condition on or before 31 August, and GoldBod may ask for evidence of those amendments at any time. Exporting or attempting to export unrefined doré breaches the conditions of an aggregator's licence, with sanctions ranging from refusal or suspension of export approvals to revocation of the licence.
+The notice also answers who pays. The refining charge “shall be borne by the Self-Financing Aggregator or the approved Offtaker in accordance with their commercial arrangements,” and it has to be paid before the refined gold is exported. In plain terms, the private parties to the trade carry the cost, not GoldBod. The notice does not say how much refining will cost, or how the charge should be worked out.
 
-The rule reaches a defined group. It is addressed to self-financing aggregators — licensed buyers who fund gold purchases with their own money — and to their approved offtakers, which leaves industrial mining companies outside its scope. As of 31 May 2026, 67 of GoldBod's 1,184 licensed gold buyers held self-financing aggregator licences, Deputy Finance Minister Thomas Nyarko Ampem told Parliament in June. He also said GoldBod itself bought 135.843 tonnes of gold between January 2025 and May 2026, 135.221 tonnes of it from the artisanal and small-scale sector. Those were the Board's own purchases; neither of GoldBod's recent compliance notices states what share of Ghana's gold exports moves through the aggregator channel.
+GoldBod’s Compliance Directorate issued the directive on 24 August 2026 under the Ghana Gold Board Act, 2025 (Act 1140). Aggregators had until 31 August to amend existing offtake contracts so they include the refining condition. GoldBod may ask for proof of those changes at any time. Trying to export unrefined gold of this kind can cost a buyer its export approvals or even its licence.
 
-## Where the refining must happen
+The group is large enough to matter, but it is not the whole gold market. As of 31 May 2026, 67 of GoldBod’s 1,184 licensed gold buyers held self-financing aggregator licences, Deputy Finance Minister Thomas Nyarko Ampem told Parliament in June. He also said GoldBod itself bought 135.843 tonnes of gold between January 2025 and May 2026, almost all of it from the artisanal and small-scale sector. Those were the Board’s own purchases. Neither of the recent compliance notices says what share of Ghana’s exports moves through the aggregator channel.
 
-The notice requires refining at a refinery "approved or designated by the GoldBod" and keeps for the Board the right to decide which refinery handles a particular consignment, and to issue further operational directives on the process. It names no refinery.
+## Where the gold must be refined
 
-GoldBod has announced two refinery agreements. It signed with Gold Coast Refinery in Accra in January 2026, with refining under that agreement beginning in February, and with Royal Ghana Gold Refinery on 25 May. Each provides for GoldBod to supply up to one tonne of gold a week.
+The notice says refining must happen at a refinery “approved or designated by the GoldBod.” The Board keeps the right to decide which plant handles a shipment and to issue further operating rules. It names no refinery in the notice itself.
 
-Both agreements concern gold that GoldBod supplies itself. Doré that a self-financing aggregator buys with its own funds is not GoldBod-supplied metal, and neither compliance notice sets out how much refining capacity is available to the aggregator channel or on what terms. No such allocation was found in the GoldBod notices, releases and refinery-agreement reports reviewed for this article as of 1 September 2026.
+GoldBod has announced two refining deals of its own. It signed with Gold Coast Refinery in Accra in January 2026, with work under that deal beginning in February, and with Royal Ghana Gold Refinery on 25 May. Each deal lets GoldBod supply up to one tonne of gold a week.
 
-What is on the record is stated capacity rather than measured output. Gold Coast Refinery's executive chairman, Dr Said Deraz, said in February that the plant can process up to two tonnes of gold a week while the GoldBod agreement provided for one tonne. GoldBod's chief executive, Sammy Gyamfi, said the same month that the agreement allows the weekly volume to be varied if the refinery's capacity grows. Neither statement measures what the plant currently processes, and neither describes capacity set aside for aggregator-owned doré.
+Both deals are for gold GoldBod supplies. Gold that a self-financing aggregator buys with its own money is a different channel. Neither compliance notice says how much refining capacity is set aside for that channel, or on what terms. No such allocation was found in the GoldBod notices, releases and refinery-deal reports reviewed for this article as of 1 September 2026.
 
-## The cost the industry is already discussing
+What is on the record is stated capacity, not measured output. Gold Coast Refinery’s executive chairman, Dr Said Deraz, said in February that the plant can process up to two tonnes a week while the GoldBod deal provided for one tonne. GoldBod’s chief executive, Sammy Gyamfi, said the same month that the weekly volume can rise if the plant’s capacity grows. Neither statement measures what the plant currently processes, and neither describes capacity reserved for aggregator-owned gold.
 
-The Ghana Chamber of Mines says the policy direction is right and the cost of it needs managing. Its chief executive, Dr Ken Ashigbey, told JoyNews' PM Express on 26 August that "when you want to do this local content, it comes with some cost," and that "government needs to put its skin in the game." He asked for a review of the taxes and levies bearing on refining, investment by refinery owners in cost-reducing technology, and cheaper power for plants he called critical. He was speaking about local beneficiation across the industry, including costs already falling on large-scale miners, rather than about the aggregator notice alone.
+## The cost the industry is already talking about
 
-The refining step also feeds into a standard Ghana is still working towards. GoldBod's stated target is for at least one Ghanaian refinery to hold London Bullion Market Association accreditation by 2030. The LBMA's Good Delivery List covers refiners whose bars it has accredited for trading on the global over-the-counter market. In its own account of its work in Ghana, the LBMA says it is government policy to have a Good Delivery refiner in the country, and that Rand Refinery of South Africa is supporting Gold Coast Refinery towards a potential Good Delivery application. Ruth Crowell, the LBMA's chief executive, said in February that Rand shares the ambition of seeing Gold Coast apply to become a Good Delivery refiner.
+The Ghana Chamber of Mines supports the policy direction and says the cost needs managing. Its chief executive, Dr Ken Ashigbey, told JoyNews’ PM Express on 26 August that “when you want to do this local content, it comes with some cost,” and that “government needs to put its skin in the game.” He called for a review of taxes and levies on refining, investment in cheaper refining technology, and lower power costs for plants he described as critical. He was talking about local processing across the industry, including costs that already fall on large-scale miners, not only about this aggregator notice.
 
-A second GoldBod notice, issued on 17 August, took effect on the same date as the refining rule. It makes X-ray fluorescence — a non-destructive test of elemental composition — the standard basis for determining the purity of gold doré bought by GoldBod and its licensed buyers, and removes the water-density method as the definitive test. Where a buyer is unable to use XRF because of genuine operational or logistical constraints, a water-density reading counts as indicative only and the doré must be bought at a purity discount of at least 0.5 per cent, after which GoldBod's own XRF assessment determines final purity and payment.
+The refining step also sits inside a longer ambition. GoldBod wants at least one Ghanaian refinery to hold London Bullion Market Association accreditation by 2030. That accreditation is the LBMA’s Good Delivery standard for bars traded on the global over-the-counter market. The LBMA itself says Ghana’s government wants a Good Delivery refiner in the country, and that Rand Refinery of South Africa is helping Gold Coast Refinery prepare a possible application. Ruth Crowell, the LBMA’s chief executive, said in February that Rand shares the aim of seeing Gold Coast apply.
 
-Two things can be checked against the public record as the requirement takes hold. The first is whether GoldBod names the refineries approved for aggregator-owned doré and publishes what refining there will cost. The second is whether export approvals for the 67 licensed aggregators continue at their earlier pace now that a refining step, and a charge their own contracts must absorb, sits ahead of every shipment.
+A second GoldBod notice, issued on 17 August, took effect on the same day as the refining rule. It makes X-ray fluorescence (XRF) — a scan that measures what the metal is made of without destroying it — the standard way to judge the purity of gold bought by GoldBod and its licensed buyers. The older water-density method is no longer the final word. If a buyer cannot use XRF for genuine operational reasons, a water-density reading counts only as a guide and the gold must be bought at a purity discount of at least 0.5 per cent. GoldBod’s own XRF test then sets the final purity and payment.
+
+Two practical checks matter as the rule beds in. The first is whether GoldBod names the refineries that will handle aggregator-owned gold and publishes what refining will cost. The second is whether export approvals for the 67 licensed buyers in this group keep moving at their earlier pace now that a refining step, and a private charge, sits in front of every shipment.
