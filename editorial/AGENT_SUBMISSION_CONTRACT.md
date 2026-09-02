@@ -110,6 +110,7 @@ The Markdown body is required and must be publication-ready. It must:
 - contain no stock sentence frames, repeated house transitions, or templated ending borrowed from another story;
 - use `##` headings when they genuinely help navigation;
 - contain no source list, agent commentary, prompts, TODO markers, or verification notes intended only for the reviewer;
+- contain no reporting-process diary (download failures, “in this run,” unstable URLs, tooling limits, or “we kept / left out until we could check…”). Record those only in front-matter notes; public uncertainty must be about the evidence, not the assignment;
 - contain no HTML unless the template system explicitly supports it.
 
 There is no universal word count. The story should be as long as the reporting supports and no longer.

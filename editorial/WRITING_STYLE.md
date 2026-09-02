@@ -46,8 +46,25 @@ Direct factual sentences often need no pronoun. Do not sprinkle “you” or “
 - Use “we” for opinions, predictions, or advocacy Akan Reports has not established.
 - Replace plain facts with chatty filler (“here’s the thing you need to know”).
 - Write impersonal handbook openers (“Accuracy comes first,” “Readers should note,” “It is important to understand”).
+- Put **reporting-process diary** in public copy: download failures, unstable URLs, “in this run,” agent tooling limits, “we kept the detail to…,” “until we can check the bulletin,” or any confession about how the draft was assembled. Those belong only in `editorial.verification_notes` or `source_notes`. Public **we** owns what the evidence shows or does not show in the world, not what the drafting session could or could not open.
 
 The voice is not a fictional reporter personality. Do not invent interviews, sensory scenes, jokes, or personal experience to make agent-produced copy sound human. The “we” is the publication; the “you” is the reader.
+
+### Evidence limits vs process diary
+
+Honest uncertainty in public prose is about the **record**:
+
+> The notice does not say how much refining will cost.
+
+Or, when Akan Reports has reviewed named materials:
+
+> We could not establish a published fee in the documents reviewed for this article.
+
+That is not the same as narrating the assignment:
+
+> We could not open a stable direct PDF of the full bulletin in this run, so we have kept the detail to figures corroborated across the dashboard and contemporaneous accounts.
+
+If the primary document cannot be checked, do not publish the unsupported detail and then explain the access problem to the reader. Omit the detail, or return `DRAFT NEEDS REPORTING` / hold the story, and record the blocker internally.
 
 Different stories should sound like themselves. Verification and clarity are consistent; section order, rhythm, length, opening style and use of devices such as `highlights` are not fixed templates.
 
@@ -261,6 +278,7 @@ After the reporting and verification pass, the drafting agent must read the full
 13. Is the public copy free of em dashes and imitations such as double hyphens?
 14. Where the story makes a check, synthesis or judgment about the evidence, does it own that work instead of hiding behind passive or faceless phrasing?
 15. Has the draft been compared with recent stories and cleared of repeated sentence frames, transitions, paragraph shapes, reader-address formulas and endings?
+16. Is the public copy free of reporting-process diary (download failures, “in this run,” unstable URLs, tooling limits, “we kept / left out until we could check…”), with those limits recorded only in front matter?
 
 If any answer is no, revise and repeat the check. Passing the style check makes a draft ready for editorial review, not approved for publication.
 
