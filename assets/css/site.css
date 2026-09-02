@@ -69,6 +69,7 @@
     --akan-paper: #f4ebdd;
     --akan-forest: #173d2d;
     --akan-signal: #bc382a;
+    --akan-signal-strong: #9a2e22;
     --akan-gold: #e8b946;
     --akan-quiet: #615a51;
     --akan-white: #fffdf8;
@@ -117,7 +118,7 @@ img { display: block; max-width: 100%; }
 .wordmark { color: var(--akan-ink); font-size: clamp(3.5rem, 8vw, 6rem); font-weight: 900; letter-spacing: -.075em; line-height: .72; text-decoration: none; }
 .site-clock { border-left: 2px solid var(--akan-ink); padding-left: 1rem; text-align: right; }
 .site-clock span { display: block; font-family: var(--font-mono); font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; }
-.site-clock time { display: block; margin-top: .3rem; color: var(--akan-signal); font-family: var(--font-mono); font-size: clamp(.85rem, 2vw, 1rem); font-weight: 500; }
+.site-clock time { display: block; margin-top: .3rem; color: var(--akan-signal-strong); font-family: var(--font-mono); font-size: clamp(.85rem, 2vw, 1rem); font-weight: 500; }
 .site-nav { overflow-x: auto; border-top: 1px solid var(--akan-ink); scrollbar-width: none; }
 .site-nav::-webkit-scrollbar { display: none; }
 .site-nav ul { display: flex; min-width: max-content; margin: 0; padding: 0; list-style: none; }
