@@ -32,7 +32,7 @@ workflow:
 editorial:
   strategy_stream: world
   angle_lens: ghana-connection
-  angle: "Through what mechanism the EU Deforestation Regulation’s December 2026 cocoa rules reach Ghanaian exporters, licensed buyers and farmers via COCOBOD’s traceability and forest-map systems — and what costs remain publicly unpriced."
+  angle: "Through what mechanism the EU Deforestation Regulation’s December 2026 cocoa rules reach Ghanaian exporters, licensed buyers and farmers via COCOBOD’s traceability and forest-map systems, and what costs remain publicly unpriced."
   reader_value: "A non-specialist can see why a European market rule matters for Ghanaian cocoa, what evidence the supply chain must produce, and where the remaining uncertainty sits."
   visual:
     treatment: none
@@ -94,13 +94,13 @@ editorial:
       notes: "Corroborates GNA account of COCOBOD’s public readiness claims."
 ---
 
-From 30 December 2026, large and medium companies that first place cocoa or cocoa products on the European Union market — or export them from it — must be able to show three things: the cocoa is deforestation-free, it was produced legally, and it is covered by a due diligence statement with plot-level traceability. Most micro and small operators follow on 30 June 2027, except those already covered by the older EU timber rules, which face the December date.
+From 30 December 2026, large and medium companies that first place cocoa or cocoa products on the European Union market, or export them from it, must be able to show three things: the cocoa is deforestation-free, it was produced legally, and it is covered by a due diligence statement with plot-level traceability. Most micro and small operators follow on 30 June 2027, except those already covered by the older EU timber rules, which face the December date.
 
 That European deadline lands hard on Ghana. Cocoa makes up about 95% of the export value of the seven commodities covered by the regulation in Ghana, the EU’s ambassador in Accra said in May 2026. Access to Europe’s market therefore depends less on a press release and more on whether beans can be linked to a mapped farm that was not carved from forest after 31 December 2020.
 
 ## What exporters must prove
 
-Under the EU Deforestation Regulation, an operator cannot rely on a country-of-origin label alone. The company needs geolocation for the plots that produced the cocoa — a GPS polygon when a plot is larger than four hectares — plus information on when it was produced and who supplied it. Cocoa grown on land converted from forest after the 2020 cut-off fails the deforestation-free test.
+Under the EU Deforestation Regulation, an operator cannot rely on a country-of-origin label alone. The company needs geolocation for the plots that produced the cocoa (a GPS polygon when a plot is larger than four hectares), plus information on when it was produced and who supplied it. Cocoa grown on land converted from forest after the 2020 cut-off fails the deforestation-free test.
 
 The due diligence statement is filed in the EU’s information system. Ghana’s national tools are meant to supply much of the underlying evidence, but the legal duty still sits with the operator placing the product on the EU market.
 
@@ -116,6 +116,6 @@ Licensed buying companies and private traders still have to connect their own re
 
 For farmers and cooperatives, the practical requirements are less about reading European regulations and more about being registered, having farms mapped, and selling through channels that can keep a bag’s identity intact. Where records are missing, or where cocoa from unknown plots mixes with mapped beans, the bean risks becoming unsellable into the EU even if a farmer did nothing wrong on the land.
 
-What those requirements will cost at farm or cooperative level is still unclear in the public record. The sources checked for this story describe a service fee for company access to GCTS data but do not publish the fee, and they do not give a verified per-farmer cost for registration, devices or segregation of compliant cocoa. Logistical strain — keeping EU-bound cocoa separate, verifying the national data, and financing the system over time — is acknowledged by officials and technical reviews alike.
+What those requirements will cost at farm or cooperative level is still unclear in the public record. The sources checked for this story describe a service fee for company access to GCTS data but do not publish the fee, and they do not give a verified per-farmer cost for registration, devices or segregation of compliant cocoa. Logistical strain (keeping EU-bound cocoa separate, verifying the national data, and financing the system over time) is acknowledged by officials and technical reviews alike.
 
 The confirmed next marker is the calendar: 30 December 2026 for large and medium operators. Whether Ghana’s systems turn mapped farms into uninterrupted EU market access will be tested in the trading season that meets that date.

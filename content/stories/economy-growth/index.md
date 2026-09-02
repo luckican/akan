@@ -79,7 +79,7 @@ The national number is clear. Who gained from it is not. The release shows which
 
 ## Where the growth came from
 
-Services remained the main engine. The sector grew 7.1% and accounted for 48.3% of overall year-on-year growth. Inside services, information and communication rose 25.2% — the fastest sub-sector in the release — while transport and storage grew 13.0% and trade, repair of vehicles and household goods grew 9.0%. Accommodation and food service activities contracted 13.6%, the principal drag within services. Health and social work edged down 1.0%.
+Services remained the main engine. The sector grew 7.1% and accounted for 48.3% of overall year-on-year growth. Inside services, information and communication rose 25.2%, the fastest sub-sector in the release, while transport and storage grew 13.0% and trade, repair of vehicles and household goods grew 9.0%. Accommodation and food service activities contracted 13.6%, the principal drag within services. Health and social work edged down 1.0%.
 
 Industry accelerated to 6.9% growth, from 4.1% a year earlier. Mining and quarrying rebounded to 10.7%. Oil and gas grew 7.0% after a deep contraction in the first quarter of 2025. Manufacturing and electricity each expanded 6.2%. Water and sewerage contracted 3.7%.
 

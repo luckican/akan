@@ -78,7 +78,7 @@ editorial:
 
 The Supreme Court has refused to pause the Accra High Court trial over an alleged $2 million payment linked to the proposed SkyTrain project. On Monday, 31 August 2026, Justice Senyo Dzamefe, sitting alone, dismissed an interlocutory injunction filed by the first accused, former Ghana Infrastructure Investment Fund (GIIF) chief executive Solomon Asamoah.
 
-The order means the criminal trial can continue while a separate Supreme Court application — asking the court to quash the High Court’s refusal of Asamoah’s “no case” submission — remains undecided. It is not a finding that the alleged payment was lawful or unlawful, and it does not decide whether either accused is guilty.
+The order means the criminal trial can continue while a separate Supreme Court application, asking the court to quash the High Court’s refusal of Asamoah’s “no case” submission, remains undecided. It is not a finding that the alleged payment was lawful or unlawful, and it does not decide whether either accused is guilty.
 
 ## What the court decided
 
@@ -90,7 +90,7 @@ The practical effect is limited and precise: the High Court does not have to wai
 
 ## What remains open
 
-The ruling does not quash the High Court’s 2 July 2026 decision dismissing the no-case submissions of Asamoah and the second accused, former GIIF board chair Professor Christopher Ameyaw-Akumfi. It does not resolve the certiorari application itself. And it does not decide the underlying allegations: that GIIF paid about $2 million toward the Accra SkyTrain project — which was never built — to Africa Investor Holdings Limited without board approval. Both accused have pleaded not guilty.
+The ruling does not quash the High Court’s 2 July 2026 decision dismissing the no-case submissions of Asamoah and the second accused, former GIIF board chair Professor Christopher Ameyaw-Akumfi. It does not resolve the certiorari application itself. And it does not decide the underlying allegations: that GIIF paid about $2 million toward the Accra SkyTrain project, which was never built, to Africa Investor Holdings Limited without board approval. Both accused have pleaded not guilty.
 
 On Tuesday, 1 September 2026, the Court of Appeal separately dismissed Ameyaw-Akumfi’s application to stay the High Court proceedings pending an appeal, finding that he had not shown exceptional circumstances. That clears another attempt to pause the case, but again without judging the charges.
 
