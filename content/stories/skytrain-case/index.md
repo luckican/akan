@@ -3,7 +3,7 @@ title: "Supreme Court refuses to halt SkyTrain trial. Defence filings due 23 Sep
 description: "A single Supreme Court justice dismissed Solomon Asamoah’s bid to pause the High Court case while his certiorari application remains pending. The ruling does not decide guilt or quash the trial judge’s no-case ruling; the accused must still file their defences by 23 September 2026."
 date: 2026-09-02T10:00:00Z
 lastmod: 2026-09-02T10:00:00Z
-draft: true
+draft: false
 
 primary_section: ghana
 topics:
@@ -23,11 +23,11 @@ breaking:
   expires: null
 
 workflow:
-  status: review
+  status: approved
   agent: reporting-agent
   created_at: 2026-09-02T09:40:00Z
-  reviewed_at: null
-  decision_note: null
+  reviewed_at: 2026-09-02T13:32:17Z
+  decision_note: "Approved for publication."
 
 editorial:
   strategy_stream: signal

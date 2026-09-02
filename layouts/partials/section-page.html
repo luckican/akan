@@ -54,7 +54,7 @@
         {{ if gt (len $sideStories) 0 }}
         <aside class="section-lead__side" aria-label="More important {{ $.Title }} reporting">
             {{ range $index, $story := $sideStories }}
-            <a class="section-side-story{{ if eq $index 1 }} section-side-story--dark{{ end }}" href="{{ $story.RelPermalink }}"><div><p class="ds-kicker">{{ $story.Params.format | title }}{{ with index ($story.Params.topics | default (slice "")) 0 }} / {{ . | title }}{{ end }}</p><h2>{{ $story.Title }}</h2><p>{{ $story.Description }}</p></div><span>{{ $story.ReadingTime }} min read</span></a>
+            <a class="section-side-story{{ if eq $index 1 }} section-side-story--dark{{ end }}" href="{{ $story.RelPermalink }}"><div><p class="ds-kicker">{{ with index ($story.Params.topics | default (slice)) 0 }}{{ . | title }}{{ else }}{{ $story.Params.primary_section | title }}{{ end }}</p><h2>{{ $story.Title }}</h2><p>{{ $story.Description }}</p></div><span>{{ $story.ReadingTime }} min read</span></a>
             {{ end }}
         </aside>
         {{ end }}

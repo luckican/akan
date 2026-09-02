@@ -73,7 +73,7 @@ The agent must not imply that Akan Reports conducted an interview, visited a loc
 All public copy must also follow `WRITING_STYLE.md`. Apply its style pass only after factual verification; style must never remove a necessary qualification or attribution.
 
 - Lead with the news, consequence, or central question—not background about the process of reporting it.
-- Write in clear international English for intelligent readers in and beyond Ghana without assuming professional knowledge of the subject.
+- Write in clear international English for intelligent readers in and beyond Ghana without assuming professional knowledge of the subject. Address the reader as Akan Reports talking to them when it clarifies stake or publication stance; follow `WRITING_STYLE.md`.
 - Prefer precise nouns and active verbs. Remove filler, hype, clichés, and claims such as “shocking,” “historic,” or “game-changing” unless evidence makes the description necessary.
 - A headline may be sharp and curious, but it must not promise more than the reporting delivers.
 - The standfirst must tell the reader what happened and why the story deserves attention; it must add information rather than repeat the headline.

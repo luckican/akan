@@ -3,7 +3,7 @@
 <a class="story-row" href="{{ $story.RelPermalink }}" data-story data-section="{{ $story.Params.primary_section }}" data-topics="{{ delimit $topics " " }}">
     <div class="story-copy">
         <div>
-            <div class="story-labels"><span>{{ if gt (len $topics) 0 }}{{ index $topics 0 | humanize | title }}{{ else }}{{ $story.Params.primary_section | title }}{{ end }}</span><span>{{ $story.Params.format | title }} · {{ $story.Date.UTC.Format "15:04 GMT" }}</span></div>
+            <div class="story-labels"><span>{{ if gt (len $topics) 0 }}{{ index $topics 0 | humanize | title }}{{ else }}{{ $story.Params.primary_section | title }}{{ end }}</span><span>{{ $story.Date.UTC.Format "15:04 GMT" }}</span></div>
             <h3 class="story-headline">{{ $story.Title }}</h3>
         </div>
         <p class="story-summary">{{ $story.Description }}</p>

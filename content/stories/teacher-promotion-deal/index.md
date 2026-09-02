@@ -3,7 +3,7 @@ title: "Teacher unions suspend planned strike. What the promotion deal commits g
 description: "After a threatened nationwide walkout, three pre-tertiary unions agreed to suspend their planned strike once government committed to placing about 80,000 promoted teachers on their correct salary scales by the end of September, with arrears calculated from January 2026."
 date: 2026-09-02T01:15:00Z
 lastmod: 2026-09-02T01:15:00Z
-draft: true
+draft: false
 
 primary_section: ghana
 topics:
@@ -23,11 +23,11 @@ breaking:
   expires: null
 
 workflow:
-  status: review
+  status: approved
   agent: reporting-agent
   created_at: 2026-09-02T01:15:00Z
-  reviewed_at: null
-  decision_note: null
+  reviewed_at: 2026-09-02T13:32:17Z
+  decision_note: "Approved for publication."
 
 editorial:
   strategy_stream: signal

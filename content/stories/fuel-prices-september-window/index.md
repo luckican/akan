@@ -3,7 +3,7 @@ title: "Petrol and diesel floors rise for 1–16 September as crude costs outwei
 description: "The National Petroleum Authority raised the petrol floor to GH¢14.53 a litre and diesel to GH¢15.60 for the first September pricing window. Oil marketers project higher pump prices even though the cedi strengthened, because international product costs rose faster."
 date: 2026-09-02T10:20:00Z
 lastmod: 2026-09-02T10:20:00Z
-draft: true
+draft: false
 
 primary_section: business
 topics:
@@ -22,11 +22,11 @@ breaking:
   expires: null
 
 workflow:
-  status: review
+  status: approved
   agent: reporting-agent
   created_at: 2026-09-02T10:05:00Z
-  reviewed_at: null
-  decision_note: null
+  reviewed_at: 2026-09-02T13:32:17Z
+  decision_note: "Approved for publication."
 
 editorial:
   strategy_stream: signal

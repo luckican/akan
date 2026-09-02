@@ -3,7 +3,7 @@ title: "Gold for export must now be refined in Ghana. Who pays?"
 description: "From 1 September, a class of licensed gold buyers can no longer ship unrefined metal out of the country. The Ghana Gold Board says they or their trading partners must pay for local refining first, but has not said what that will cost."
 date: 2026-09-01T23:44:00Z
 lastmod: 2026-09-02T12:30:00Z
-draft: true
+draft: false
 
 primary_section: business
 topics:
@@ -23,11 +23,11 @@ breaking:
   expires: null
 
 workflow:
-  status: review
+  status: approved
   agent: reporting-agent
   created_at: 2026-09-01T23:44:00Z
-  reviewed_at: null
-  decision_note: null
+  reviewed_at: 2026-09-02T13:32:17Z
+  decision_note: "Approved for publication."
 
 in_brief:
   - label: What changed

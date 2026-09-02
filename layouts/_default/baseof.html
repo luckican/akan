@@ -8,6 +8,24 @@
     {{ if $hasCanonicalBase }}{{ with .Params.hero }}
         {{ with $.Resources.GetMatch .src }}{{ $socialImage = .Permalink }}{{ end }}
     {{ end }}{{ end }}
+    {{ $pageType := "standard" }}
+    {{ if .IsHome }}
+        {{ $pageType = "home" }}
+    {{ else if and .IsPage (eq .Section "stories") }}
+        {{ $pageType = "story" }}
+    {{ else if eq .Layout "latest" }}
+        {{ $pageType = "latest" }}
+    {{ else if eq .Layout "section" }}
+        {{ $pageType = "section" }}
+    {{ else if eq .Layout "search" }}
+        {{ $pageType = "search" }}
+    {{ else if eq .Kind "404" }}
+        {{ $pageType = "404" }}
+    {{ end }}
+    {{ $pageSection := .Params.primary_section | default "" }}
+    {{ $pageFormat := .Params.format | default "" }}
+    {{ $pageTopic := "" }}
+    {{ with index (.Params.topics | default (slice)) 0 }}{{ $pageTopic = . }}{{ end }}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ $description }}">
@@ -33,8 +51,14 @@
     <link rel="preload" href="/fonts/dm-mono-400.woff2" as="font" type="font/woff2" crossorigin>
     {{ $styles := resources.Get "css/site.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+    {{ partial "analytics.html" . }}
 </head>
-<body>
+<body
+    data-page-type="{{ $pageType }}"
+    {{ with $pageSection }}data-page-section="{{ . }}"{{ end }}
+    {{ with $pageFormat }}data-page-format="{{ . }}"{{ end }}
+    {{ with $pageTopic }}data-page-topic="{{ . }}"{{ end }}
+>
     <a class="skip-link ds-button" href="#main-content">Skip to content</a>
     {{ partial "site-header.html" . }}
     <main id="main-content">

@@ -1,7 +1,7 @@
 ---
 title: Corrections
 layout: standard
-draft: true
+draft: false
 ---
 
 We strive to be as accurate as we can. When we get something wrong in a published story, we correct it and add a dated note explaining what changed. We do not quietly rewrite a material error out of existence.

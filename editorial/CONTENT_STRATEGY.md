@@ -1,6 +1,6 @@
 # Akan Reports Content Strategy
 
-**Version:** 1.2
+**Version:** 1.3
 **Status:** Approved MVP strategy
 **Model:** Signal → Stakes → Follow-through
 
@@ -15,6 +15,8 @@ The current positioning line, “Signals from Ghana's news cycle. Plus the world
 ## Who we write for
 
 Akan Reports writes for intelligent, curious non-specialists in Ghana and for readers elsewhere who want to understand Ghana and the world shaping it. They are interested in public life, money, culture, power and change, but they are not assumed to know an institution's internal language, an industry's professional roles or the history behind every continuing story.
+
+Story prose should sound like the publication talking to that reader. Prefer clear **you** / **we** address when it helps, and avoid handbook or executive-briefing tone. The full rule lives in `editorial/WRITING_STYLE.md`.
 
 The reporting may enter specialised subjects, but the assumed reader is not a regulator, executive, lawyer, analyst or communications professional. Institutions and industries are usually actors and sources, not the audience. Akan Reports should translate their language, establish the wider interest and give procedural detail only the space the story needs.
 

@@ -1,7 +1,7 @@
 ---
 title: Privacy
 layout: standard
-draft: true
+draft: false
 ---
 
 Here is how we handle information when you use [akanreports.com](https://akanreports.com).
@@ -18,7 +18,7 @@ If you write to us, we receive whatever you put in the message, including your e
 
 ## What we do not do
 
-We do not sell personal information. You do not need an account to read the site, and we do not currently run advertising.
+We do not sell personal information. You do not need an account to read the site.
 
 ## Questions
 

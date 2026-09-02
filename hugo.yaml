@@ -21,6 +21,12 @@ permalinks:
 params:
   description: "Signals from Ghana's news cycle. Plus the world that shapes it."
   accraTimezone: Africa/Accra
+  analytics:
+    gaMeasurementId: G-0NCKKGH0QD
+
+caches:
+  images:
+    dir: :cacheDir/images
 
 markup:
   goldmark:

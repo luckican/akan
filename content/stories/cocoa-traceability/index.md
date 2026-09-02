@@ -3,7 +3,7 @@ title: "Europe’s deforestation law takes effect for cocoa on 30 December. What
 description: "Large and medium operators placing cocoa on the EU market must show the beans are deforestation-free, legally produced and traceable to the farm plot. Ghana has rolled out a national cocoa traceability system and a 2020 forest map; the public record still does not put a firm price on what farmers and cooperatives will pay."
 date: 2026-09-02T10:10:00Z
 lastmod: 2026-09-02T10:10:00Z
-draft: true
+draft: false
 
 primary_section: world
 topics:
@@ -23,11 +23,11 @@ breaking:
   expires: null
 
 workflow:
-  status: review
+  status: approved
   agent: reporting-agent
   created_at: 2026-09-02T09:55:00Z
-  reviewed_at: null
-  decision_note: null
+  reviewed_at: 2026-09-02T13:32:17Z
+  decision_note: "Approved for publication."
 
 editorial:
   strategy_stream: world

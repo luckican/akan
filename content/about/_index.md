@@ -1,7 +1,7 @@
 ---
 title: About Akan Reports
 layout: standard
-draft: true
+draft: false
 ---
 
 Akan Reports covers Ghana and the wider world that shapes it.

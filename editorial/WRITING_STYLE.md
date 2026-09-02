@@ -1,6 +1,6 @@
 # Akan Reports Writing Style
 
-**Version:** 1.2
+**Version:** 1.3
 **Status:** Required for the MVP
 **Applies to:** Headlines, standfirsts, article bodies, captions, updates, corrections, and other public editorial copy
 
@@ -23,9 +23,29 @@ Akan Reports is:
 - **calm:** it does not manufacture urgency, outrage, triumph, or profundity;
 - **contextual:** it explains enough for a new reader and connects outside events to Ghana when that connection is real;
 - **economical:** it uses the space the reporting needs, with no padding to imitate importance;
-- **human:** sentence length and paragraph shape vary naturally, while the facts remain in control.
+- **human:** sentence length and paragraph shape vary naturally, while the facts remain in control;
+- **addressed to the reader:** the publication talks to the reader, not at them and not like a policy handbook.
 
-The voice is not a fictional reporter personality. Do not invent first-hand presence, interviews, sensory scenes, opinions, jokes, or personal experience to make agent-produced copy sound human.
+### Talk to the reader
+
+Public story copy should sound like Akan Reports speaking to a capable reader. Prefer **you** when naming the reader's stake, what they can check, or what a figure does and does not show. Prefer **we** when the publication is stating what Akan Reports is establishing, leaving open, or not claiming from the evidence.
+
+Use this address when it makes the reporting clearer. Do not sprinkle “you” or “we” into every sentence, and do not turn a Signal into a lecture.
+
+**Do:**
+
+- “You can see the new floor, the industry’s projected pump levels, and the international price move behind them.”
+- “The release shows which industries expanded. It does not show how households shared the gain.”
+- “We could not establish the refining charge from the notice itself.”
+
+**Do not:**
+
+- Invent first-hand presence: “we visited,” “we spoke to,” “I watched,” or scenes that did not happen in this assignment.
+- Use “we” for opinions, predictions, or advocacy Akan Reports has not established.
+- Replace plain facts with chatty filler (“here’s the thing you need to know”).
+- Write impersonal handbook openers (“Accuracy comes first,” “Readers should note,” “It is important to understand”).
+
+The voice is not a fictional reporter personality. Do not invent interviews, sensory scenes, jokes, or personal experience to make agent-produced copy sound human. The “we” is the publication; the “you” is the reader.
 
 Different stories should sound like themselves. Verification and clarity are consistent; section order, rhythm, length, opening style and use of devices such as `highlights` are not fixed templates.
 
@@ -189,15 +209,25 @@ Better:
 
 The revision preserves both the attributed claim and its limitation.
 
-### Formulaic contrast
+### Handbook tone
 
 Weak:
 
-> This is not just about cocoa prices. It is about Ghana's economic future.
+> Readers should note that the notice does not specify the refining charge.
 
 Better:
 
-> Cocoa prices affect export revenue, farmer income, and the public funds available through the sector.
+> The notice does not say how much refining will cost. We could not find a published figure in the documents reviewed for this article.
+
+### Reader address
+
+Weak:
+
+> Motorists and transport operators are expected to experience higher prices at the pump.
+
+Better:
+
+> If you buy petrol or diesel, the confirmed change is the higher floor for this window. What any one station charges above that floor will vary.
 
 ## Required style pass
 
@@ -212,7 +242,7 @@ After the reporting and verification pass, the drafting agent must read the full
 7. Are useful names, numbers, dates, locations, and mechanisms preserved?
 8. Does the standfirst add information beyond the headline?
 9. Does the ending land on substance rather than a recap or artificial flourish?
-10. Does the copy sound natural when read aloud without pretending that Akan Reports witnessed or reported something it did not?
+10. Does the copy sound like Akan Reports talking to the reader—using **you** / **we** where they clarify stake or publication stance—without inventing presence, interviews, or opinions?
 11. Could an intelligent non-specialist enter the story without already knowing the institution, profession, acronym or regulatory process involved?
 12. Does the article's shape arise from this reporting rather than from a repeated house template?
 

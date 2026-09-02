@@ -50,8 +50,8 @@ The initial Akan Reports stack is:
 - **Repository service:** GitHub Free initially, with Forgejo as an open-source migration option
 - **Styling:** Custom CSS with shared design tokens; Tailwind is not a current dependency
 - **Search:** Pagefind
-- **Deployment:** Automated static builds delivered through a CDN
-- **Analytics:** Google Analytics and Google Search Console, with Umami, GoatCounter, or an equivalent open-source platform available when privacy, ownership, or self-hosting is preferred
+- **Deployment:** Vercel (Git-connected Hugo builds to a CDN); Cloudflare remains the DNS registrar
+- **Analytics:** Google Analytics 4 and Google Search Console for the starter stack; Umami, GoatCounter, or an equivalent open-source platform remain options if privacy or self-hosting becomes the priority later
 - **Newsletter management:** listmonk or an equivalent open-source system
 - **Media storage:** Git-managed article media initially; object storage when scale requires it
 

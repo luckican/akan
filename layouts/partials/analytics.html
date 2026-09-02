@@ -1,0 +1,17 @@
+{{/*
+  Loads GA4 only when a measurement ID is set and the build is production.
+  Local `hugo server` stays clean. Measurement IDs are public by design.
+*/}}
+{{ $id := site.Params.analytics.gaMeasurementId | default "" }}
+{{ if and $id hugo.IsProduction }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ $id }}');
+  window.akanAnalytics = { enabled: true, measurementId: '{{ $id }}' };
+</script>
+{{ else }}
+<script>window.akanAnalytics = { enabled: false };</script>
+{{ end }}

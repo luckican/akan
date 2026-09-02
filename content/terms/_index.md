@@ -1,7 +1,7 @@
 ---
 title: Terms of use
 layout: standard
-draft: true
+draft: false
 ---
 
 These terms cover your use of Akan Reports at [akanreports.com](https://akanreports.com). By using the site, you agree to them.

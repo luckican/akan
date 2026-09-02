@@ -11,7 +11,7 @@
     <header class="article-header">
         <div class="article-shell article-header__grid">
             <div>
-                <p class="ds-kicker">{{ .Params.format | title }}{{ with index (.Params.topics | default (slice)) 0 }} / {{ . | humanize | title }}{{ end }}</p>
+                <p class="ds-kicker">{{ .Params.primary_section | title }}{{ with index (.Params.topics | default (slice)) 0 }} / {{ . | humanize | title }}{{ end }}</p>
                 <h1 class="{{ $headlineClass }}">
                     {{ if and .Params.headline_lead .Params.headline_emphasis }}
                         {{ .Params.headline_lead }} <span>{{ .Params.headline_emphasis }}</span>

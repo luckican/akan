@@ -3,7 +3,7 @@ title: "School placement results moved to 4 September after 20,000 choice upload
 description: "The Education Ministry postponed the 2026/2027 CSSPS release from 31 August to Friday, 4 September so outstanding school choices can be uploaded. About 20,000 qualified students were still missing from the platform, the ministry said."
 date: 2026-09-02T10:15:00Z
 lastmod: 2026-09-02T10:15:00Z
-draft: true
+draft: false
 
 primary_section: ghana
 topics:
@@ -21,11 +21,11 @@ breaking:
   expires: null
 
 workflow:
-  status: review
+  status: approved
   agent: reporting-agent
   created_at: 2026-09-02T10:00:00Z
-  reviewed_at: null
-  decision_note: null
+  reviewed_at: 2026-09-02T13:32:17Z
+  decision_note: "Approved for publication."
 
 editorial:
   strategy_stream: signal

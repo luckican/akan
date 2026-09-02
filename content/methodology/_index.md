@@ -1,7 +1,7 @@
 ---
 title: Methodology
 layout: standard
-draft: true
+draft: false
 ---
 
 We try to be clear about what is confirmed, what someone claims, and what remains uncertain. When how we know something matters to the story, we say so.

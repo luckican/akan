@@ -1,7 +1,7 @@
 ---
 title: Contact
 layout: standard
-draft: true
+draft: false
 ---
 
 Write to us at [news@akanreports.com](mailto:news@akanreports.com).
