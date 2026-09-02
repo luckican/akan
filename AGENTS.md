@@ -65,6 +65,7 @@ data/                        Structured site data
 editorial/                   Editorial contracts, rules, and prompts
 frontend_concept/            Approved concepts and product documentation
 layouts/                     Production Hugo templates
+skills/                      IDE-agnostic agent skills
 hugo.yaml                    Hugo configuration
 ```
 
