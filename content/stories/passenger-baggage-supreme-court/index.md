@@ -1,8 +1,8 @@
 ---
-title: "Supreme Court suit challenges GRA's power to decide duty-free passenger baggage"
-description: "A lawyer is asking the Supreme Court to strike down part of L.I. 2514 that lets the GRA Commissioner-General determine how much passenger baggage qualifies for exemption. The case arrives as GRA clarifies that carrying more than two phones does not automatically trigger Customs duty."
+title: "Lawyer challenges GRA passenger-baggage rule at Supreme Court"
+description: "A Supreme Court suit is challenging a rule that allows the GRA Commissioner-General to determine how much baggage a traveller can bring into Ghana duty-free. GRA says carrying more than two phones does not automatically attract duty."
 date: 2026-09-04T19:40:00Z
-lastmod: 2026-09-04T19:40:00Z
+lastmod: 2026-09-04T20:00:00Z
 draft: true
 
 primary_section: ghana
@@ -115,38 +115,34 @@ editorial:
       notes: "Current GRA guidance page. Its examples are used only for the practical distinction between passenger effects and commercial goods; the article relies on Act 1083 and L.I. 2514 for the statutory legal framework."
 ---
 
-A Supreme Court case filed on 4 September is asking a basic question about what happens when you arrive in Ghana with phones, laptops or other belongings: who has the legal power to decide how much of your baggage enters without Customs duty?
+A lawyer has asked Ghana's Supreme Court to strike down a rule that allows the Commissioner-General of the Ghana Revenue Authority to decide how much passenger baggage qualifies for duty-free entry.
 
-Lawyer Jonathan A. Alua has sued the Attorney-General and the Commissioner-General of the Ghana Revenue Authority over Regulation 18(2)(b) of the Exemptions Regulations, 2025, known as L.I. 2514. The provision says the Commissioner-General shall determine the quantity of baggage for a passenger.
+Jonathan A. Alua filed the action on 4 September against the Attorney-General and the GRA Commissioner-General. It challenges Regulation 18(2)(b) of the Exemptions Regulations, 2025, known as L.I. 2514.
 
-That sentence matters because the underlying Act already creates an exemption. Section 17 of the Exemptions Act, 2022 exempts baggage accompanying a passenger entering Ghana, provided the goods are not for sale, barter, exchange or as a gift. The same section tells the Minister to make regulations setting the permissible quantities and kinds of imports covered by the exemption.
+The regulation says the Commissioner-General shall determine the quantity of baggage for a passenger.
 
-L.I. 2514 does part of that work. Regulation 18 identifies the categories of baggage through a statutory schedule, but it leaves the quantity for an individual passenger to the Commissioner-General.
+The Exemptions Act, 2022 already exempts baggage accompanying a passenger entering Ghana, provided the goods are not for sale, barter, exchange or as a gift. It also requires the Minister to make regulations setting the permissible quantities and kinds of imports covered by that exemption.
 
-Alua's case argues that this goes too far.
+L.I. 2514 lists the categories of goods that can qualify, but leaves the quantity for each passenger to the Commissioner-General.
 
-## The constitutional question
+## What the case argues
 
-Article 174 of the Constitution says taxes must be imposed by or under an Act of Parliament. It also says that when an Act gives someone the power to waive or vary a tax in favour of a person or authority, using that power requires prior parliamentary approval unless Parliament has exempted the exercise by the required resolution.
+Alua says that power goes beyond ordinary administration of the exemption.
 
-According to reports based on the writ, Alua argues that allowing the Commissioner-General or Customs officers acting under that authority to decide an individual passenger's exempt quantity amounts to exercising a tax-waiver or tax-variation power case by case. He wants the Supreme Court to declare that part of Regulation 18 inconsistent with the Constitution and to restrain its use until the Article 174 requirements are satisfied.
+Article 174 of the Constitution says taxes must be imposed by or under the authority of an Act of Parliament. It also requires prior parliamentary approval when a statutory power is used to waive or vary a tax in favour of a person or authority, unless Parliament has exempted that exercise by the required resolution.
 
-The court has not made that finding. The case therefore turns on whether Regulation 18 is merely administering an exemption Parliament already created in Act 1083, or whether the quantity decision itself changes an individual traveller's tax liability in a way that Article 174 reserves for parliamentary control.
+According to reports based on the writ, Alua argues that deciding a passenger's exempt quantity case by case can change that person's tax liability and should therefore be subject to Article 174.
 
-## Why the phone argument brought this into view
+He is asking the Supreme Court to declare Regulation 18(2)(b) unconstitutional and to restrain its use until the constitutional requirements are met.
 
-The lawsuit arrives after public controversy over how Customs treats travellers carrying multiple mobile phones.
+The court has not ruled on the argument. No interim order suspending Regulation 18 had been reported as of 4 September, and no substantive response from the Attorney-General had been reported.
 
-Comments by Customs Commissioner Aaron Kanor prompted reports that travellers would face a two-phone limit. GRA has since clarified that there is no automatic rule making a third phone dutiable. Its current position is that officers should look at the circumstances, including whether devices are already in use, whether they are new and commercially packaged, how many similar items are being carried and whether they appear intended for another person, sale or distribution.
+## Why mobile phones are part of the dispute
 
-That clarification removes the idea of a simple numerical trigger. It also makes the discretion at the centre of the Supreme Court case easier to see: Customs may still have to decide where personal baggage ends and commercial importation begins.
+The case comes amid controversy over how Customs treats travellers carrying several mobile phones.
 
-GRA's published passenger guidance similarly distinguishes personal effects from goods imported for trade and requires passengers to declare their baggage. Commercial goods go through the Red Channel.
+GRA has said there is no automatic rule that makes a third phone dutiable. Officers are expected to consider the circumstances, including whether the devices are already in use, whether they are new and commercially packaged, how many similar items are being carried and whether they appear to be intended for sale or distribution.
 
-## What changes for travellers now
+GRA's published passenger guidance also distinguishes personal effects from goods brought in for trade. It advises travellers who are unsure about an item's status to declare it and seek guidance from Customs.
 
-The filing itself is not a Supreme Court ruling. We found no reported interim order suspending Regulation 18 as of 4 September, and the Attorney-General has not yet been reported as filing a substantive response to Alua's constitutional argument.
-
-For a traveller, GRA's stated position therefore remains the practical one to work with: more than two phones does not automatically mean duty is payable, but the purpose, condition, packaging and quantity of the items can trigger further Customs scrutiny. If you are unsure whether something qualifies as personal baggage, GRA advises declaring it and asking an officer.
-
-The next thing to watch is whether the Supreme Court treats the quantity decision as ordinary administration of an exemption Parliament already created or as a tax decision that Article 174 requires Parliament to control more directly.
+For now, that remains the position at the border. The Supreme Court case will decide whether the power to set an individual passenger's exempt quantity can continue to rest with the Commissioner-General under the current regulation.
