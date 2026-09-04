@@ -1,8 +1,8 @@
 ---
-title: "Cement makers add GH¢12 surcharge as Tema Port delays stretch past a month"
-description: "The Chamber of Cement Manufacturers says clinker vessels that waited about seven days in January were waiting 30 to more than 40 days in August. Its temporary GH¢12-per-bag surcharge is meant to recover demurrage costs created by those delays."
+title: "Cement makers add GH¢12 surcharge over Tema Port delays"
+description: "The Chamber of Cement Manufacturers says clinker vessels are spending far longer waiting to discharge at Tema Port, pushing up demurrage costs. It has introduced a temporary GH¢12 surcharge on each bag of cement."
 date: 2026-09-04T19:50:00Z
-lastmod: 2026-09-04T19:50:00Z
+lastmod: 2026-09-04T20:00:00Z
 draft: true
 
 primary_section: business
@@ -81,30 +81,34 @@ editorial:
       notes: "Current official evidence that congestion at Tema Port is a broader operational issue under active government attention."
 ---
 
-Ghana's cement manufacturers have put a price on one part of the congestion at Tema Port: GH¢12 on a bag of cement.
+Ghana's cement manufacturers have introduced a temporary GH¢12 surcharge on each bag of cement, blaming long delays for clinker vessels at Tema Port.
 
-The Chamber of Cement Manufacturers, Ghana says the temporary charge is a clinker demurrage surcharge, not a permanent general price increase. It consists of GH¢10 before tax and GH¢2 in taxes and levies and is intended to recover exceptional costs from vessels waiting offshore before they can discharge clinker, the main intermediate material used to make cement.
+The Chamber of Cement Manufacturers, Ghana says GH¢10 of the charge is for demurrage, with GH¢2 covering taxes and levies.
 
-The distinction does not make the cost disappear. A surcharge attached to each bag still enters the chain that runs from manufacturer to distributor, retailer, builder and eventually the cost of construction.
+Demurrage is charged when a vessel is kept waiting beyond the agreed period for loading or unloading. Cement producers import clinker, the main intermediate material used to make cement, and say ships are now spending much longer waiting to discharge it at Tema.
 
-## The cost starts with time at anchor
+COCMAG says the average wait for clinker vessels rose from about seven days in January to between 30 and more than 40 days in August.
 
-Demurrage is the charge a vessel owner can impose when a ship is kept beyond the agreed period for loading or unloading. For a cement manufacturer importing clinker, a long wait at Tema means the vessel is costing money before the raw material even reaches the factory.
+It estimates that the delays cost the industry between US$45 million and US$50 million in demurrage during the first eight months of 2026. Individual vessels, it says, have accumulated bills of about US$800,000 to US$1 million.
 
-COCMAG says clinker vessels were waiting about seven days on average in January 2026. By August, it says the wait had reached 30 to more than 40 days.
+Those figures come from the manufacturers and have not been independently audited in the material used for this report.
 
-The chamber estimates that those delays generated US$45 million to US$50 million in industry-wide demurrage costs during the first eight months of the year, with individual vessels accumulating roughly US$800,000 to US$1 million. Those numbers come from the manufacturers themselves; we have not treated them as independently audited port statistics.
+## Congestion has been a continuing problem
 
-What is independently clear is that the congestion problem did not begin with this week's surcharge. In March, the Ghana Ports and Harbours Authority said government was dredging berths at Tema partly because clinker delays were increasing costs for cement manufacturers. The Transport Minister said the deeper berths were intended to let larger vessels discharge more efficiently.
+The Ghana Ports and Harbours Authority said in March that clinker delays were already increasing costs for cement manufacturers.
 
-On 4 September, the same ministry publicly acknowledged a wider version of the problem: delays in Tema Port clearance create extra charges that are eventually passed on to consumers. The Ghana Shippers' Authority has also begun a fact-finding exercise on congestion and vessel turnaround.
+The government has been dredging berths at Tema Port to allow larger vessels to discharge more efficiently, while the Transport Ministry has also acknowledged that prolonged port delays create extra charges that can be passed on to consumers.
 
-## Why clinker is exposed
+The Ghana Shippers' Authority has separately been examining congestion and vessel turnaround times at the port.
 
-COCMAG says only three main berths are currently available for clinker discharge and that Berths 10 and 11 remain unavailable to cement importers and manufacturers. The chamber is asking government and GPHA to reduce vessel waiting times, expand berth capacity and restore access to those berths.
+COCMAG says only three main berths are currently available for clinker discharge and that Berths 10 and 11 remain unavailable to cement importers and manufacturers.
 
-If the bottleneck continues, the chamber warns that clinker shipment cycles could stretch toward three months. That is a supply risk as well as a cost problem because cement plants need a regular flow of clinker to keep production moving.
+The chamber has asked government and GPHA to reduce vessel waiting times and expand access to berths.
 
-The GH¢12 charge is scheduled to remain until 31 December 2026, subject to monitoring, with a formal review after that. COCMAG says it wants the surcharge removed when congestion and demurrage return to normal levels.
+## How long the surcharge will last
 
-For buyers, the number to watch is therefore not only the price printed on a bag this week. It is vessel waiting time at Tema. If that does not fall, the temporary cost has a reason to remain. If it does, the industry has already given itself a test for whether the surcharge should come off.
+COCMAG says the GH¢12 charge is temporary and is due to remain in place until 31 December 2026, subject to monitoring.
+
+The chamber says it can be removed if congestion eases and demurrage costs return to normal levels.
+
+Until then, the additional charge will feed into the cost of cement bought by distributors, retailers and builders.
