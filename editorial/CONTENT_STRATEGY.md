@@ -1,6 +1,6 @@
 # Akan Reports Content Strategy
 
-**Version:** 1.4
+**Version:** 1.5
 **Status:** Approved MVP strategy
 **Model:** Signal → Stakes → Follow-through
 
@@ -16,7 +16,7 @@ The current positioning line, “Signals from Ghana's news cycle. Plus the world
 
 Akan Reports writes for intelligent, curious non-specialists in Ghana and for readers elsewhere who want to understand Ghana and the world shaping it. They are interested in public life, money, culture, power and change, but they are not assumed to know an institution's internal language, an industry's professional roles or the history behind every continuing story.
 
-Story prose should sound like Akan Reports taking responsibility for what it reports to that reader. Impersonal wire or handbook prose is not the default. Use **we** to own what the publication checked, found, concluded, could not establish or is leaving open. Use **you** when it makes the reader's point of entry or stake clearer. Plain factual sentences do not need a pronoun, and no story should insert one mechanically. The full rule lives in `editorial/WRITING_STYLE.md`.
+The default register for straight news is restrained factual narration. Put the verified development first, attribute claims clearly, explain unfamiliar institutions or mechanisms only as needed, and let the order of the facts show the significance. Akan Reports does not need a visible narrator in every story. Use **we** when a genuine reporting check, synthesis, finding or evidence limit materially helps the reader. Use **you** when it genuinely clarifies the reader's stake. Neither is required.
 
 The reporting may enter specialised subjects, but the assumed reader is not a regulator, executive, lawyer, analyst or communications professional. Institutions and industries are usually actors and sources, not the audience. Akan Reports should translate their language, establish the wider interest and give procedural detail only the space the story needs.
 
@@ -34,16 +34,16 @@ It should:
 
 - identify a verified new or newly relevant development;
 - state who acted, what they did, when, and where;
-- explain the immediate consequence or the next known step;
+- add the immediate consequence, necessary context or next confirmed step only when it materially helps understanding;
 - distinguish confirmed facts from claims and unknowns.
 
 A Signal is not limited to social-media length. It may be short or substantial. The reporting decides the length.
 
 Illustrative headlines:
 
-- “Fuel prices fall again. What changes at the pump?”
-- “School placement moves to final checks.”
-- “Parliament passes the revised bill. What happens next?”
+- “Fuel prices fall again for September pricing window”
+- “School placement results delayed to 4 September”
+- “Parliament passes revised bill after committee changes”
 
 Do not publish a Signal that merely paraphrases another publisher, reproduces a press release, or adds urgency without useful context.
 
@@ -132,7 +132,7 @@ Follow-through is part of the long-term identity but is not a standing MVP produ
 
 The strategy stream identifies the story's editorial job. The angle identifies the specific view through which the story performs that job.
 
-Every agent-produced draft must choose one primary `editorial.angle_lens` and write one precise `editorial.angle` sentence. Supporting lenses may appear in the reporting, but the primary lens should control the headline, standfirst, opening, and structure.
+Every agent-produced draft must choose one primary `editorial.angle_lens` and write one precise `editorial.angle` sentence. Supporting lenses may appear in the reporting. The primary lens should keep the reporting coherent, but it must not force a standard headline shape, section order, rhetorical question, or visible analytical scaffold.
 
 ### Approved angle lenses
 
@@ -140,7 +140,7 @@ Every agent-produced draft must choose one primary `editorial.angle_lens` and wr
 
 **Question:** What is new or newly visible?
 
-Use for a consequential new fact, decision, event, date, result, or update. State the change precisely, including who acted, when it applies, and the next confirmed step.
+Use for a consequential new fact, decision, event, date, result, or update. State the change precisely, including who acted, when it applies, and the next confirmed step when that step is material.
 
 This is the standard lens for an important story that everyone else is also reporting when Akan Reports can still provide a clear, verified, useful account.
 
@@ -190,7 +190,7 @@ Use for global events involving trade, finance, regulation, security, climate, t
 
 **Question:** What happens next, and what should be checked?
 
-Identify the next decision, deadline, vote, release, implementation stage, measurement, or accountability point. Avoid predicting an outcome the evidence cannot support.
+Identify the next decision, deadline, vote, release, implementation stage, measurement, or accountability point. Avoid predicting an outcome the evidence cannot support. Do not turn this lens into a stock closing paragraph.
 
 ### How to choose the angle
 
@@ -201,9 +201,9 @@ Identify the next decision, deadline, vote, release, implementation stage, measu
 5. Apply the scope test: every substantial section must help answer the headline or perform the primary angle. Remove or clearly subordinate material that does not; propose a separate story when the secondary development deserves substantial treatment of its own.
 6. Change or narrow the angle when the evidence cannot support it.
 
-An angle is not an opinion, a slogan, a mood, or a demand to disagree with other publishers. Distinctiveness can come from clarity, verification, consequence, context, synthesis, or honest uncertainty.
+An angle is not an opinion, a slogan, a mood, or a demand to disagree with other publishers. Distinctiveness can come from clarity, verification, source proximity, sequencing, consequence, context, synthesis, correction of confusion, or honest uncertainty. Added value does not require visible analysis in the prose.
 
-When a widely reported development is important but no deeper lens is yet supportable, use `development` and publish a strong Signal. Include the immediate consequence, necessary context, confirmed unknowns, and next step when the evidence permits. Do not manufacture a Stakes angle.
+When a widely reported development is important but no deeper lens is yet supportable, use `development` and publish a strong Signal. Include only the context, consequence, uncertainty or next confirmed step that the reader needs. Do not manufacture a Stakes angle or a standard “what happens next” ending.
 
 If a candidate offers neither a useful `development` account nor another supported angle, it fails the added-value requirement and should return `NO DRAFT`.
 
@@ -264,7 +264,7 @@ Before researching a full draft, an agent must test a candidate against six ques
 1. **Newness:** Is something new, newly documented, newly relevant, or newly understandable?
 2. **Consequence:** Does it affect money, power, opportunity, public services, daily life, culture, or Ghana's place in the world?
 3. **Evidence:** Can the central facts be verified to the standard in `REPORTING_AND_QUALITY_RULES.md`?
-4. **Added value:** Can Akan Reports add consequence, context, synthesis, explanation, or follow-through beyond the originating material?
+4. **Added value:** Can Akan Reports improve the reader's understanding through stronger sourcing, clearer sequencing, correction of confusion, context, consequence, synthesis, explanation, or follow-through beyond the originating material?
 5. **Angle:** Is there a precise reporting question or consequence rather than a broad topic?
 6. **Reader fit:** Can an intelligent non-specialist follow the story and gain something beyond an update intended mainly for the institution or profession involved?
 
