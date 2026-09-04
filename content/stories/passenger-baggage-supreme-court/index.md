@@ -2,8 +2,8 @@
 title: "Lawyer challenges GRA passenger-baggage rule at Supreme Court"
 description: "A Supreme Court suit is challenging a rule that allows the GRA Commissioner-General to determine how much baggage a traveller can bring into Ghana duty-free. GRA says carrying more than two phones does not automatically attract duty."
 date: 2026-09-04T19:40:00Z
-lastmod: 2026-09-04T20:00:00Z
-draft: true
+lastmod: 2026-09-04T20:10:00Z
+draft: false
 
 primary_section: ghana
 topics:
@@ -14,8 +14,8 @@ topics:
 format: report
 
 home:
-  position: none
-  weight: 100
+  position: briefing
+  weight: 2
   expires: null
 
 breaking:
@@ -23,11 +23,11 @@ breaking:
   expires: null
 
 workflow:
-  status: review
+  status: approved
   agent: directed-reporting-agent
   created_at: 2026-09-04T19:40:00Z
-  reviewed_at: null
-  decision_note: null
+  reviewed_at: 2026-09-04T20:10:00Z
+  decision_note: "Approved for publication after restrained rewrite."
 
 editorial:
   strategy_stream: context
