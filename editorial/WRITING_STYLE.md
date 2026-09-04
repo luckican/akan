@@ -1,6 +1,6 @@
 # Akan Reports Writing Style
 
-**Version:** 1.5
+**Version:** 1.6
 **Status:** Required for the MVP
 **Applies to:** Headlines, standfirsts, article bodies, captions, updates, corrections, and other public editorial copy
 
@@ -10,7 +10,24 @@ This guide defines how Akan Reports should sound and gives agents a final editin
 
 Accuracy comes first. A style edit must never remove a necessary qualification, weaken attribution, overstate evidence, invent a detail, or turn an allegation into a fact. `REPORTING_AND_QUALITY_RULES.md` controls when a style preference conflicts with verification, fairness, or safety.
 
-The assumed reader is intelligent and curious, not professionally initiated into the subject. Write like a well-informed person making a complex story clear to another capable person. Do not write like an institution addressing its peers, an analyst briefing executives or a teacher simplifying material for a child.
+The assumed reader is intelligent and curious, not professionally initiated into the subject. Write like a careful journalist making a complex story clear to another capable person. Do not write like an institution addressing its peers, an analyst briefing executives, a teacher simplifying material for a child, or a narrator constantly explaining the significance of its own sentences.
+
+## The default register
+
+For straight news, Signals, and ordinary reports, use restrained factual narration.
+
+The basic movement is:
+
+1. the verified development;
+2. clear attribution where needed;
+3. the context required to understand it;
+4. the next useful fact.
+
+This is not a fixed article template. It is a preference for letting reporting do the explanatory work before the writer adds interpretation.
+
+The publication's voice should usually be unobtrusive. A story can sound like Akan Reports without repeatedly saying **we**, addressing **you**, or announcing what a fact means. Precision, sourcing, sequencing, restraint and clarity are part of the voice.
+
+Analysis, explainers, features and investigations may carry a more visible interpretive voice when the reporting genuinely requires synthesis. Even there, the writer should not narrate insights that the evidence already makes plain.
 
 ## The voice
 
@@ -18,67 +35,77 @@ Akan Reports is:
 
 - **direct:** it starts with the verified development, consequence, or useful question;
 - **specific:** it prefers names, dates, numbers, mechanisms, and affected groups to abstract claims;
-- **curious:** it follows the unanswered question without pretending certainty;
+- **curious:** it follows unanswered questions without pretending certainty;
 - **clear-eyed:** it examines official and popular claims without automatic deference or theatrical cynicism;
 - **calm:** it does not manufacture urgency, outrage, triumph, or profundity;
 - **contextual:** it explains enough for a new reader and connects outside events to Ghana when that connection is real;
 - **economical:** it uses the space the reporting needs, with no padding to imitate importance;
 - **human:** sentence length and paragraph shape vary naturally, while the facts remain in control;
-- **addressed to the reader:** the publication talks to the reader, not at them and not like a policy handbook.
+- **restrained:** the writer does not keep stepping between the reader and the reporting.
 
-### Talk to the reader
+## Reader address and publication voice
 
-Public story copy should sound like Akan Reports speaking to a capable reader and taking responsibility for the reporting. Impersonal wire copy is not the default. Prefer **you** when naming the reader's stake, what they can check, or what a figure does and does not show. Use **we** when the publication is stating what it checked, found, concluded, could not establish, is leaving open, or is not claiming from the evidence.
+Direct factual sentences are the default.
 
-Direct factual sentences often need no pronoun. Do not sprinkle “you” or “we” into every sentence, impose a quota, or turn a Signal into a lecture. The test applies to the voice of the whole story: when the reporting makes a check, judgment, synthesis or statement about the limits of the evidence, it should not hide the publication behind passive or institutional phrasing.
+Use **we** when Akan Reports has performed a genuine reporting action or synthesis that materially helps the reader understand the evidence. Examples include a documented comparison, a check across named records, a calculation, or a clearly scoped statement about what the reviewed material does not establish.
 
-**Do:**
+Use **you** only when it makes a practical consequence materially easier to understand. Do not use it simply to make neutral reporting sound conversational.
 
-- “You can see the new floor, the industry’s projected pump levels, and the international price move behind them.”
-- “The release shows which industries expanded. It does not show how households shared the gain.”
-- “We could not establish the refining charge from the notice itself.”
-- “We reviewed the published figures and found no breakdown of how the gain was shared across households.”
+Neither pronoun is required.
 
-**Do not:**
-
-- Invent first-hand presence: “we visited,” “we spoke to,” “I watched,” or scenes that did not happen in this assignment.
-- Hide a genuine reporting action behind evasive phrasing such as “no evidence was found” when Akan Reports can accurately say what it reviewed and what **we** did not find.
-- Use “we” for opinions, predictions, or advocacy Akan Reports has not established.
-- Replace plain facts with chatty filler (“here’s the thing you need to know”).
-- Write impersonal handbook openers (“Accuracy comes first,” “Readers should note,” “It is important to understand”).
-- Put **reporting-process diary** in public copy: download failures, unstable URLs, “in this run,” agent tooling limits, “we kept the detail to…,” “until we can check the bulletin,” or any confession about how the draft was assembled. Those belong only in `editorial.verification_notes` or `source_notes`. Public **we** owns what the evidence shows or does not show in the world, not what the drafting session could or could not open.
-
-The voice is not a fictional reporter personality. Do not invent interviews, sensory scenes, jokes, or personal experience to make agent-produced copy sound human. The “we” is the publication; the “you” is the reader.
-
-### Evidence limits vs process diary
-
-Honest uncertainty in public prose is about the **record**:
+Prefer:
 
 > The notice does not say how much refining will cost.
 
-Or, when Akan Reports has reviewed named materials:
+when that sentence fully states the evidence limit.
 
-> We could not establish a published fee in the documents reviewed for this article.
+Use:
 
-That is not the same as narrating the assignment:
+> We reviewed the published tariff schedules and found no separate refining fee.
 
-> We could not open a stable direct PDF of the full bulletin in this run, so we have kept the detail to figures corroborated across the dashboard and contemporaneous accounts.
+when the reporting action itself is useful information.
 
-If the primary document cannot be checked, do not publish the unsupported detail and then explain the access problem to the reader. Omit the detail, or return `DRAFT NEEDS REPORTING` / hold the story, and record the blocker internally.
+Avoid turning routine facts into publication commentary:
 
-Different stories should sound like themselves. Verification and clarity are consistent; section order, rhythm, length, opening style and use of devices such as `highlights` are not fixed templates.
+> We are therefore not treating the directive as the end of the dispute.
+
+If the record supports a more direct sentence, write it:
+
+> The directive does not settle the operating framework between the two institutions.
+
+Do not invent first-hand presence. Never write “we visited,” “we spoke to,” “I watched,” or similar language unless that reporting actually happened in the assignment.
 
 ## Core writing rules
 
-### Lead with the point
+### Lead with the news
 
-Open with the central fact, what the evidence shows, what a decision does, who is affected, or the precise question the reporting examines. Background follows when the reader needs it.
+For straight news, open with what happened. Name the actor, action and material consequence when the evidence supports them.
 
-Do not begin by announcing that the subject is important, complex, rapidly changing, or worth discussing.
+Background should follow when the reader needs it. Do not begin by announcing that a subject is important, complex, controversial, rapidly changing or worth understanding.
+
+A question can lead an analysis or explainer when the reporting genuinely answers it. It should not replace a clear news fact that is already known.
 
 ### Let facts carry the emphasis
 
-Show significance through scale, consequence, comparison, or a concrete example. Avoid telling the reader that something is significant, historic, remarkable, concerning, or encouraging when the reporting can demonstrate why.
+Show significance through scale, consequence, comparison, chronology, mechanism, or a concrete example.
+
+Avoid sentences whose main job is to tell the reader that the previous fact matters. If the significance can be shown by the next fact, give the next fact.
+
+Weak:
+
+> That distinction matters because developers need to know which institution controls permits.
+
+Better:
+
+> Building permits in the metropolis remain the responsibility of TMA.
+
+Weak:
+
+> The practical point for buyers is that the surcharge could affect construction costs.
+
+Better:
+
+> The GH¢12 surcharge is added to each bag before it moves through distributors and retailers.
 
 ### Protect the useful detail
 
@@ -90,7 +117,9 @@ Prefer a clear verb over a padded verb phrase. Write “the ministry approved”
 
 ### Attribute where attribution matters
 
-Name the person, institution, document, or dataset behind a claim when the reader needs to know who is speaking or when the claim is disputed. Avoid vague authorities such as “experts,” “observers,” “reports,” or “many people” unless the story identifies them.
+Name the person, institution, document, or dataset behind a claim when the reader needs to know who is speaking or when the claim is disputed.
+
+Avoid vague authorities such as “experts,” “observers,” “reports,” or “many people” unless the story identifies them.
 
 Public citations are not required by default, but prose must not disguise a source's assertion as Akan Reports' independent finding.
 
@@ -98,25 +127,105 @@ Public citations are not required by default, but prose must not disguise a sour
 
 Terms such as “about,” “nearly,” “may,” “according to,” “alleged,” “preliminary,” and “projected” can carry essential meaning. Never delete them merely to make a sentence sound stronger.
 
-### Vary rhythm without performing it
+### Explain by sequence before commentary
 
-Mix sentence lengths when the material supports it. Avoid a page of equally shaped sentences, repeated paragraph templates, or a stack of dramatic fragments. Rhythm should help comprehension, not advertise the writing.
+When a mechanism can be understood by placing facts in the right order, do that first.
 
-### End on substance
+For example:
 
-End with the next verifiable development, a concrete consequence, an unresolved question grounded in the reporting, or the last fact the reader needs. Do not repeat the whole article or add a manufactured mic-drop line.
+1. vessels wait longer to berth;
+2. shipowners charge demurrage;
+3. manufacturers add a surcharge.
+
+The sequence often explains the story more cleanly than a sentence announcing that port congestion is “being converted into consumer costs.”
+
+Interpretation is appropriate when it adds something the sequence cannot establish by itself.
+
+### Use precise repetition
+
+Repeat the accurate noun when clarity benefits. Do not rotate among “government,” “administration,” “authorities,” and “leadership” when those words could refer to different actors.
+
+### Keep paragraphs natural and short
+
+A paragraph should usually carry one main idea. Short paragraphs improve news readability, but do not turn every sentence into a separate paragraph or force every paragraph to the same length.
+
+A one-sentence paragraph is acceptable when the material earns the emphasis or when a clean break improves comprehension. It is not the default rhythm.
+
+### Use subheads only when they help
+
+Short reports may need no subheads.
+
+When a longer story benefits from them, use factual, subject-specific subheads that identify what the section is about.
+
+Prefer:
+
+- `TDC will remain a developer`
+- `Vessels waited more than a month`
+- `GRA says a third phone is not automatically taxed`
+
+Avoid generic rhetorical labels such as:
+
+- `Why this matters`
+- `What this means`
+- `The practical point`
+- `What happens next`
+- `What is not settled yet`
+
+A subhead should be difficult to transplant unchanged into an unrelated article.
+
+### End when the reporting is finished
+
+A story does not require a formal conclusion.
+
+End with the last useful fact, a concrete unresolved point, a response, a deadline, or a genuinely material next development. If the article is complete without a closing synthesis, stop.
+
+Do not add a final paragraph merely because the story feels as though it needs an ending.
+
+## Evidence limits vs process diary
+
+Honest uncertainty in public prose is about the record:
+
+> The notice does not state when the new rule will take effect.
+
+Or, when a documented reporting action matters:
+
+> We checked the published regulations and found no commencement date beyond the date stated in the instrument.
+
+Do not narrate the drafting process:
+
+> We could not open a stable direct PDF in this run, so we kept the article to details we could corroborate.
+
+Download failures, unstable URLs, tooling limits and other assignment mechanics belong in `editorial.verification_notes` or `source_notes`.
+
+If a primary record cannot be checked, omit the unsupported detail or return `DRAFT NEEDS REPORTING`.
 
 ## Patterns to remove
 
-These are diagnostic patterns, not evidence that a human or an AI wrote the copy. Revise the sentence when the pattern appears and weakens it.
+These are diagnostic patterns, not proof that a human or an AI wrote the copy. Revise them when they weaken the story.
 
 ### Throat-clearing
 
-Cut openers that delay the subject, including constructions such as “it is worth noting,” “the reality is,” “in today's world,” “when it comes to,” “here is the thing,” and “let us take a closer look.”
+Cut openers such as “it is worth noting,” “the reality is,” “in today's world,” “when it comes to,” “here is the thing,” and “let us take a closer look.”
 
 ### Importance puffery
 
-Replace claims that an event “marks a pivotal moment,” “underscores its significance,” “stands as a testament,” “plays a vital role,” or is a “game changer” with the specific first, largest, costliest, newest, or consequential fact, if the evidence supports one.
+Replace claims that an event “marks a pivotal moment,” “underscores its significance,” “stands as a testament,” “plays a vital role,” or is a “game changer” with the specific fact that demonstrates the consequence, if one exists.
+
+### Interpretive signposting
+
+Be suspicious of phrases whose main job is to announce that analysis is about to happen:
+
+- “that distinction matters because”;
+- “the practical point is”;
+- “the key question is”;
+- “what this means is”;
+- “the bigger issue is”;
+- “what is independently clear is”;
+- “the next test is”;
+- “the number to watch is”;
+- “in other words”.
+
+These phrases are not banned. Use one only when it performs work that a direct factual sentence cannot do more cleanly.
 
 ### Faux insight
 
@@ -124,7 +233,7 @@ Remove setups that flatter the writer as uniquely perceptive: “what everyone m
 
 ### Formulaic contrast
 
-Do not repeatedly use “it is not X; it is Y,” “not only X but Y,” or “the question is not X.” State Y directly unless the contrast itself is necessary to correct a real misunderstanding.
+Do not repeatedly use “it is not X; it is Y,” “not only X but Y,” “the question is not X,” or colon constructions that manufacture a neat opposition. State the verified development directly unless the contrast corrects a real misunderstanding.
 
 ### Negative and dramatic listing
 
@@ -140,27 +249,35 @@ Replace “experts say,” “studies show,” “reports suggest,” “critics
 
 ### Synonym cycling
 
-Repeat the accurate noun when clarity benefits. Do not rotate among “government,” “administration,” “authorities,” and “leadership” if those words could refer to different actors.
+Repeat the accurate noun when clarity benefits. Do not vary nouns simply to avoid repetition.
 
 ### Generic portability
 
-Test any polished sentence by asking whether it could be moved unchanged to a different country, company, policy, or event. If so, it probably needs a fact, mechanism, consequence, attributed judgment, or deletion.
+Test a polished sentence by asking whether it could be moved unchanged to a different country, company, policy, or event. If so, it probably needs a fact, mechanism, consequence, attributed judgment, or deletion.
 
-### Templated language
+Apply the same test to subheads and transitions.
 
-Do not write from a reusable article script. Stock openings, transition phrases, paragraph sequences, evidence disclaimers, reader-address formulas, and endings are prohibited when they are repeated by habit rather than required by the reporting.
+### Templated article architecture
 
-Phrases such as “what we can establish,” “at this point,” “the next test,” and “we will be watching” may occasionally be accurate, but they must not become recurring slots filled with a different subject. Repeated use across recent stories is a failed style check. Rewrite from the specific fact, uncertainty, consequence, deadline, or reporting action in the story.
+Do not write from a reusable sequence such as:
 
-Compare the draft with recent Akan Reports articles before submission. Look beyond identical wording. A sequence that repeatedly moves from announcement, to background, to generic consequence, to “what happens next” is still templated even when every sentence is different.
+1. announcement;
+2. “why this matters”;
+3. background;
+4. generic consequence;
+5. “what happens next”.
+
+Different stories should sound and move differently because their evidence is different.
+
+Compare the draft with recent Akan Reports articles before submission. Look beyond identical wording. Repeated section order, paragraph shape, rhetorical subheads and closing formulas are also signs of a filled template.
 
 ### Fake-profound endings
 
-Delete vague endings such as “only time will tell,” “the future starts now,” or a new metaphor designed only to sound quotable. Do not replace one empty flourish with another.
+Delete vague endings such as “only time will tell,” “the future starts now,” or a new metaphor designed only to sound quotable.
 
 ### Recap endings
 
-Avoid “in conclusion,” “ultimately,” “overall,” and final paragraphs that merely restate the headline and standfirst. The reader has just read the article.
+Avoid “in conclusion,” “ultimately,” “overall,” and final paragraphs that merely restate the headline and standfirst.
 
 ### Formatting slop
 
@@ -176,29 +293,31 @@ Good editing requires judgment. These forms are allowed when they make the repor
 
 - **Adverbs:** keep an adverb that supplies evidence, degree, timing, legal meaning, or genuine contrast; remove one that only inflates or softens.
 - **Passive voice:** use it when the actor is unknown, the action or affected person is the proper focus, or naming the actor would misstate the evidence. Prefer active voice when the responsible actor is known and relevant.
-- **Questions:** a question may be an effective headline or structural device when the article genuinely investigates or answers it. Before using one in a headline, identify the sentence or section that supplies the answer and check whether the reporting establishes a party, amount, cause, effect, or only part of what the wording appears to ask. Narrow the question when the evidence provides only a partial answer. Do not use a question to hide the absence of reporting.
+- **Questions:** a question may be an effective headline or structural device when the article genuinely investigates or answers it. Do not use a question to make straight news sound more analytical than the reporting is.
 - **Fragments:** use rarely and deliberately. Do not stack them to simulate urgency.
 - **Repetition:** repeat the precise term when replacing it would blur meaning.
 - **Long sentences:** keep one when its clauses remain clear and the relationship between ideas matters. Split a sentence that makes the reader reconstruct it.
+- **Visible analysis:** use it when the article is actually doing analytical work. Do not add it to a straight report merely to create a distinctive voice.
 
-The approved headline “Ghana grows. Who gains?” is valid because the question defines the analysis and the article must examine who benefits. A ban on question openings would make the writing system worse.
+The approved headline “Ghana grows. Who gains?” is valid because the question defines an analysis and the article must examine who benefits. It is not a model that every headline should imitate.
 
 ## Headlines and standfirsts
 
 ### Headline
 
-- State or frame the actual story rather than its topic.
+- State the actual story rather than its topic.
+- For straight news, prefer plain factual wording over clever framing.
 - Use a question only when the body seriously addresses it.
 - Avoid clickbait, unexplained cleverness, generic urgency, and claims the body cannot prove.
-- Prefer a concrete tension or consequence over a slogan.
-- Keep `title` complete and understandable without the visual split fields.
-- Avoid “today,” “this morning,” and similar relative time in a headline unless same-day publication is intended and the wording will be checked again at approval. Prefer wording that remains accurate after the first news cycle.
+- Avoid forcing a headline into a colon-based contrast when a direct sentence is clearer.
+- Keep `title` complete and understandable without visual split fields.
+- Avoid “today,” “this morning,” and similar relative time unless same-day publication is intended and the wording will be checked again at approval.
 
 ### Standfirst
 
 - Add information rather than paraphrasing the headline.
-- State the development and add the information that earns the reader's attention.
-- Identify the relevant place, institution, scale, or affected group.
+- State the development and add the most useful verified detail, qualification, scale, or affected group.
+- Do not feel obliged to explain “why it matters” in the standfirst when the development and added fact already earn attention.
 - Do not begin with “In a significant development” or another importance label.
 
 ## Editing examples
@@ -213,19 +332,25 @@ Better:
 
 > The Transport Ministry has approved a new bus-franchise system for Accra, with the first routes due to begin in January.
 
-The revision is valid only if the approval, location, and date are verified.
-
-### Superficial analysis
+### Unnecessary interpretation
 
 Weak:
 
-> The increase reached 12%, highlighting the government's commitment to economic growth.
+> That distinction matters because TMA remains the institution developers must deal with for permits.
 
 Better:
 
-> The increase reached 12%. The data does not show whether household incomes rose with it.
+> TMA will continue to issue development permits within the metropolis.
 
-The second sentence is appropriate only when the dataset's scope supports that distinction.
+### Visible analysis layer
+
+Weak:
+
+> The practical point for cement buyers is that the port delay is now reaching retail prices.
+
+Better:
+
+> Manufacturers have added a GH¢12 surcharge to each bag, which they say will remain until port delays ease or the charge is reviewed in December.
 
 ### Vague attribution
 
@@ -237,9 +362,7 @@ Better:
 
 > Two importers' associations said the inspection fee would add to clearing costs. Neither provided an estimate of the effect on retail prices.
 
-The revision preserves both the attributed claim and its limitation.
-
-### Handbook tone
+### Evidence limit
 
 Weak:
 
@@ -247,38 +370,46 @@ Weak:
 
 Better:
 
-> The notice does not say how much refining will cost. We could not find a published figure in the documents reviewed for this article.
+> The notice does not say how much refining will cost.
 
-### Reader address
+Use a publication-action sentence only when it adds value:
+
+> We checked the published fee schedules and found no separate refining charge.
+
+### Unnecessary reader address
 
 Weak:
 
-> Motorists and transport operators are expected to experience higher prices at the pump.
+> If you are a developer in Tema, the practical point is that TMA remains the regulator.
 
 Better:
 
-> If you buy petrol or diesel, the confirmed change is the higher floor for this window. What any one station charges above that floor will vary.
+> Developers in Tema must still obtain the relevant permits from TMA.
+
+Reader address can still be useful when it materially simplifies a practical instruction or consequence.
 
 ## Required style pass
 
-After the reporting and verification pass, the drafting agent must read the full public copy once more and complete this check:
+After reporting and verification, read the full public copy once more and answer:
 
-1. Does the opening give the reader the development, consequence, or real question without throat-clearing?
-2. Does every claim of importance have a concrete fact, comparison, mechanism, or consequence behind it?
-3. Are vague sources replaced by named attribution or removed?
-4. Are allegations, estimates, uncertainty, and limitations still qualified accurately?
-5. Does each generic sentence pass the portability test?
-6. Are formulaic contrasts, dramatic fragments, superficial `-ing` analysis, and robotic paragraph patterns removed?
-7. Are useful names, numbers, dates, locations, and mechanisms preserved?
-8. Does the standfirst add information beyond the headline?
-9. Does the ending land on substance rather than a recap or artificial flourish?
-10. Does the copy sound like Akan Reports talking to the reader and taking responsibility for its reporting, using **we** for genuine checks, findings, limits and framing, and **you** where it clarifies the reader's stake?
-11. Could an intelligent non-specialist enter the story without already knowing the institution, profession, acronym or regulatory process involved?
-12. Does the article's shape arise from this reporting rather than from a repeated house template?
-13. Is the public copy free of em dashes and imitations such as double hyphens?
-14. Where the story makes a check, synthesis or judgment about the evidence, does it own that work instead of hiding behind passive or faceless phrasing?
-15. Has the draft been compared with recent stories and cleared of repeated sentence frames, transitions, paragraph shapes, reader-address formulas and endings?
-16. Is the public copy free of reporting-process diary (download failures, “in this run,” unstable URLs, tooling limits, “we kept / left out until we could check…”), with those limits recorded only in front matter?
+1. Does the opening give the verified development, consequence, or genuine reporting question without throat-clearing?
+2. For straight news, could the lead be stated more directly as a fact?
+3. Does every claim of importance have a concrete fact, comparison, mechanism, or consequence behind it?
+4. Are vague sources replaced by named attribution or removed?
+5. Are allegations, estimates, uncertainty, and limitations qualified accurately?
+6. Does each generic sentence pass the portability test?
+7. Have unnecessary interpretive signposts been removed?
+8. Are formulaic contrasts, dramatic fragments, superficial analysis and robotic paragraph patterns removed?
+9. Are useful names, numbers, dates, locations and mechanisms preserved?
+10. Does the standfirst add useful verified information beyond the headline?
+11. Are **we** and **you** used only where they materially improve the reporting rather than to satisfy a house-voice formula?
+12. Could an intelligent non-specialist enter the story without already knowing the institution, profession, acronym or regulatory process involved?
+13. Does the article's shape arise from this reporting rather than from a repeated house template?
+14. Are subheads necessary, factual and specific rather than rhetorical labels?
+15. Does the ending stop on substance rather than add a recap, prediction, “next test” formula or artificial flourish?
+16. Is the public copy free of em dashes and imitations such as double hyphens?
+17. Has the draft been compared with recent stories and cleared of repeated sentence frames, transitions, paragraph shapes, subhead formulas and endings?
+18. Is the public copy free of reporting-process diary, with those limits recorded only in front matter?
 
 If any answer is no, revise and repeat the check. Passing the style check makes a draft ready for editorial review, not approved for publication.
 
@@ -289,4 +420,4 @@ This guide adapts ideas from two MIT-licensed open-source writing projects:
 - Hardik Pandya's [`stop-slop`](https://github.com/hardikpandya/stop-slop), especially its catalogues of throat-clearing, vague importance, formulaic structure, and robotic rhythm.
 - Peter Yang's [`no-ai-slop`](https://github.com/petergyang/no-ai-slop), especially its minimum-effective-edit approach, specificity and portability tests, voice preservation, and post-edit evaluation.
 
-Their absolute rules were not copied wholesale. Akan Reports modifies the approach for evidence-based journalism, where qualification, selective passive voice, questions, and other context-dependent forms may protect accuracy. Both upstream projects are available under the MIT License: [`stop-slop` license](https://github.com/hardikpandya/stop-slop/blob/main/LICENSE) and [`no-ai-slop` license](https://github.com/petergyang/no-ai-slop/blob/main/LICENSE).
+Akan Reports modifies those ideas for evidence-based journalism, where qualification, selective passive voice, questions and other context-dependent forms may protect accuracy. Both upstream projects are available under the MIT License: [`stop-slop` license](https://github.com/hardikpandya/stop-slop/blob/main/LICENSE) and [`no-ai-slop` license](https://github.com/petergyang/no-ai-slop/blob/main/LICENSE).

@@ -1,6 +1,6 @@
 # Reporting and Quality Rules
 
-**Version:** 1.2
+**Version:** 1.3
 **Status:** Required for the MVP
 **Owner:** Human publisher of Akan Reports
 
@@ -21,7 +21,7 @@ An agent may draft a story only when it can state:
 3. **The reader value:** what an intelligent non-specialist gains that was not clear from the originating item alone.
 4. **The Ghana connection:** direct for Ghana and Business stories; explicit and meaningful for World stories.
 
-Do not draft a story merely because it is trending, emotionally provocative, already published elsewhere, or likely to generate clicks. A rewrite that adds no verification, context, synthesis, explanation, or distinct angle is not sufficient.
+Do not draft a story merely because it is trending, emotionally provocative, already published elsewhere, or likely to generate clicks. A rewrite that adds no verification, context, synthesis, explanation, source proximity, clearer sequencing, or distinct angle is not sufficient.
 
 An announcement may be important to the institution that issued it without being a worthwhile Akan Reports article. A specialist subject qualifies when the reporting can make it useful or interesting beyond the professional group directly involved. If that broader value is limited, use a concise Signal when one is justified or return `NO DRAFT`; do not manufacture length or significance.
 
@@ -65,29 +65,34 @@ The agent must not imply that Akan Reports conducted an interview, visited a loc
 - A caveat does not make an invalid comparison probative. When figures cannot be normalised, describe them separately and do not infer a shortfall, surplus, trend, causal relationship, or performance gap from the difference.
 - Percent and percentage-point changes are different and must be labelled correctly.
 - Avoid false precision. Round only when doing so does not alter the meaning.
-- A large number is not automatically important. Explain the denominator, baseline, historical context, or practical consequence.
+- A large number is not automatically important. Explain the denominator, baseline, historical context, or practical consequence when the reader needs it.
 - Data visualisations and `home.stat` values must be reproducible from the recorded source. Presentation values such as bar heights must not be treated as data.
 
 ## 5. Writing and structure
 
 All public copy must also follow `WRITING_STYLE.md`. Apply its style pass only after factual verification; style must never remove a necessary qualification or attribution.
 
-- Lead with the news, consequence, or central question, not background about the process of reporting it.
-- Do not put reporting-process diary in public copy. Failures to open a PDF, unstable download links, “in this run,” tool limits, and explanations of how the agent narrowed the draft (“we kept the detail to…,” “left out until the bulletin can be checked”) belong only in `editorial.verification_notes` or `source_notes`. Public uncertainty must describe what the evidence shows or does not show, not how the session went. If a primary record cannot be checked, omit the unsupported claim or mark the draft `DRAFT NEEDS REPORTING`; do not publish the claim with a process apology.
-- Write in clear international English for intelligent readers in and beyond Ghana without assuming professional knowledge of the subject. The default voice is Akan Reports speaking to the reader and owning its reporting, not an impersonal wire summary. Use **we** for genuine checks, findings, limits and editorial framing, and **you** when it clarifies the reader's stake. Do not add pronouns mechanically; follow `WRITING_STYLE.md`.
+- Lead with the verified development, consequence, or central question. For straight news, the verified development is usually the best opening.
+- Use restrained factual narration as the default register for straight news, Signals, and ordinary reports. State the fact, attribute the claim, add the necessary context, and move to the next useful fact. Do not insert commentary merely to tell the reader what a fact already demonstrates.
+- Do not put reporting-process diary in public copy. Failures to open a PDF, unstable download links, “in this run,” tool limits, and explanations of how the agent narrowed the draft belong only in `editorial.verification_notes` or `source_notes`. Public uncertainty must describe what the evidence shows or does not show, not how the session went. If a primary record cannot be checked, omit the unsupported claim or mark the draft `DRAFT NEEDS REPORTING`; do not publish the claim with a process apology.
+- Write in clear international English for intelligent readers in and beyond Ghana without assuming professional knowledge of the subject. Akan Reports does not need a visible narrator in every story. Use **we** when a genuine reporting check, finding, synthesis, or evidence limit materially helps the reader. Use **you** when it genuinely clarifies the reader's stake. Neither pronoun is required.
 - Prefer precise nouns and active verbs. Remove filler, hype, clichés, and claims such as “shocking,” “historic,” or “game-changing” unless evidence makes the description necessary.
-- A headline may be sharp and curious, but it must not promise more than the reporting delivers.
-- The standfirst must tell the reader what happened and why the story deserves attention; it must add information rather than repeat the headline.
+- A headline may be sharp and curious, but it must not promise more than the reporting delivers. Straight-news headlines should normally be plain, concrete, and understandable without rhetorical framing.
+- The standfirst must state the development and add the most useful verified detail beyond the headline. It does not need to announce the story's significance.
 - Headlines, standfirsts, `highlights`, cards, and other summaries must preserve material qualifications, conditions, scope, attribution, dates, and units from the body.
 - Supply enough context for a new reader without turning every story into a complete history.
 - Explain technical terms on first use and spell out uncommon abbreviations.
 - Translate institutional and industry language into ordinary terms. Include procedural detail when it advances the story, not merely because it appeared in a source document.
 - Do not let a sequence of official titles, clauses, programme names or technical distinctions turn the article into an executive briefing. Establish the reader's point of entry before asking them to carry specialist detail.
+- Let chronology, attribution, comparison and mechanism do as much explanatory work as possible. Avoid stock analytical signposts such as “why this matters,” “the practical point,” “the key question,” “what this means,” “the next test,” and “what happens next” when the following facts can make the point directly.
+- Use subheads only when they improve navigation. Prefer specific factual subheads that name the subject, institution, decision, figure or development. Avoid generic rhetorical labels that could be moved unchanged to another story.
+- Paragraphs should be short enough to read easily but not mechanically uniform. One paragraph should usually carry one main idea. A one-sentence paragraph is acceptable when the material earns it, not as a default rhythm.
+- A story does not need a formal conclusion. End after the last useful fact, a concrete unresolved point, or a genuinely material next development. Do not manufacture a closing insight because the article feels as though it needs one.
 - Identify dates and locations when relative phrases such as “today” or “recently” could become misleading after publication. Use relative time in a headline only when same-day publication is intended and its accuracy will be rechecked at approval; prefer the exact date or a durable formulation otherwise.
 - Do not add invented scenes, composite characters, sensory details, emotions, or narrative colour. A scene is used only when it was observed or reliably documented.
-- Analysis may draw an inference from evidence, but the prose must label it as analysis and acknowledge material alternative explanations.
+- Analysis may draw an inference from evidence, but the prose must label it as analysis and acknowledge material alternative explanations. Straight news should not acquire an analysis layer merely to sound distinctive.
 - Do not imitate another publisher's distinctive wording or lightly rewrite its article. Report from the underlying facts and sources in original language.
-- Do not reuse a house script for openings, transitions, reader address, evidence limits, or endings. Repeated language from recent Akan Reports stories is a defect unless the wording is an exact factual or technical term.
+- Do not reuse a house script for openings, transitions, reader address, evidence limits, subheads, or endings. Repeated language or repeated article architecture from recent Akan Reports stories is a defect unless the structure is demanded by the facts.
 - No personal byline, invented reporter identity, or agent disclosure appears in the article body.
 
 There is no minimum word count. A concise signal is preferable to a padded report; a complex investigation must not be compressed until essential context disappears.
@@ -146,12 +151,12 @@ A draft is ready for review only when all answers below are **yes**:
 
 1. Does the candidate pass the `CONTENT_STRATEGY.md` selection gate, audience test and angle framework, with the correct strategy stream, primary angle lens, clear development, precise angle and genuine non-specialist reader value?
 2. Does the headline accurately match the evidence and body?
-3. Does the standfirst explain both the development and its significance?
+3. Does the standfirst state the development and add a useful verified detail beyond the headline?
 4. Is every material factual claim mapped to recorded evidence?
 5. Are disputed, uncertain, inferred, attributed, and negative research claims labelled and scoped honestly?
 6. Are names, dates, places, quotations, numbers, units, links, comparisons, and structured summaries checked?
 7. Is the article original in wording, free of unsupported scenes or details, and compliant with the `WRITING_STYLE.md` style pass?
-8. Is the language and structure specific to this story rather than copied from a house template or recent draft?
+8. Is the language and structure specific to this story rather than copied from a house template or recent draft, including repeated analytical signposts, rhetorical subheads and closing formulas?
 9. Are fairness, privacy, harm, legal, and safety concerns disclosed and addressed?
 10. Is the visual treatment legitimate, useful, and fully documented?
 11. Are the Markdown bundle and all required metadata complete?

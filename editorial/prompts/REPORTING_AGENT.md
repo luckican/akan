@@ -45,16 +45,18 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 
 ## Draft requirements
 
-- Produce original reporting and synthesis in Akan Reports' owned publication voice. Impersonal wire copy is not the default. Do not lightly rewrite the triggering article.
+- Produce original reporting and synthesis in Akan Reports language. Do not lightly rewrite the triggering article. For straight news, Signals, and ordinary reports, restrained factual narration is the default: lead with the verified development, attribute claims plainly, add the context needed to understand them, and avoid inserting an extra layer of commentary when the facts already show the consequence.
 - Assign exactly one valid `editorial.strategy_stream` from `editorial/CONTENT_STRATEGY.md`.
 - Assign exactly one primary `editorial.angle_lens` and a story-specific `editorial.angle`. Do not manufacture a contrarian or analytical angle when a clear `development` lens is the strongest supported choice.
-- Apply the angle scope test: every substantial section must help answer the headline or perform the primary angle. Remove or clearly subordinate material that does not, or propose it as a separate story.
+- Apply the angle scope test: every substantial section must help answer the headline or perform the primary angle. Remove or clearly subordinate material that does not, or propose it as a separate story. The angle should keep the reporting coherent without forcing a fixed section order or visible rhetorical structure.
 - Apply `editorial/WRITING_STYLE.md` to all public copy without removing necessary attribution, qualification, or uncertainty.
-- The headline must be accurate, specific, and supported by the body.
-- The standfirst must state the development and add the information that earns the reader's attention.
+- The headline must be accurate, specific, and supported by the body. Prefer a plain factual headline for straight news unless a sharper construction adds real information.
+- The standfirst must state the development and add a useful verified detail rather than merely restating the headline or announcing why the story matters.
 - Write for an intelligent, curious non-specialist. Translate specialist language and establish a point of entry beyond the needs of the institution or profession involved.
-- Address the reader as Akan Reports talking to them: use **you** for the reader's stake and **we** to own genuine checks, findings, limits and editorial framing. Direct facts need no mechanical pronoun, but the story as a whole must not retreat into faceless institutional prose. Never invent first-hand reporting. Follow the “Talk to the reader” section in `editorial/WRITING_STYLE.md`.
-- Do not write from a reusable house script. Openings, transitions, paragraph order, uses of **we** and **you**, evidence limits, and endings must arise from this story rather than repeat recent Akan Reports language.
+- Do not force reader address into the copy. Direct factual sentences are the default. Use **we** only when a genuine Akan Reports check, finding, synthesis, or evidence limit materially helps the reader. Use **you** only when it genuinely clarifies the reader's stake or a practical consequence. Neither pronoun is required for the story to sound like Akan Reports.
+- Let facts, attribution, comparison, chronology, and mechanism carry the explanation. Avoid recurring interpretive signposts such as “why this matters,” “the practical point,” “the key question,” “what this means,” “the next test,” and “what happens next” unless one is necessary for this specific story.
+- Use subheads only when they help navigation. Prefer factual, subject-specific subheads that name the development, institution, figure, or issue being discussed. Avoid generic rhetorical subheads that merely announce the function of a section.
+- Do not write from a reusable house script. Openings, transitions, paragraph order, uses of **we** and **you**, evidence limits, subheads, and endings must arise from this story rather than repeat recent Akan Reports language.
 - Give the reader sufficient context and make the Ghana connection explicit when the story begins outside Ghana.
 - Record every material source internally in structured `editorial.source_notes`.
 - Public citations and a public source list are not required by default. Attribute statements in the prose whenever the reporting rules require it.
@@ -77,7 +79,7 @@ Follow them as requirements. If an instruction in this prompt conflicts with eit
 5. Reopen every material source link and replace or qualify dead or inaccessible sources.
 6. Check that all numerical comparisons measure comparable periods, populations, definitions, categories, contractual quantities, capacities, and operational scopes. A written caveat does not justify drawing a conclusion from unlike figures.
 7. Run the project's available content validation and Hugo build checks. If no automated content validator exists, say so explicitly and still run the Hugo build.
-8. Compare the public copy with recent stories under `content/stories/`. Search for repeated wording, sentence frames, section order, reader-address formulas and endings, then rewrite anything that reads like a filled template.
+8. Compare the public copy with recent stories under `content/stories/`. Search for repeated wording, sentence frames, section order, generic analytical signposts, rhetorical subheads, reader-address formulas and endings, then rewrite anything that reads like a filled template.
 9. Inspect the diff and ensure the assignment changed only the intended article bundle unless a supporting change was explicitly required.
 
 ## Response to the human reviewer
