@@ -2,8 +2,8 @@
 title: "Government says TMA has regulatory authority over development in Tema"
 description: "The Presidency has directed TDC Ghana Ltd to comply with the Tema Metropolitan Assembly on planning, permits, rates and municipal requirements. TDC will continue as a commercial developer while the two institutions work out a formal operating framework."
 date: 2026-09-04T19:49:00Z
-lastmod: 2026-09-04T20:00:00Z
-draft: true
+lastmod: 2026-09-04T20:15:00Z
+draft: false
 
 primary_section: ghana
 topics:
@@ -14,8 +14,8 @@ topics:
 format: explainer
 
 home:
-  position: none
-  weight: 100
+  position: briefing
+  weight: 3
   expires: null
 
 breaking:
@@ -23,11 +23,11 @@ breaking:
   expires: null
 
 workflow:
-  status: review
+  status: approved
   agent: directed-reporting-agent
   created_at: 2026-09-04T19:49:00Z
-  reviewed_at: null
-  decision_note: null
+  reviewed_at: 2026-09-04T20:15:00Z
+  decision_note: "Approved for publication."
 
 editorial:
   strategy_stream: context
