@@ -1,8 +1,8 @@
 ---
-title: "Tema's permit fight has a government answer: TMA regulates, TDC develops"
-description: "The Presidency has directed TDC Ghana Ltd to comply with the Tema Metropolitan Assembly on development control, planning, permits, rates and municipal requirements. TDC keeps its commercial development role, while the two institutions must still agree an operating framework."
+title: "Government says TMA has regulatory authority over development in Tema"
+description: "The Presidency has directed TDC Ghana Ltd to comply with the Tema Metropolitan Assembly on planning, permits, rates and municipal requirements. TDC will continue as a commercial developer while the two institutions work out a formal operating framework."
 date: 2026-09-04T19:49:00Z
-lastmod: 2026-09-04T19:49:00Z
+lastmod: 2026-09-04T20:00:00Z
 draft: true
 
 primary_section: ghana
@@ -80,28 +80,30 @@ editorial:
       notes: "Used to represent TDC's position before the Presidency's intervention and to distinguish commercial development from municipal regulation."
 ---
 
-The Presidency has drawn a clearer line through the dispute between the Tema Metropolitan Assembly and TDC Ghana Ltd: within the Tema Metropolis, TMA is the regulator. TDC remains a developer.
+The government has said the Tema Metropolitan Assembly has regulatory authority over planning and development within the Tema Metropolis, ending a dispute with TDC Ghana Ltd over their respective powers.
 
-That distinction matters if you are trying to work out who controls building permits, development approvals, municipal charges or physical planning in the metropolis.
+A letter from the Office of the President directs TDC to comply with TMA on development control, spatial planning, building permits, municipal services, rates and fees.
 
-A letter from the Office of the President, reported on 3 September, says TMA is the highest political and administrative authority within its jurisdiction and directs TDC to comply with the Assembly on development control, spatial planning, permitting, municipal services, rates and fees.
+The Presidency also said TDC's status as a commercial property developer does not give it municipal or regulatory authority.
 
-The legal structure behind that position is fairly direct. The Local Governance Act says a District Assembly is the highest political authority in its district and gives it responsibility for overall development and human settlements. The Land Use and Spatial Planning Act goes further on construction: physical development requires a permit from the District Assembly in whose jurisdiction the land sits.
+The decision follows a public disagreement between the two institutions over who has the final say on development in Tema.
 
-## What TDC still does
+## What the law says
 
-The directive does not erase TDC's development role.
+The Local Governance Act says a District Assembly is the highest political authority in its district and gives it responsibility for overall development and human settlements.
 
-TDC had argued in August that its mandate to plan, lay out and develop the Tema area remained intact and was different from TMA's municipal and regulatory functions. The Presidency's intervention keeps that distinction, but places the regulatory hierarchy more clearly: TDC may develop property, while TMA retains the public authority that regulates development within the metropolis.
+The Land Use and Spatial Planning Act also requires a person undertaking physical development to obtain a permit from the District Assembly in whose jurisdiction the land is located.
 
-The Presidency described TDC as a commercially oriented real estate developer and said that status does not itself give the company municipal, legislative, regulatory or spatial-planning authority.
+Those provisions support the government's position that TMA controls the regulatory process within the metropolis.
 
-For a developer or property owner, the practical point is narrower than the institutional argument. A TDC project or interest in land does not replace the planning and building-permit requirements administered by the Assembly where Act 925 applies.
+TDC still retains its role as a developer. In August, the company said its mandate to plan, lay out and develop the Tema area remained intact and was separate from TMA's municipal functions.
 
-## What is not settled yet
+The Presidency has not removed that commercial role. It has instead said TDC must operate within the planning and permitting system administered by the Assembly.
 
-The government has also ordered the ministries responsible for local government and works and housing to create an operating framework for the two institutions.
+## What still needs to be settled
 
-That framework is supposed to cover permitting, infrastructure coordination, revenue obligations, information sharing, dispute resolution and regular engagement. In other words, the Presidency has clarified who regulates, but the day-to-day process between the institutions still needs to be made explicit.
+The ministries responsible for local government and for works and housing have been directed to develop an operating framework for TMA and TDC.
 
-We are therefore not treating the directive as the end of every TMA-TDC disagreement. The more durable test will be whether the new framework makes approvals, charges and project responsibilities predictable enough that the same institutional fight does not return around the next development.
+The framework is expected to cover permits, infrastructure coordination, revenue obligations, information sharing and dispute resolution.
+
+That means the broad division of authority is now clearer, but some of the day-to-day arrangements between the two institutions still have to be agreed.
