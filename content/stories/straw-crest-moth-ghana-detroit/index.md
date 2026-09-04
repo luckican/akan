@@ -82,28 +82,8 @@ editorial:
       notes: "Used as supporting taxonomic context only, not to establish the origin of the Detroit specimen."
 ---
 
-US agriculture inspectors have recorded their first interception of a straw crest moth at a port of entry after finding the insect in luggage arriving from Ghana.
+US agriculture inspectors have recorded their first interception of a straw crest moth at a port of entry after finding the insect in luggage arriving from Ghana. The moth was discovered at Detroit Metropolitan Airport in January after an agriculture detector dog alerted officers to a passenger's baggage. US Customs and Border Protection said officers found the insect while examining corn and seeds in the luggage. Specialists at the US Department of Agriculture later identified it as *Mesophleps silacella*, commonly known as the straw crest moth, with the identification confirmed on 12 August. CBP announced the find on 1 September and said its records showed no previous interception of the species at a US port of entry.
 
-The moth was discovered at Detroit Metropolitan Airport in January after an agriculture detector dog alerted officers to a passenger's baggage.
+The passenger was a Ghanaian citizen and was advised about US agricultural import requirements before being released, according to the agency. The US announcement does not establish that the moth originated in Ghana. It establishes only that the insect was found in luggage arriving from Ghana. Published records place *Mesophleps silacella* in Europe and parts of the wider Old World, while CBP described the species as non-native to the United States. The species has been associated with plants in the rockrose family, but CBP did not say the insect was feeding on the corn or seeds found in the baggage or explain how it came to be inside the luggage.
 
-US Customs and Border Protection said officers found the insect while examining corn and seeds in the luggage.
-
-Specialists at the US Department of Agriculture later identified it as *Mesophleps silacella*, commonly known as the straw crest moth. The identification was confirmed on 12 August.
-
-CBP announced the find on 1 September and said its records showed no previous interception of the species at a US port of entry.
-
-The passenger was a Ghanaian citizen and was advised about US agricultural import requirements before being released, according to the agency.
-
-The US announcement does not establish that the moth originated in Ghana. It establishes that the insect was found in luggage arriving from Ghana.
-
-Published records place *Mesophleps silacella* in Europe and parts of the wider Old World. CBP described the species as non-native to the United States.
-
-The species has been associated with plants in the rockrose family.
-
-CBP did not say the insect was feeding on the corn or seeds found in the passenger's baggage, or how it came to be inside the luggage.
-
-US border authorities inspect food, seeds, plants and other agricultural material because insects and plant diseases can be carried across borders with them.
-
-CBP says its agriculture specialists intercept hundreds of pests each year as part of efforts to prevent potentially harmful species from becoming established in the United States.
-
-The Detroit interception happened in January, but it became public only after USDA specialists confirmed the species several months later.
+US border authorities inspect food, seeds, plants and other agricultural material because insects and plant diseases can be carried across borders with them. CBP says its agriculture specialists intercept hundreds of pests each year as part of efforts to prevent potentially harmful species from becoming established in the United States. The Detroit interception happened in January but became public only after USDA specialists confirmed the species several months later.
