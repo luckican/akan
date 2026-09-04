@@ -3,7 +3,7 @@ title: "US records first straw crest moth interception after find in luggage fro
 description: "US agriculture inspectors recorded their first interception of a straw crest moth at a port of entry after finding the insect in luggage arriving from Ghana at Detroit Metropolitan Airport. The available record does not establish that the moth originated in Ghana."
 date: 2026-09-02T10:00:00Z
 lastmod: 2026-09-02T10:00:00Z
-draft: true
+draft: false
 
 primary_section: world
 topics:
@@ -23,11 +23,11 @@ breaking:
   expires: null
 
 workflow:
-  status: review
+  status: approved
   agent: directed-reporting-agent
   created_at: 2026-09-04T20:30:00Z
-  reviewed_at: null
-  decision_note: null
+  reviewed_at: 2026-09-04T20:41:34Z
+  decision_note: "Approved for publication by human reviewer."
 
 editorial:
   strategy_stream: world
