@@ -14,8 +14,8 @@ topics:
 format: report
 
 home:
-  position: briefing
-  weight: 1
+  position: lead
+  weight: 5
   expires: null
 
 breaking:

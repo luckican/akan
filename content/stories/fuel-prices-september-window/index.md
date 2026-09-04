@@ -13,8 +13,8 @@ topics:
 format: signal
 
 home:
-  position: lead
-  weight: 10
+  position: briefing
+  weight: 12
   expires: null
 
 breaking:
