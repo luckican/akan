@@ -131,15 +131,13 @@ Article 174 of the Constitution says taxes must be imposed by or under an Act of
 
 According to reports based on the writ, Alua argues that allowing the Commissioner-General or Customs officers acting under that authority to decide an individual passenger's exempt quantity amounts to exercising a tax-waiver or tax-variation power case by case. He wants the Supreme Court to declare that part of Regulation 18 inconsistent with the Constitution and to restrain its use until the Article 174 requirements are satisfied.
 
-The court has not made that finding. The legal question it will have to confront is whether Regulation 18 is merely administering an exemption Parliament already created in Act 1083, or whether the quantity decision itself changes an individual traveller's tax liability in a way that Article 174 reserves for parliamentary control.
-
-That distinction is the centre of the case.
+The court has not made that finding. The case therefore turns on whether Regulation 18 is merely administering an exemption Parliament already created in Act 1083, or whether the quantity decision itself changes an individual traveller's tax liability in a way that Article 174 reserves for parliamentary control.
 
 ## Why the phone argument brought this into view
 
 The lawsuit arrives after public controversy over how Customs treats travellers carrying multiple mobile phones.
 
-Comments by Customs Commissioner Aaron Kanor were widely understood as setting a two-phone limit. GRA has since clarified that there is no automatic rule making a third phone dutiable. Its current position is that officers should look at the circumstances, including whether devices are already in use, whether they are new and commercially packaged, how many similar items are being carried and whether they appear intended for another person, sale or distribution.
+Comments by Customs Commissioner Aaron Kanor prompted reports that travellers would face a two-phone limit. GRA has since clarified that there is no automatic rule making a third phone dutiable. Its current position is that officers should look at the circumstances, including whether devices are already in use, whether they are new and commercially packaged, how many similar items are being carried and whether they appear intended for another person, sale or distribution.
 
 That clarification removes the idea of a simple numerical trigger. It also makes the discretion at the centre of the Supreme Court case easier to see: Customs may still have to decide where personal baggage ends and commercial importation begins.
 
@@ -151,4 +149,4 @@ The filing itself is not a Supreme Court ruling. We found no reported interim or
 
 For a traveller, GRA's stated position therefore remains the practical one to work with: more than two phones does not automatically mean duty is payable, but the purpose, condition, packaging and quantity of the items can trigger further Customs scrutiny. If you are unsure whether something qualifies as personal baggage, GRA advises declaring it and asking an officer.
 
-The next consequential step is not another argument over the number two. It is whether the Supreme Court accepts that deciding an exempt quantity is ordinary Customs administration or a constitutional tax decision that needs a more direct act of Parliament.
+The next thing to watch is whether the Supreme Court treats the quantity decision as ordinary administration of an exemption Parliament already created or as a tax decision that Article 174 requires Parliament to control more directly.
