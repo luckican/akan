@@ -3,7 +3,7 @@ title: "Cement makers add GH¢12 surcharge over Tema Port delays"
 description: "The Chamber of Cement Manufacturers says clinker vessels are spending far longer waiting to discharge at Tema Port, pushing up demurrage costs. It has introduced a temporary GH¢12 surcharge on each bag of cement."
 date: 2026-09-04T19:50:00Z
 lastmod: 2026-09-04T20:00:00Z
-draft: true
+draft: false
 
 primary_section: business
 topics:
